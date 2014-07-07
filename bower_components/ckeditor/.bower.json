@@ -11,17 +11,17 @@
     "text",
     "javascript"
   ],
-  "authors": "CKSource - Frederico Knabben (http://cksource.com)",
-  "license": "http://ckeditor.com/about/license",
+  "authors": "CKSource (http://cksource.com/)",
+  "license": "For licensing, see LICENSE.md or http://ckeditor.com/license.",
   "homepage": "http://ckeditor.com",
-  "_release": "full/4.4.1",
+  "version": "4.4.2",
+  "_release": "4.4.2",
   "_resolution": {
-    "type": "tag",
-    "tag": "full/4.4.1",
-    "commit": "731ff16162c3fcc12e43503e359cc8be5262b75b"
+    "type": "version",
+    "tag": "4.4.2",
+    "commit": "e90a22b1e6957a3c85c097c85a194ecdec4c0e18"
   },
   "_source": "git://github.com/ckeditor/ckeditor-releases.git",
-  "_target": "full/4.4.1",
-  "_originalSource": "ckeditor",
-  "_direct": true
+  "_target": "~4.4.2",
+  "_originalSource": "ckeditor"
 }
