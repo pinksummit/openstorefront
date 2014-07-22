@@ -67,41 +67,7 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ {
-    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
-    "username" : "Abby TEST",
-    "userType" : "End User",
-    "createDts" : 1381644930000,
-    "updateDts" : 1381644930000,
-    "responses" : [ {
-      "response" : "Version 3.1 added support.(SAMPLE)",
-      "username" : "Cathy TEST",
-      "userType" : "End User",
-      "answeredDate" : 1391447730000
-    }, {
-      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "End User",
-      "answeredDate" : 1398845730000
-    } ]
-  }, {
-    "question" : "Does this support the 2.0 specs? (SAMPLE)",
-    "username" : "Cathy TEST",
-    "userType" : "End User",
-    "createDts" : 1362298530000,
-    "updateDts" : 1362298530000,
-    "responses" : [ {
-      "response" : "No,  they planned to add support next Version(SAMPLE)",
-      "username" : "Dawson TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1399961730000
-    }, {
-      "response" : "Update: they backport support to version 1.6(SAMPLE)",
-      "username" : "Dawson TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1399961730000
-    } ]
-  } ],
+  "questions" : [ ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Application",
@@ -139,7 +105,7 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Operations",
     "important" : false
   } ],
-  "tags" : [ ],
+  "tags" : [ { text: "Data Exchange"} ],
   "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/CAS.jpg",
@@ -149,14 +115,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Cathy TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "DI2E Framework Evaluation Report URL",
@@ -174,11 +142,34 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "http://www.jasig.org/cas/download"
   } ],
-  "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Erlang",
-    "comment" : "Version 3.0"
-  } ]
+  "reviews" : [ {
+    "username" : "Dawson TEST",
+    "userType" : "Project Manager",
+    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
+    "rating" : 5,
+    "title" : "Just what I was looking for (SAMPLE)",
+    "usedTimeCode" : "< 1 year",
+    "lastUsed" : 1381644930000,
+    "updateDate" : 1398845730000,
+    "organization" : "Private Company",
+    "recommend" : true,
+    "pros" : [ "Reliable" ],
+    "cons" : [ ]
+  }, {
+    "username" : "Jack TEST",
+    "userType" : "End User",
+    "comment" : "It's a good product.  The features are nice and performed well.  It quite configurable without a lot of setup and it worked out of the box.",
+    "rating" : 4,
+    "title" : "Good Product (SAMPLE)",
+    "usedTimeCode" : "< 6 Months",
+    "lastUsed" : 1362298530000,
+    "updateDate" : 1398845730000,
+    "organization" : "Private Company",
+    "recommend" : true,
+    "pros" : [ ],
+    "cons" : [ ]
+  } ],
+  "dependencies" : [ ]
 }, {
   "componentId" : 9,
   "guid" : "75718e9b-f650-4600-b949-cdebc5c179ec",
@@ -211,9 +202,9 @@ MOCKDATA2.componentList = [ {
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL 1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
-      "levelStatus" : "P"
+      "estimatedCompeletionDate" : null,
+      "actualCompeletionDate" : 1392138930000,
+      "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL 2",
       "estimatedCompeletionDate" : 1393002930000,
@@ -225,53 +216,116 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaulationSections" : [ {
+      "name" : "Discoverable",
+      "score" : 3
+    }, {
+      "name" : "Accessible",
+      "score" : 4
+    }, {
+      "name" : "Documentation",
+      "score" : 2
+    }, {
+      "name" : "Deployable",
+      "score" : 2
+    }, {
+      "name" : "Usable",
+      "score" : 5
+    }, {
+      "name" : "Error Handling",
+      "score" : 1
+    }, {
+      "name" : "Integrable",
+      "score" : 2
+    }, {
+      "name" : "I/O Validation",
+      "score" : 4
+    }, {
+      "name" : "Testing",
+      "score" : 4
+    }, {
+      "name" : "Monitoring",
+      "score" : 0
+    }, {
+      "name" : "Performance",
+      "score" : 1
+    }, {
+      "name" : "Scalability",
+      "score" : 0
+    }, {
+      "name" : "Security",
+      "score" : 4
+    }, {
+      "name" : "Maintainability",
+      "score" : 1
+    }, {
+      "name" : "Community",
+      "score" : 5
+    }, {
+      "name" : "Change Management",
+      "score" : 5
+    }, {
+      "name" : "CA",
+      "score" : 5
+    }, {
+      "name" : "Licensing",
+      "score" : 4
+    }, {
+      "name" : "Roadmap",
+      "score" : 1
+    }, {
+      "name" : "Willingness",
+      "score" : 2
+    }, {
+      "name" : "Architecture Alignment",
+      "score" : 4
+    } ]
   },
   "questions" : [ {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1391447730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1391537730000
+    } ]
+  }, {
+    "question" : "Are samples included? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1381644930000,
+    "updateDts" : 1381644930000,
+    "responses" : [ {
+      "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1398845730000
+    } ]
+  }, {
     "question" : "Does this support the 2.0 specs? (SAMPLE)",
-    "username" : "Abby TEST",
+    "username" : "Jack TEST",
     "userType" : "Developer",
     "createDts" : 1367309730000,
     "updateDts" : 1367309730000,
     "responses" : [ {
       "response" : "No,  they planned to add support next Version(SAMPLE)",
-      "username" : "Abby TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1391537730000
+      "username" : "Jack TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1398845730000
     }, {
       "response" : "Update: they backport support to version 1.6(SAMPLE)",
       "username" : "Cathy TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1398845730000
-    } ]
-  }, {
-    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
-    "username" : "Abby TEST",
-    "userType" : "End User",
-    "createDts" : 1367309730000,
-    "updateDts" : 1367309730000,
-    "responses" : [ {
-      "response" : "Version 3.1 added support.(SAMPLE)",
-      "username" : "Colby TEST",
       "userType" : "End User",
-      "answeredDate" : 1391447730000
-    }, {
-      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1399961730000
-    } ]
-  }, {
-    "question" : "Are samples included? (SAMPLE)",
-    "username" : "Colby TEST",
-    "userType" : "End User",
-    "createDts" : 1381644930000,
-    "updateDts" : 1381644930000,
-    "responses" : [ {
-      "response" : "They are included in a separate download.(SAMPLE)",
-      "username" : "Abby TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1393834530000
+      "answeredDate" : 1391537730000
     } ]
   } ],
   "attributes" : [ {
@@ -306,6 +360,14 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Software License Type",
     "codeDescription" : "OpenSource",
     "important" : false
+  }, {
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
+    "important" : false
+  }, {
+    "typeDescription" : "Lifecycle Stage (SAMPLE)",
+    "codeDescription" : "Development",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -317,14 +379,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "http://clavin.bericotechnologies.com",
@@ -347,37 +411,8 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "https://github.com/Berico-Technologies/CLAVIN"
   } ],
-  "reviews" : [ {
-    "username" : "Cathy TEST",
-    "userType" : "End User",
-    "comment" : "I had issues trying to obtain the component and once I got it is very to difficult to install.",
-    "rating" : 2,
-    "title" : "Hassle (SAMPLE)",
-    "usedTimeCode" : "> 3 years",
-    "lastUsed" : 1328379330000,
-    "updateDate" : 1391537730000,
-    "organization" : "Private Company",
-    "recommend" : true,
-    "pros" : [ "Well Tested" ],
-    "cons" : [ "Difficult Installation", "Bulky" ]
-  }, {
-    "username" : "Jack TEST",
-    "userType" : "Project Manager",
-    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
-    "rating" : 3,
-    "title" : "Just what I was looking for (SAMPLE)",
-    "usedTimeCode" : "< 6 Months",
-    "lastUsed" : 1362298530000,
-    "updateDate" : 1398845730000,
-    "organization" : "NGA",
-    "recommend" : true,
-    "pros" : [ "Reliable", "Open Source" ],
-    "cons" : [ ]
-  } ],
-  "dependencies" : [ {
-    "dependancy" : "Tomcat",
-    "comment" : "Version 7 or 8"
-  } ]
+  "reviews" : [ ],
+  "dependencies" : [ ]
 }, {
   "componentId" : 10,
   "guid" : "23aa2f6b-1842-43d8-910f-f547f4696c0d",
@@ -410,9 +445,9 @@ MOCKDATA2.componentList = [ {
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL 1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
-      "levelStatus" : "P"
+      "estimatedCompeletionDate" : null,
+      "actualCompeletionDate" : 1392138930000,
+      "levelStatus" : "H"
     }, {
       "evaluationLevelCode" : "LEVEL 2",
       "estimatedCompeletionDate" : 1393002930000,
@@ -426,7 +461,41 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Does this support the 2.0 specs? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "Developer",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "No,  they planned to add support next Version(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1399961730000
+    }, {
+      "response" : "Update: they backport support to version 1.6(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1399961730000
+    } ]
+  }, {
+    "question" : "Are there alternate licenses? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "End User",
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
+    "responses" : [ {
+      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1393834530000
+    }, {
+      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1398845730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Software",
@@ -448,10 +517,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "Army PEO-C3T",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -460,16 +525,8 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Pilot",
     "important" : false
   }, {
-    "typeDescription" : "Accreditation Status (SAMPLE)",
-    "codeDescription" : "ATO",
-    "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
-    "important" : false
-  }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
+    "typeDescription" : "Network(s) Fielded (SAMPLE)",
+    "codeDescription" : "NIPR, SIPR",
     "important" : false
   } ],
   "tags" : [ ],
@@ -479,12 +536,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Colby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://confluence.di2e.net/download/attachments/14518881/CP-CE%20COE%20v2%20Map%20API%20Developer%20Guide.pdf?api=v2",
@@ -508,20 +567,14 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Windows",
-    "comment" : "Version 8.1"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 11,
   "guid" : "4a1c06c7-c854-43db-a41b-5318a7012412",
   "name" : "Common Map Widget API",
   "description" : "Background\nMany programs and projects create widgets that search for or manipulate data then present the results on a map. The desire is to be able to combine data search/manipulation widgets from any provider with map widgets from other providers. In order to accomplish this, a standard way for the data search/manipulation widgets to be able to communicate with the map widget is necessary. This Application Program Interface (API) is the codification of that standard. \n\nOverview\nUsing this API allows developers to focus on the problem domain rather than implementing a map widget themselves. It also allows the actual map implementation used to be chosen dynamically by the user at runtime rather than being chosen by the developer. Any map implementation that applies this API can be used. Currently, implementations using Google Earth, Google Maps V2, Google Maps V3, and OpenLayers APIs are available, and others can be written as needed.\nAnother benefit of this API is that it allows multiple widgets to collaboratively display data on a single map widget rather than forcing the user to have a separate map for each widget so the user does not have to learn a different map user interface for each widget.\nThe API uses the OZONE Widget Framework (OWF) inter-widget communication mechanism to allow client widgets to interact with the map. Messages are sent to the appropriate channels (defined below), and the map updates its state accordingly. Other widgets interested in knowing the current map state can subscribe to these messages as well.\n\nalso available on https://software.forge.mil/sf/frs/do/viewRelease/projects.jc2cui/frs.common_map_widget.common_map_widget_api",
   "parentComponent" : null,
-  "subComponents" : [ {
-    "componentId" : 10,
-    "name" : "Common Map API Javascript Library"
-  } ],
+  "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "DI2E Framework",
   "releaseDate" : 1364364000000,
@@ -543,19 +596,7 @@ MOCKDATA2.componentList = [ {
     "evaluationSchedule" : [ ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ {
-    "question" : "Are samples included? (SAMPLE)",
-    "username" : "Colby TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1367309730000,
-    "updateDts" : 1367309730000,
-    "responses" : [ {
-      "response" : "They are included in a separate download.(SAMPLE)",
-      "username" : "Abby TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1391537730000
-    } ]
-  } ],
+  "questions" : [ ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Standards, Specifications, and APIs",
@@ -581,8 +622,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
+    "typeDescription" : "Lifecycle Stage (SAMPLE)",
+    "codeDescription" : "Development",
+    "important" : false
+  }, {
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
+    "important" : false
+  }, {
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
     "important" : false
   } ],
   "tags" : [ ],
@@ -590,14 +639,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "http://www.cmapi.org/spec.html",
@@ -611,7 +662,10 @@ MOCKDATA2.componentList = [ {
     "link" : "http://www.cmapi.org/spec.html"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ ]
+  "dependencies" : [ {
+    "dependancy" : "Tomcat",
+    "comment" : "Version 7 or 8"
+  } ]
 }, {
   "componentId" : 12,
   "guid" : "bbf65a32-157c-4770-9cee-948bd48b3837",
@@ -682,10 +736,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS-IC",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -694,25 +744,20 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Operations",
     "important" : false
   }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
+    "important" : false
+  }, {
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
+    "important" : false
+  }, {
     "typeDescription" : "Network(s) Fielded (SAMPLE)",
     "codeDescription" : "NIPR, SIPR",
     "important" : false
-  }, {
-    "typeDescription" : "Lifecycle Stage (SAMPLE)",
-    "codeDescription" : "Development",
-    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ {
-    "label" : "Support Common Interface 2.1 (SAMPLE)",
-    "value" : "No"
-  }, {
-    "label" : "Provides Web Hooks via RPC service(SAMPLE)",
-    "value" : "Yes"
-  }, {
-    "label" : "Extra Metadata (SAMPLE)",
-    "value" : "Unfiltered"
-  } ],
+  "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/satellite-icon.png",
     "contentType" : "image/png",
@@ -721,14 +766,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Abby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Colby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://software.forge.mil/sf/frs/do/listReleases/projects.di2e-f/frs.agency_data_layer_content_discov",
@@ -752,7 +799,10 @@ MOCKDATA2.componentList = [ {
     "link" : "https://intellipedia.intelink.gov/wiki/Content_Discovery_and_Retrieval_Brokered_Search_Service"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ ]
+  "dependencies" : [ {
+    "dependancy" : "Ruby",
+    "comment" : "Version 2.0+"
+  } ]
 }, {
   "componentId" : 13,
   "guid" : "ccec2c4d-fa44-487f-9b34-ac7d10ec62ba",
@@ -801,41 +851,7 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ {
-    "question" : "Are there alternate licenses? (SAMPLE)",
-    "username" : "Cathy TEST",
-    "userType" : "Developer",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
-    "responses" : [ {
-      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1393834530000
-    }, {
-      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1393834530000
-    } ]
-  }, {
-    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
-    "username" : "Dawson TEST",
-    "userType" : "Developer",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
-    "responses" : [ {
-      "response" : "Version 3.1 added support.(SAMPLE)",
-      "username" : "Dawson TEST",
-      "userType" : "End User",
-      "answeredDate" : 1391537730000
-    }, {
-      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "End User",
-      "answeredDate" : 1393834530000
-    } ]
-  } ],
+  "questions" : [ ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Software",
@@ -869,11 +885,11 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Development",
     "important" : false
   }, {
-    "typeDescription" : "Accreditation Status (SAMPLE)",
-    "codeDescription" : "ATO",
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
     "important" : false
   } ],
-  "tags" : [ ],
+  "tags" : [ { text: "Visualization"}, { text: "Mapping" } ],
   "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/satellite-icon.png",
@@ -883,14 +899,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://software.forge.mil/sf/frs/do/listReleases/projects.di2e-f/frs.agency_data_layer_content_discov",
@@ -964,37 +982,49 @@ MOCKDATA2.componentList = [ {
     "evaulationSections" : [ ]
   },
   "questions" : [ {
-    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
-    "username" : "Jack TEST",
+    "question" : "Does this support the 2.0 specs? (SAMPLE)",
+    "username" : "Dawson TEST",
     "userType" : "End User",
-    "createDts" : 1362298530000,
-    "updateDts" : 1362298530000,
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
     "responses" : [ {
-      "response" : "Version 3.1 added support.(SAMPLE)",
+      "response" : "No,  they planned to add support next Version(SAMPLE)",
       "username" : "Jack TEST",
       "userType" : "End User",
-      "answeredDate" : 1399961730000
-    }, {
-      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
-      "username" : "Abby TEST",
-      "userType" : "End User",
       "answeredDate" : 1391447730000
+    }, {
+      "response" : "Update: they backport support to version 1.6(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "End User",
+      "answeredDate" : 1393834530000
     } ]
   }, {
-    "question" : "Which os platforms does this support? (SAMPLE)",
+    "question" : "Are samples included? (SAMPLE)",
     "username" : "Cathy TEST",
-    "userType" : "Developer",
+    "userType" : "Project Manager",
     "createDts" : 1381644930000,
     "updateDts" : 1381644930000,
     "responses" : [ {
-      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1391447730000
-    }, {
-      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
-      "username" : "Dawson TEST",
+      "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Abby TEST",
       "userType" : "Project Manager",
+      "answeredDate" : 1398845730000
+    } ]
+  }, {
+    "question" : "Are there alternate licenses? (SAMPLE)",
+    "username" : "Colby TEST",
+    "userType" : "Developer",
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
+    "responses" : [ {
+      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "End User",
+      "answeredDate" : 1398845730000
+    }, {
+      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "Developer",
       "answeredDate" : 1399961730000
     } ]
   } ],
@@ -1019,24 +1049,12 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS-IC",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
   }, {
     "typeDescription" : "Life Cycle Stage",
     "codeDescription" : "Operations",
-    "important" : false
-  }, {
-    "typeDescription" : "Lifecycle Stage (SAMPLE)",
-    "codeDescription" : "Development",
-    "important" : false
-  }, {
-    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
-    "codeDescription" : "DoD MAC Level",
     "important" : false
   } ],
   "tags" : [ ],
@@ -1049,14 +1067,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://software.forge.mil/sf/frs/do/listReleases/projects.di2e-f/frs.agency_data_layer_content_discov",
@@ -1129,7 +1149,53 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Are there alternate licenses? (SAMPLE)",
+    "username" : "Dawson TEST",
+    "userType" : "Developer",
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
+    "responses" : [ {
+      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1399961730000
+    }, {
+      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391537730000
+    } ]
+  }, {
+    "question" : "Are samples included? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1388769330000,
+    "updateDts" : 1388769330000,
+    "responses" : [ {
+      "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1398845730000
+    } ]
+  }, {
+    "question" : "Does this support the 2.0 specs? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "End User",
+    "createDts" : 1381644930000,
+    "updateDts" : 1381644930000,
+    "responses" : [ {
+      "response" : "No,  they planned to add support next Version(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1398845730000
+    }, {
+      "response" : "Update: they backport support to version 1.6(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1399961730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Application",
@@ -1154,10 +1220,6 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
-  }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
-    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -1169,14 +1231,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://software.forge.mil/sf/projects/cot",
@@ -1202,7 +1266,10 @@ MOCKDATA2.componentList = [ {
   "name" : "DCGS Discovery Metadata Guide",
   "description" : "This document provides information on DCGS metadata artifacts and guidance for populating DDMS and the DIB Metacard, using DDMS Schema Extensions, and creating new DDMS extension schemas. These guidelines should be used by developers and System Integrators building resource adapters and schemas to work with DIB v2.0 or later.\n\nDISTRIBUTION STATEMENT C - Distribution authorized to U.S. Government Agencies and their contractors (Critical Technology)   Not ITAR restricted",
   "parentComponent" : null,
-  "subComponents" : [ ],
+  "subComponents" : [ {
+    "componentId" : 13,
+    "name" : "Content Discovery and Retrieval Engine - Describe Component"
+  } ],
   "relatedComponents" : [ ],
   "organization" : "AFLCMC/HBBG",
   "releaseDate" : 1393830000000,
@@ -1274,31 +1341,31 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "N/A",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "AFLCMC/HBBG",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "N/A",
     "important" : false
-  }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Extra Metadata (SAMPLE)",
+    "value" : "Unfiltered"
+  }, {
+    "label" : "Available to public (SAMPLE)",
+    "value" : "YES"
+  } ],
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
-    "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
-  }, {
-    "postionDescription" : "Government POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
+  }, {
+    "postionDescription" : "Government POC",
+    "name" : "Dawson TEST",
+    "email" : "sample_email@test.com",
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://wiki.macefusion.com/display/MMT/DCGS+Discovery+Metadata+Guide",
@@ -1318,10 +1385,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "1687ab9a-f6de-4253-9887-f9dfcece10d5",
   "name" : "DCGS Enterprise Messaging Technical Profile",
   "description" : "DCGS Enterprise Services rely on asynchronous communications for sending messages so they can notify users when certain data is published or a particular event has occurred. Users may subscriber to a data source so they can be notified when a piece of intelligence has been published on a topic of interest. Enterprise Messaging is a key capability that supports the processing of messages between Web Services that are needed for an enterprise to function efficiently. As the number of Web Services deployed across an enterprise increases, the ability to effectively send and receive messages across an enterprise becomes critical for its success. This Technical Design Document (TDD) was created by the DCGS Enterprise Focus Team (EFT) to provide guidance for Enterprise Messaging for use by the DCGS Enterprise Community at large. DCGS Service Providers will use this guidance to support the Enterprise Standards for the DCGS Enterprise. \n\nContent of Enterprise Messaging (EM) CDP:\n - Technical Design Document (TDD)\n - Service Specification Package (SSP) \n - Conformance Test Kit (CTK) \n    - Conformance Traceability Matrix (CTM)\n    - Test Procedure Document\n    - Test Request Messages\n    - Gold Data Set\n    - Conformance Checks Scripts",
-  "parentComponent" : {
-    "componentId" : 11,
-    "name" : "Common Map Widget API"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "DCGS EFT",
@@ -1366,12 +1430,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
+    "important" : false
+  }, {
+    "typeDescription" : "Lifecycle Stage (SAMPLE)",
+    "codeDescription" : "Development",
+    "important" : false
+  }, {
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
     "important" : false
   } ],
   "tags" : [ ],
@@ -1379,14 +1447,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/q30MNpu",
@@ -1406,10 +1476,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "fe190601-3d24-48fd-b7ca-09ea9b5ddd5f",
   "name" : "DCGS Enterprise OWF IdAM Technical Profile",
   "description" : "The Ozone Widget Framework is a web-application engine built around the concept of discrete, reusable web application interface components called widgets. Widgets may be composed into full applications by Ozone users or administrators.\n\n\nThe architecture of the Ozone framework allows widgets to be implemented and deployed in remote web application servers. This leads to the possibility of an enterprise Ozone architecture, where Ozone users may access widgets from multiple providers in the enterprise.\n\nAn enterprise Ozone architecture will require a capability that can provide identity and access management services to Ozone and widget web applications and provide a single-sign-on experience to Ozone users.\n\nContent of Ozone Widget Framework Identity and Access Management  CDP:\n- Technical Design Document (TDD)\n- Web Service Specification, Web Browser Single Sign On\n- Conformance Test Kit (CTK) \n- Conformance Traceability Matrix (CTM)\n- Test Procedure Document\n- Test Request Messages\n- Gold Data Set\n- Conformance Checks Scripts",
-  "parentComponent" : {
-    "componentId" : 15,
-    "name" : "Cursor on Target Toolkit"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "unknown",
@@ -1454,12 +1521,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
+    "important" : false
+  }, {
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
+    "important" : false
+  }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
     "important" : false
   } ],
   "tags" : [ ],
@@ -1467,14 +1538,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/jeYvHyO",
@@ -1494,10 +1567,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "346042fd-1e3c-4486-93a6-f3dc9acb71c1",
   "name" : "DCGS Integration Backbone (DIB)",
   "description" : "The Distributed Common Ground/Surface System (DCGS) Integration Backbone (DIB) is the enabler for DCGS enterprise interoperability. The DIB is a technical infrastructure, the foundation for sharing data across the ISR enterprise. More specifically the DIB is:\n1) Standards-based set of software, services, documentation and metadata schema designed to enhance interoperability of ISR\n2) Data sharing enabler for the ISR enterprise\n3) Reduces development costs through component sharing and reuse.\nDIB Provides timely information, with access to all enterprise intelligence dissemination nodes, containing terabytes of data, the ability to filter data to relevant results, and supports real-time Cross Domain ISR data query and retrieval across Coalition and/or Security domains",
-  "parentComponent" : {
-    "componentId" : 11,
-    "name" : "Common Map Widget API"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "DMO",
@@ -1569,6 +1639,14 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
+  }, {
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
+    "important" : false
+  }, {
+    "typeDescription" : "Network(s) Fielded (SAMPLE)",
+    "codeDescription" : "NIPR, SIPR",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -1580,14 +1658,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://software.forge.mil/sf/go/proj1145",
@@ -1612,10 +1692,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "4cd37f95-c98e-4a83-800b-887cd972c714",
   "name" : "DCGS-E Audit Log Management and Reporting Technical Profile",
   "description" : "This CDP provides the technical design description for the Audit and Accountability capability of the Distributed Common Ground/Surface System (DCGS) Enterprise Service Dial Tone (SDT) layer. It includes the capability architecture design details, conformance requirements, and implementation guidance.\n\nCertain user actions, performed within a limited time period and in certain patterns, can be signs of preparation or attempts to exploit system vulnerabilities that involve privileged access.  Certain actions taken by the application server, in response to a perceived threat, are also potential signs of an attack.  Taken individually, these events are not absolute indicators and any response to them could be premature.  However, if the execution of the actions is not recorded, it becomes impossible to recognize later the pattern that confirms the occurrence of an attack.  In a Service Oriented Architecture (SOA), Web services dynamically bind to one another, making it even more difficult to recognize these patterns across Web services and determine accountability in a service chain.  Audit and Accountability is the capability that logs these events at each Web service so that these patterns can be identified, after the fact, and accountability enforced.\n\nIn support of enterprise behavior within the DCGS Family of Systems (FoS), this technical design document was created by the DCGS Enterprise Focus Team (EFT) to provide guidance for audit and accountability of the DCGS Enterprise Service Dial Tone (SDT) layer for use by the DCGS Enterprise Community at large.  It includes the capability architecture design details, conformance requirements, and implementation guidance.  DCGS service providers will use this guidance to generate security audit logs to enforce accountability in a service chain.\n\nContent of Audit Logging (SOAP) CDP:\n - Technical Design Document (TDD)\n - Service Specification Package (SSP) for each service - Not applicable\n - Conformance Test Kit (CTK) - Currently under development",
-  "parentComponent" : {
-    "componentId" : 12,
-    "name" : "Content Discovery and Retrieval Engine - Brokered Search Component"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "unknown",
@@ -1660,10 +1737,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -1672,12 +1745,8 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "FOSS",
     "important" : false
   }, {
-    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
-    "codeDescription" : "DoD MAC Level",
-    "important" : false
-  }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
     "important" : false
   } ],
   "tags" : [ ],
@@ -1685,14 +1754,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Abby TEST",
-    "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
-  }, {
-    "postionDescription" : "Government POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
+  }, {
+    "postionDescription" : "Government POC",
+    "name" : "Colby TEST",
+    "email" : "sample_email@test.com",
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/zsxM4al",
@@ -1712,10 +1783,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "74f8c854-d70d-45f7-ab74-f63c27abdf8f",
   "name" : "DCGS-E Domain Name System (DNS) Technical Profile",
   "description" : "(U) This CDP provides guidance for DNS for use by the DCGS Enterprise Community at large. DCGS Service Providers will use this guidance to make their services visibility and accessibility in the DCGS Enterprise SOA (DES). Several Intelligence Community/Department of Defense (IC/DoD) documents were incorporated to support the guidance provided. DNS is important to the DCGS Community because it supports visibility and accessibility of services hosted on their servers.\n\n(U//FOUO) This CDP provides a technical design description for the Domain Name System of the Distributed Common Ground/Surface System (DCGS) Enterprise Service Dial Tone (SDT).  It includes the service architecture design details, conformance requirements, and implementation guidance.\n\n(U//FOUO) Domain names are meaningful identification labels for Internet addresses. The Domain Name System capability translates domain names into the numerical identifiers associated with networking equipment for the purpose of locating and addressing these devices across the globe. The Domain Name System capability makes it possible to assign domain names to groups of Internet users in a meaningful way, independent of each user's physical location. Because of this, World Wide Web (WWW) hyperlinks and Internet contact information can remain consistent and constant even if the current Internet routing arrangements change or the participant uses a mobile device.  The Domain Name System (DNS) is the industry standard for domain name translation and will be utilized across the DCGS Enterprise as the DCGS Enterprise Domain Name System solution.  \n\n(U//FOUO) In support of enterprise behavior within the DCGS Family of Systems (FoS), this technical design document was created by the DCGS Enterprise Focus Team (EFT) to provide guidance for the use of the Domain Name System capability by the DCGS Enterprise Community at large. DCGS service providers will use this guidance to make their services visible and accessible in the DCGS Enterprise SOA (DES). \n\nContent of Domain Name System (DNS) CDP:\n - Technical Design Document (TDD)\n - Service Specification Package (SSP) \n - Conformance Test Kit (CTK) \n    - Conformance Traceability Matrix (CTM)\n    - Test Procedure Document\n    - Test Request Messages - N/A (DNS is a network infrastructure service)\n    - Gold Data Set - N/A (DNS is a network infrastructure service) \n    - Conformance Checks Scripts - N/A (DNS is a network infrastructure service)",
-  "parentComponent" : {
-    "componentId" : 12,
-    "name" : "Content Discovery and Retrieval Engine - Brokered Search Component"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "DCGS EFT",
@@ -1760,24 +1828,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
-  }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
-    "important" : false
-  }, {
     "typeDescription" : "Lifecycle Stage (SAMPLE)",
     "codeDescription" : "Development",
+    "important" : false
+  }, {
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
     "important" : false
   } ],
   "tags" : [ ],
@@ -1787,12 +1847,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/J9qBGN9",
@@ -1812,10 +1874,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "50ababb2-08e3-4f2a-98a5-068b261d9424",
   "name" : "DCGS-E Metrics Management Technical Profile",
   "description" : "**Previously titled Service Level Agreement/Quality of Service CDP**\n\n(U) This CDP provides guidance for Metrics Management for use by the DCGS Enterprise Community at large. DCGS Service Providers will use this guidance to make their services visibility and accessibility in the DCGS Enterprise SOA. Several Intelligence Community/Department of Defense (IC/DoD) documents were incorporated to support the guidance provided.\n\n(U//FOUO) Enterprise Management refers to the management techniques, metrics and related tools that DCGS programs of record can use to support their nodes and make strategic decisions to maintain the overall health of their services. The Metrics Management service family is a key capability that supports Enterprise Management. It is used to monitor the performance and operational status of services. \n\n(U//FOUO) Metrics Management measures what is actually delivered to the service consumer via a set of metrics (e.g. service performance and availability). As the number of service offerings deployed across an enterprise increases, the ability to effectively manage and monitor them becomes critical to ensure a successful implementation. Clearly defined metrics need to be collected and reported to determine if the service offerings are meeting their users? needs.  \n\n(U//FOUO) In support of enterprise behavior within the DCGS Family of Systems (FoS), this technical design document was created by the DCGS Enterprise Focus Team (EFT) to provide guidance on metrics, service events, and service interfaces needed by the DCGS Enterprise Community at large to support Metrics Management.  DCGS service providers will use this guidance to collect metrics measurements, calculate associated metrics, and report those metrics to interested parties.\n\nContent of Metrics Management (formerly known as QoS Management) CDP:\n - Technical Design Document (TDD)\n - Service Specification Package (SSP) \n - Conformance Test Kit (CTK) \n    - Conformance Traceability Matrix (CTM)\n    - Test Procedure Document\n    - Test Request Messages\n    - Gold Data Set\n    - Conformance Checks Scripts",
-  "parentComponent" : {
-    "componentId" : 14,
-    "name" : "Content Discovery and Retrieval Engine - Retrieve Component"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "DCGS EFT",
@@ -1860,24 +1919,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
-    "important" : false
-  }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
     "important" : false
   }, {
     "typeDescription" : "Funded (SAMPLE)",
     "codeDescription" : "Yes",
     "important" : false
   }, {
-    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
-    "codeDescription" : "DoD MAC Level",
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
     "important" : false
   } ],
   "tags" : [ ],
@@ -1885,14 +1936,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/CMpInl8",
@@ -1912,10 +1965,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "a84fe52a-c964-4be1-b0b1-e00212417817",
   "name" : "DCGS-E Sensor Web Enablement (SWE) Technical Profile",
   "description" : "(U//FOUO)  This CDP provides the technical design description for the SensorWeb capability of the Distributed Common Ground/Surface System (DCGS) Enterprise Intelligence, Surveillance and Reconnaissance (ISR) Common layer.  \n\n(U//FOUO)  SensorWeb is a development effort led by the Defense Intelligence Agency (DIA) National Measurement and Signature Intelligence (MASINT) Office (NMO) that aligns native sensor data output to open standard data formats in order to improve sensor data discoverability and to increase interoperability between sensor technologies, analytical tools, and Common Operating Environments (COE). \n\n(U//FOUO)  SensorWeb architecture is based on the Open Geospatial Consortium (OGC?) suite of Sensor Web Enablement (SWE) standards and practices: specifically, the Sensor Observation Service (SOS) Interface Standard 2.0 and the Sensor Planning Service (SPS) Interface Standard 2.0.  This TDD outlines the SOS and SPS and describes how they are used in the SensorWeb reference implementation.\n(U//FOUO)  The SensorWeb reference implementation can be combined with other SOS servers to cover a wider range of sensor systems, or it can be used as a stand-alone to observe a limited area or slate of sensors.\n\n(U//FOUO)  The objective of the SensorWeb is to leverage existing data standards and apply them to MASINT sensors and sensor systems.  MASINT sensors cross a broad spectrum of collection types and techniques, including radar, sonar, directed energy weapons, and chemical, biological, radiological, and nuclear incident reporting.  SensorWeb ingests sensor data from its earliest point of transmittal and aligns that raw sensor output to established data standards.  SensorWeb outputs sensor data in Keyhole Markup Language (KML) format, making sensor data readily available in near real-time to systems that support KML, such as Google Earth.\n\n(U//FOUO)  SensorWeb provides unified access and control of disparate sensor data and standardized services across the ISR Enterprise, as well as delivers Command and Control (C2)/ISR Battlespace Awareness through a visualization client(s).\n(U//FOUO)  The SensorWeb Service Oriented Architecture (SOA) ingests raw data from multiple sensor systems and then converts the data to OGC standardized schemas which allows for sensor discovery, observation, and dissemination using common, open source data exchange standards.\n\n(U//FOUO)  SensorWeb was established to determine a method and means for collecting and translating MASINT sensor data output and aligning that output with open standards supported by the OGC, the Worldwide Web Consortium (W3C), the International Organization for Standardization (ISO), and the Institute of Electrical and Electronics Engineers (IEEE) directives.\n\n(U//FOUO)  The models, encodings, and services of the SWE architecture enable implementation of interoperable and scalable service-oriented networks of heterogeneous sensor systems and client applications.  In much the same way that Hypertext Markup Language (HTML) and Hypertext Transfer Protocol (HTTP) standards enable the exchange of any type of information on the Web, the OGC?s SWE initiative is focused on developing standards to enable the discovery, exchange, and processing of sensor observations, as well as the tasking of sensor systems.\n\nContent of Sensor Web Enablement (SWE) CDP:\n - Technical Design Document (TDD)\n - Service Specification Package (SSP) \n - Conformance Test Kit (CTK) \n    - Conformance Traceability Matrix (CTM)\n    - Test Procedure Document - Under development\n    - Test Request Messages - Under development\n    - Gold Data Set - Under development\n    - Conformance Checks Scripts - Under development",
-  "parentComponent" : {
-    "componentId" : 15,
-    "name" : "Cursor on Target Toolkit"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "unknown",
@@ -1960,24 +2010,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
-    "important" : false
-  }, {
-    "typeDescription" : "Accreditation Status (SAMPLE)",
-    "codeDescription" : "ATO",
     "important" : false
   }, {
     "typeDescription" : "Funded (SAMPLE)",
     "codeDescription" : "Yes",
     "important" : false
   }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
     "important" : false
   } ],
   "tags" : [ ],
@@ -1985,14 +2027,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
-    "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
-  }, {
-    "postionDescription" : "Government POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
+  }, {
+    "postionDescription" : "Government POC",
+    "name" : "Abby TEST",
+    "email" : "sample_email@test.com",
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/N4Gma4M",
@@ -2012,10 +2056,7 @@ MOCKDATA2.componentList = [ {
   "guid" : "8f915029-78bb-4df2-944f-f6fc4a84eeec",
   "name" : "DCGS-E Service Registration and Discovery (SRD) Technical Profile",
   "description" : "(U//FOUO) Service discovery provides DCGS Enterprise consumers the ability to locate and invoke services to support a given task or requirement in a trusted and secure operational environment. By leveraging service discovery, existing DCGS Enterprise services will be published to a root service registry, which is searchable via keyword or taxonomy. This capability provides users and machines the ability to search and discover services or business offerings. The Service Discovery capability is a foundational building block allowing the DCGS programs of record to publish and discover service offerings allowing the DCGS Enterprise Community to share and reuse information in a common, proven, and standards-based manner.\n\n(U//FOUO) In support of enterprise behavior within the DCGS Family of Systems (FoS), this technical design document was created by the DCGS Enterprise Focus Team (EFT) to provide guidance for service discovery for use by the DCGS Enterprise Community at large. DCGS service providers will use this guidance to make their services discoverable within the DCGS Enterprise.\n\nContent of Service Registration and Discovery (SRD) CDP:\n - Technical Design Document (TDD)\n - Service Specification Package (SSP) \n - Conformance Test Kit (CTK) \n    - Conformance Traceability Matrix (CTM)\n    - Test Procedure Document\n    - Test Request Messages\n    - Gold Data Set\n    - Conformance Checks Scripts",
-  "parentComponent" : {
-    "componentId" : 67,
-    "name" : "Central Authentication Service (CAS)"
-  },
+  "parentComponent" : null,
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "DCGS EFT",
@@ -2060,24 +2101,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
   }, {
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
+    "important" : false
+  }, {
     "typeDescription" : "Protection/ Impact Level (SAMPLE)",
     "codeDescription" : "DoD MAC Level",
-    "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
-    "important" : false
-  }, {
-    "typeDescription" : "Lifecycle Stage (SAMPLE)",
-    "codeDescription" : "Development",
     "important" : false
   } ],
   "tags" : [ ],
@@ -2087,12 +2120,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/bujBaGB",
@@ -2112,11 +2147,11 @@ MOCKDATA2.componentList = [ {
   "guid" : "01724885-d2c1-4788-9aa0-ea0128fff805",
   "name" : "DCGS-E Time Synchronization (NTP) Technical Profile",
   "description" : "(U) This provides guidance for Network Time Protocol (NTP) for use by the DCGS Enterprise Community at large. DCGS Service Providers will use this guidance to make their services secure and interoperable in the DCGS Enterprise SOA\n\n(U//FOUO) Time synchronization is a critical service in any distributed system because it provides the frame of reference for time between all devices on the network. Time synchronization ensures that the system time on a machine located in, for example, San Francisco is the same as the time on a machine located in London before time zones are taken into account. As such, synchronized time is extremely important when performing any operations across a network. When it comes to security, it would be very hard to develop a reliable picture of an incident if logs between routers and other network devices cannot be compared successfully and accurately. Put simply, time synchronization enables security in a Net-centric environment. .\n\nContent of Time Synchronization (NTP) CDP:\n- Technical Design Document (TDD)\n- Service Specification Package (SSP) \n- Conformance Test Kit (CTK) \n- Conformance Traceability Matrix (CTM)\n- Test Procedure Document\n- Test Request Messages - N/A (NTP is a network infrastructure service)\n- Gold Data Set - N/A (NTP is a network infrastructure service) \n- Conformance Checks Scripts - N/A (NTP is a network infrastructure service",
-  "parentComponent" : {
-    "componentId" : 17,
-    "name" : "DCGS Enterprise Messaging Technical Profile"
-  },
-  "subComponents" : [ ],
+  "parentComponent" : null,
+  "subComponents" : [ {
+    "componentId" : 16,
+    "name" : "DCGS Discovery Metadata Guide"
+  } ],
   "relatedComponents" : [ ],
   "organization" : "DCGS EFT",
   "releaseDate" : 1341208800000,
@@ -2160,39 +2195,28 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
-  }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
-  }, {
-    "typeDescription" : "Lifecycle Stage (SAMPLE)",
-    "codeDescription" : "Development",
-    "important" : false
-  }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
-    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Support Common Interface 2.1 (SAMPLE)",
+    "value" : "No"
+  } ],
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Abby TEST",
-    "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
-  }, {
-    "postionDescription" : "Government POC",
     "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
+  }, {
+    "postionDescription" : "Government POC",
+    "name" : "Cathy TEST",
+    "email" : "sample_email@test.com",
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/x5UIJnv",
@@ -2205,18 +2229,47 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ ],
-  "dependencies" : [ ]
+  "reviews" : [ {
+    "username" : "Cathy TEST",
+    "userType" : "Developer",
+    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
+    "rating" : 3,
+    "title" : "Great but missing features (SAMPLE)",
+    "usedTimeCode" : "< 1 month'",
+    "lastUsed" : 1381644930000,
+    "updateDate" : 1398845730000,
+    "organization" : "DCGS Navy",
+    "recommend" : true,
+    "pros" : [ "Well Tested", "Well tested" ],
+    "cons" : [ ]
+  }, {
+    "username" : "Abby TEST",
+    "userType" : "End User",
+    "comment" : "I had issues trying to obtain the component and once I got it is very to difficult to install.",
+    "rating" : 4,
+    "title" : "Hassle (SAMPLE)",
+    "usedTimeCode" : "> 3 years",
+    "lastUsed" : 1367309730000,
+    "updateDate" : 1391537730000,
+    "organization" : "DCGS Navy",
+    "recommend" : true,
+    "pros" : [ "Active Development", "Compact" ],
+    "cons" : [ "Bulky", "Poor Documentation" ]
+  } ],
+  "dependencies" : [ {
+    "dependancy" : "Ruby",
+    "comment" : "Version 2.0+"
+  } ]
 }, {
   "componentId" : 26,
   "guid" : "b2866715-764f-4266-868f-64cac88556fe",
   "name" : "DCGS-E Web Service Access Control Technical Profile",
   "description" : "Access Control incorporates an open framework and industry best practices/standards that leverage Web Services Security (WSS) [17] standards, also referred to as WS-Security, to create a common framework using Attribute Based Access Control (ABAC). The DCGS Enterprise advocates an ABAC model as the desired vision to provide policy compliance and accountability throughout the entire enterprise. To enforce ABAC, identification and authentication is executed on the service consumer and access control is enforced by the service provider. \n\nIdentification is the process in which the identity of either a user or system is established. Authentication is the process by which an entity proves a claim regarding its identity to one or more other entities. Together, identification and authentication allows a system to securely communicate a service consumer?s identity and related security attributes to a service provider. With increased sharing across programs of record and external partners, identification and authentication is crucial to ensure that services and data are secured. The successful authentication of a subject and the attributes assigned to that subject assist in the determination of whether or not a user will be allowed to access a particular service. \n\nIdentification and authentication joined with access control enforcement provide for the Access Control capability, which is critical for meeting Information Assurance (IA) requirements for those services targeted for the Global Information Grid (GIG). Access control is the process that allows a system to control access to resources in an information system including services and data. Services, supporting the DCGS Enterprise, will be made available to users within and between nodes. It is important that these services and their resources are adequately protected in a consistent manner across the DCGS Enterprise. Services are intended to be accessible only to authorized requesters, thus requiring mechanisms to determine the rights of an authenticated user based on their attributes and enforce access based on its security policy.",
-  "parentComponent" : {
-    "componentId" : 24,
-    "name" : "DCGS-E Service Registration and Discovery (SRD) Technical Profile"
-  },
-  "subComponents" : [ ],
+  "parentComponent" : null,
+  "subComponents" : [ {
+    "componentId" : 15,
+    "name" : "Cursor on Target Toolkit"
+  } ],
   "relatedComponents" : [ ],
   "organization" : null,
   "releaseDate" : 1393311600000,
@@ -2260,39 +2313,28 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
-  }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
-    "important" : false
-  }, {
-    "typeDescription" : "Accreditation Status (SAMPLE)",
-    "codeDescription" : "ATO",
-    "important" : false
-  }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Support Common Interface 2.1 (SAMPLE)",
+    "value" : "No"
+  } ],
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/kcN4VyS",
@@ -2305,18 +2347,47 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ ],
-  "dependencies" : [ ]
+  "reviews" : [ {
+    "username" : "Jack TEST",
+    "userType" : "End User",
+    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
+    "rating" : 3,
+    "title" : "Just what I was looking for (SAMPLE)",
+    "usedTimeCode" : "< 3 Months",
+    "lastUsed" : 1328379330000,
+    "updateDate" : 1398845730000,
+    "organization" : "NGA",
+    "recommend" : true,
+    "pros" : [ "Open Source", "Compact" ],
+    "cons" : [ ]
+  }, {
+    "username" : "Abby TEST",
+    "userType" : "Project Manager",
+    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
+    "rating" : 4,
+    "title" : "Great but missing features (SAMPLE)",
+    "usedTimeCode" : "< 6 Months",
+    "lastUsed" : 1328379330000,
+    "updateDate" : 1391447730000,
+    "organization" : "NGA",
+    "recommend" : true,
+    "pros" : [ "Compact", "Well Tested" ],
+    "cons" : [ "Bulky", "Security Concerns" ]
+  } ],
+  "dependencies" : [ {
+    "dependancy" : "Windows",
+    "comment" : "Version 8.1"
+  } ]
 }, {
   "componentId" : 27,
   "guid" : "35d44bb5-adc5-42ca-9671-c58e257570d9",
   "name" : "DI2E Framework DIAS Simulator",
   "description" : "This package provides a basic simulator of the DoDIIS Identity and Authorization Service (DIAS) in a deployable web application using Apache CFX architecture.  The DI2E Framework development team have used this when testing DIAS specific attribute access internally with Identity and Access Management functionality.",
-  "parentComponent" : {
-    "componentId" : 10,
-    "name" : "Common Map API Javascript Library"
-  },
-  "subComponents" : [ ],
+  "parentComponent" : null,
+  "subComponents" : [ {
+    "componentId" : 24,
+    "name" : "DCGS-E Service Registration and Discovery (SRD) Technical Profile"
+  } ],
   "relatedComponents" : [ ],
   "organization" : "DI2E Framework",
   "releaseDate" : 1397455200000,
@@ -2380,10 +2451,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRO",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -2395,21 +2462,12 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Software License Type",
     "codeDescription" : "GOTS",
     "important" : false
-  }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
-    "important" : false
-  }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
-    "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
-    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Support Common Interface 2.1 (SAMPLE)",
+    "value" : "No"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/IdAMLogoMed-Size.png",
     "contentType" : "image/png",
@@ -2418,14 +2476,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://confluence.di2e.net/display/DI2E/DIAS+Simulation",
@@ -2448,8 +2508,37 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ ],
-  "dependencies" : [ ]
+  "reviews" : [ {
+    "username" : "Jack TEST",
+    "userType" : "Developer",
+    "comment" : "It's a good product.  The features are nice and performed well.  It quite configurable without a lot of setup and it worked out of the box.",
+    "rating" : 3,
+    "title" : "Good Product (SAMPLE)",
+    "usedTimeCode" : "> 3 years",
+    "lastUsed" : 1367309730000,
+    "updateDate" : 1391537730000,
+    "organization" : "NSA",
+    "recommend" : true,
+    "pros" : [ "Active Development", "Well Tested" ],
+    "cons" : [ ]
+  }, {
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
+    "rating" : 4,
+    "title" : "Just what I was looking for (SAMPLE)",
+    "usedTimeCode" : "> 3 years",
+    "lastUsed" : 1367309730000,
+    "updateDate" : 1393834530000,
+    "organization" : "Private Company",
+    "recommend" : true,
+    "pros" : [ "Active Development", "Reliable" ],
+    "cons" : [ "Poorly Tested", "Security Concerns" ]
+  } ],
+  "dependencies" : [ {
+    "dependancy" : "Tomcat",
+    "comment" : "Version 7 or 8"
+  } ]
 }, {
   "componentId" : 28,
   "guid" : "bcd54d72-3f0d-4a72-b473-2390b42515d5",
@@ -2520,10 +2609,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "N/A",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRO",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "N/A",
     "important" : false
@@ -2543,6 +2628,10 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Funded (SAMPLE)",
     "codeDescription" : "Yes",
     "important" : false
+  }, {
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -2554,14 +2643,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Abby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://confluence.di2e.net/display/DI2E/DI2E+Framework+IdAM+Software+Download",
@@ -2585,16 +2676,16 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Linux",
-    "comment" : "Tested on CentOS 5 and Ubuntu Server 11.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 30,
   "guid" : "3a7e6bf2-bcc4-4c1e-bc33-296cc945e733",
   "name" : "DI2E Framework Reference Architecture",
   "description" : "The DI2E Framework reference Architecture provides a structural foundation for the DI2E requirements assessment.  The DI2E Framework is specified using a level of abstraction that is not dependent on a specific technical solution, but can leverage the benefits of the latest technology advancements and make them readily accessible across the enterprise.\n\nThe DI2E Framework architecture is modeled using DoD Architecture Framework (DoDAF) version 2.02.  Below is a list of artifacts that are currently available for the DI2E Framework Reference Architecture.\n\nArtifact\tName / Purpose\nOV-5a\tOperational Activity Model Node Tree.   A breakdown of the fundamental activities performed by various actors within the DI2E Framework community.   Built from both DCGS and JIOC operational models and includes related text descriptions for each activity.\n\nSV-1\tComponent (System) Interfaces.   Diagrams that show the fundamental interface relationships among DI2E Framework components.\n\nSV-2\tComponent Resource Flows.   Extends the SV-1 diagrams by highlighting the ?data-in-motion? that passes between components along their interfaces.\n\nSV-4\tComponent Functionality.  A breakdown of DI2E Framework components, including a short description of their expected functionality.\n\nSV-5a\tActivity ? Component Matrix.   A mapping showing the alignment between DI2E Framework components and activities (and vice versa).\n\nSV-10c\tComponent Event Tract Diagrams.   Example threads through the component architecture showcasing the interaction of various components relative to example operational scenarios.\n\nSvcV-3a\tComponents-Services Matrix.   A mapping showing the alignment between DI2E Framework components and services\n\nSvcV-4\tServices.   A breakdown of the architectures services, including service definitions, descriptions, and other relevant service metadata.\n\nStdV-1\tStandards Profile.   Lists the various standards and specifications that will be applicable to DI2E Framework.\n\nSWDS\tSoftware Description Specification.   Documents the basic structure for DI2E Framework component and service specification, then points to an EXCEL worksheet documenting the specifications & related metadata for DI2E Framework components and services.\n\nDIV-3\tData Model.   A list of ?data-in-motion? Data Object Types (DOTs) that are applicable to the component architecture.\n\nDBDS\tDatabase Design Specification.  A description of the approach and various data repository lists used to define the data model (DIV-3), along with a link to the defined data model.\n\nRVTM\tRequirements Verification Traceability Matrix.   A list of DI2E Framework requirements including requirement ID #s, names, descriptions, alignment with the component and service architecture, and other related metadata.\n\nPDS\tProject Development Specification.   A high level overview of the e DI2E Framework Reference Implementation (RI), and how the components of this RI relate with the overall component architecture and related DI2E Framework requirements.\n\nICD\tInterface Control Document.  A further breakdown of the PDS (see row above), showing how RI components relate with overall component specifications as documented in the SWDS.",
-  "parentComponent" : null,
+  "parentComponent" : {
+    "componentId" : 9,
+    "name" : "CLAVIN"
+  },
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "NRO // DI2E Framework PMO",
@@ -2639,16 +2730,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRO",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
+    "typeDescription" : "Network(s) Fielded (SAMPLE)",
+    "codeDescription" : "NIPR, SIPR",
+    "important" : false
+  }, {
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
     "important" : false
   } ],
   "tags" : [ ],
@@ -2663,12 +2754,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://confluence.di2e.net/display/DI2E/DI2E+Framework+Reference+Architecture+files",
@@ -2687,16 +2780,16 @@ MOCKDATA2.componentList = [ {
     "link" : "https://confluence.di2e.net/display/DI2E/DI2E+Reference+Architecture"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Ruby",
-    "comment" : "Version 2.0+"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 31,
   "guid" : "2f8ca98a-a935-4ebf-8504-82756b8ef81b",
   "name" : "DI2E RESTful CDR Search Technical Profile",
   "description" : "This profile provides the technical design description for the RESTful Search web service of Defense Intelligence Information Enterprise (DI2E). The profile includes capability architecture design details, implementation requirements and additional implementation guidance.  DI2E Enterprise service providers and clients will use this design to support enterprise standards while creating search services within their nodes. \n\nThis document extends the IC/DoD REST interface encoding specification for Content Discovery and Retrieval (CDR) Search [CDR-RS] . It defines an interface to which a search service implementation and a subsequent deployment must conform.\n\nThe search service provides the ability to search for contents within the DI2E Enterprise with two primary functions: search and results paging. Analysts require the flexibility to search data stores in a myriad of combinations. For example, a user may perform a search for records with the keyword ?Paris? occurring between ?January 16, 2009 and January 21, 2009?; a user may perform a search for records with the keyword ?airport? and a geo location. The previous examples highlight the three different types of queries that MUST be supported by a search service implementation: \n? Keyword query with results containing the specified keyword or keyword combination\n? Temporal query with results within the specified temporal range\n? Geographic query with results within the specified geographic area\n\nThe search service provides a standard interface for discovering information and returns a ?hit list? of items. A search service?s results are generally resource discovery metadata rather than actual content resources. In the context of search, resource discovery metadata generally refers to a subset of a resource?s available metadata, not the entire underlying record. Some of the information contained within each search result may provide the information necessary for a client to retrieve or otherwise use the referenced resource. Retrieval of the product resources associated with each entry in the ?hit list? is discussed in the DI2E RESTful Retrieve profile.\n\nContent of DI2E RESTful CDR Search Profile:\n - Technical Design Document (TDD)\n - Service Specification Package (SSP) for each service - Not applicable.  Since this CDP only contains one service, contents of SSP are rolled into the TDD.\n - Conformance Test Kit (CTK)\n    - Conformance Traceability Matrix \n    - Test Procedure Document\n    - Test Request Messages \n    - Gold Data Set \n    - Conformance Checks Scripts",
-  "parentComponent" : null,
+  "parentComponent" : {
+    "componentId" : 13,
+    "name" : "Content Discovery and Retrieval Engine - Describe Component"
+  },
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "unknown",
@@ -2741,16 +2834,16 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "DCGS EFT Chair / Defense Intelligence Agency (DIA)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
+    "important" : false
+  }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
     "important" : false
   } ],
   "tags" : [ ],
@@ -2758,14 +2851,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/go/zankYmq",
@@ -2779,16 +2874,16 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Windows",
-    "comment" : "Version 8.1"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 32,
   "guid" : "e299a3aa-585f-4bad-a4f1-009397b97b93",
   "name" : "Distributed Data Framework (DDF)",
   "description" : "DDF is a free and open source common data layer that abstracts services and business logic from the underlying data structures to enable rapid integration of new data sources.",
-  "parentComponent" : null,
+  "parentComponent" : {
+    "componentId" : 17,
+    "name" : "DCGS Enterprise Messaging Technical Profile"
+  },
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "unknown",
@@ -2873,10 +2968,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "N/A",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "AFLCMC/HBBG - DIB - DMO",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "N/A",
     "important" : false
@@ -2889,8 +2980,12 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "FOSS",
     "important" : false
   }, {
-    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
-    "codeDescription" : "DoD MAC Level",
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
+    "important" : false
+  }, {
+    "typeDescription" : "Network(s) Fielded (SAMPLE)",
+    "codeDescription" : "NIPR, SIPR",
     "important" : false
   } ],
   "tags" : [ ],
@@ -2903,14 +2998,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://tools.codice.org/wiki/display/DDF/DDF+Catalog+Application+Users+Guide",
@@ -2934,16 +3031,16 @@ MOCKDATA2.componentList = [ {
     "link" : "https://github.com/codice/ddf"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Tomcat",
-    "comment" : "Version 7 or 8"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 57,
   "guid" : "79e51469-81b6-4cfb-b6b2-7b0be8065912",
   "name" : "Domain Name System (DNS) Guidebook for Linux/BIND",
   "description" : "This Guidebook focuses on those involved with the Domain Name System (DNS) in DI2E systems?those building systems based on DI2E-offered components, running in a DI2E Framework. It provides guidance for two different roles - those who configure DNS, and those who rely on DNS in the development of distributed systems.\n\nThe DNS service in both DI2E and the Distributed Common Ground/Surface System?Enterprise (DCGS Enterprise) relies on the Berkeley Internet Name Domain software, commonly referred to as BIND. Requirements and policy guidance for DNS are provided in the \"Distributed Common Ground/Surface System ? Enterprise (DCGS Enterprise), Service Dial Tone Technical Design Document Domain Name System, Version 1.1 (Final) Jun 2012\" .   This guidebook supplements the technical profile and describes how DNS capabilities must be acquired, built and deployed by DI2E programs.",
-  "parentComponent" : null,
+  "parentComponent" : {
+    "componentId" : 15,
+    "name" : "Cursor on Target Toolkit"
+  },
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "unknown",
@@ -2966,41 +3063,7 @@ MOCKDATA2.componentList = [ {
     "evaluationSchedule" : [ ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ {
-    "question" : "Does this support the 2.0 specs? (SAMPLE)",
-    "username" : "Colby TEST",
-    "userType" : "End User",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
-    "responses" : [ {
-      "response" : "No,  they planned to add support next Version(SAMPLE)",
-      "username" : "Cathy TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1391537730000
-    }, {
-      "response" : "Update: they backport support to version 1.6(SAMPLE)",
-      "username" : "Dawson TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1391537730000
-    } ]
-  }, {
-    "question" : "Are there alternate licenses? (SAMPLE)",
-    "username" : "Jack TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1328379330000,
-    "updateDts" : 1328379330000,
-    "responses" : [ {
-      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
-      "username" : "Abby TEST",
-      "userType" : "End User",
-      "answeredDate" : 1391537730000
-    }, {
-      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1399961730000
-    } ]
-  } ],
+  "questions" : [ ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Documentation",
@@ -3022,16 +3085,12 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRO",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
     "important" : false
   }, {
     "typeDescription" : "Protection/ Impact Level (SAMPLE)",
@@ -3043,14 +3102,16 @@ MOCKDATA2.componentList = [ {
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://storefront.di2e.net/marketplace/public/DNS_Guidebook_for Linux-BIND V2.1.1.doc",
@@ -3064,16 +3125,16 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Linux",
-    "comment" : "Tested on CentOS 5 and Ubuntu Server 11.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 33,
   "guid" : "ef0eaf61-05e2-405e-934a-7c377cc61269",
   "name" : "eDIB",
   "description" : "(U) eDIB contains the eDIB 4.0 services (management VM and worker VM). eDIB 4.0 is a scalable, virtualized webservice architecture based on the DMO's DIB 4.0. eDIB provides GUIs for an administrator to manage/configure eDIB. An end-user interface is not provided. Different data stores are supported including Oracle and SOLR.\n\n(U) The eDIB provides an easily managed and scalable DIB deployment. The administration console allows for additional worker VMs to scale up to support additional ingest activities or additional query activities. This provides the ability to manage a dynamic workload with a minimum of resources.\n\n(U) The software and documentation are currently available on JWICS at GForge, or you can email the DI2E Framework team for access on unclass.",
-  "parentComponent" : null,
+  "parentComponent" : {
+    "componentId" : 26,
+    "name" : "DCGS-E Web Service Access Control Technical Profile"
+  },
   "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "DI2E Framework",
@@ -3116,41 +3177,7 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ {
-    "question" : "Which os platforms does this support? (SAMPLE)",
-    "username" : "Jack TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1362298530000,
-    "updateDts" : 1362298530000,
-    "responses" : [ {
-      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
-      "username" : "Abby TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1391447730000
-    }, {
-      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "End User",
-      "answeredDate" : 1391447730000
-    } ]
-  }, {
-    "question" : "Are there alternate licenses? (SAMPLE)",
-    "username" : "Cathy TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1381644930000,
-    "updateDts" : 1381644930000,
-    "responses" : [ {
-      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
-      "username" : "Abby TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1398845730000
-    }, {
-      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "End User",
-      "answeredDate" : 1399961730000
-    } ]
-  } ],
+  "questions" : [ ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Application",
@@ -3180,12 +3207,12 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
+    "typeDescription" : "Network(s) Fielded (SAMPLE)",
+    "codeDescription" : "NIPR, SIPR",
     "important" : false
   }, {
-    "typeDescription" : "Accreditation Status (SAMPLE)",
-    "codeDescription" : "ATO",
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
     "important" : false
   } ],
   "tags" : [ ],
@@ -3198,14 +3225,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "DI2E Framework Evaluation Report URL",
@@ -3224,10 +3253,7 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Erlang",
-    "comment" : "Version 3.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 34,
   "guid" : "b52b36b8-b556-4d24-a9fe-2597402c32f7",
@@ -3276,114 +3302,97 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ {
       "name" : "Discoverable",
-      "score" : 2
+      "score" : 0
     }, {
       "name" : "Accessible",
-      "score" : 4
-    }, {
-      "name" : "Documentation",
-      "score" : 4
-    }, {
-      "name" : "Deployable",
-      "score" : 3
-    }, {
-      "name" : "Usable",
       "score" : 5
     }, {
+      "name" : "Documentation",
+      "score" : 5
+    }, {
+      "name" : "Deployable",
+      "score" : 0
+    }, {
+      "name" : "Usable",
+      "score" : 2
+    }, {
       "name" : "Error Handling",
-      "score" : 4
+      "score" : 5
     }, {
       "name" : "Integrable",
       "score" : 5
     }, {
       "name" : "I/O Validation",
-      "score" : 1
+      "score" : 5
     }, {
       "name" : "Testing",
-      "score" : 4
+      "score" : 0
     }, {
       "name" : "Monitoring",
       "score" : 3
     }, {
       "name" : "Performance",
-      "score" : 0
+      "score" : 2
     }, {
       "name" : "Scalability",
-      "score" : 5
-    }, {
-      "name" : "Security",
-      "score" : 3
-    }, {
-      "name" : "Maintainability",
-      "score" : 0
-    }, {
-      "name" : "Community",
-      "score" : 5
-    }, {
-      "name" : "Change Management",
-      "score" : 3
-    }, {
-      "name" : "CA",
       "score" : 1
     }, {
-      "name" : "Licensing",
-      "score" : 5
+      "name" : "Security",
+      "score" : 0
     }, {
-      "name" : "Roadmap",
-      "score" : 5
-    }, {
-      "name" : "Willingness",
+      "name" : "Maintainability",
       "score" : 4
     }, {
-      "name" : "Architecture Alignment",
+      "name" : "Community",
       "score" : 2
+    }, {
+      "name" : "Change Management",
+      "score" : 2
+    }, {
+      "name" : "CA",
+      "score" : 4
+    }, {
+      "name" : "Licensing",
+      "score" : 4
+    }, {
+      "name" : "Roadmap",
+      "score" : 2
+    }, {
+      "name" : "Willingness",
+      "score" : 3
+    }, {
+      "name" : "Architecture Alignment",
+      "score" : 3
     } ]
   },
   "questions" : [ {
-    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
-    "username" : "Dawson TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1328379330000,
-    "updateDts" : 1328379330000,
+    "question" : "Are samples included? (SAMPLE)",
+    "username" : "Colby TEST",
+    "userType" : "Developer",
+    "createDts" : 1388769330000,
+    "updateDts" : 1388769330000,
     "responses" : [ {
-      "response" : "Version 3.1 added support.(SAMPLE)",
-      "username" : "Cathy TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1391447730000
-    }, {
-      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
-      "username" : "Abby TEST",
+      "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Colby TEST",
       "userType" : "Project Manager",
-      "answeredDate" : 1399961730000
+      "answeredDate" : 1393834530000
     } ]
   }, {
-    "question" : "Are samples included? (SAMPLE)",
+    "question" : "Are there alternate licenses? (SAMPLE)",
     "username" : "Jack TEST",
     "userType" : "End User",
     "createDts" : 1367309730000,
     "updateDts" : 1367309730000,
     "responses" : [ {
-      "response" : "They are included in a separate download.(SAMPLE)",
-      "username" : "Cathy TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1393834530000
-    } ]
-  }, {
-    "question" : "Are there alternate licenses? (SAMPLE)",
-    "username" : "Colby TEST",
-    "userType" : "End User",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
-    "responses" : [ {
       "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1398845730000
+      "username" : "Colby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1399961730000
     }, {
       "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
-      "username" : "Jack TEST",
+      "username" : "Abby TEST",
       "userType" : "End User",
-      "answeredDate" : 1393834530000
+      "answeredDate" : 1399961730000
     } ]
   } ],
   "attributes" : [ {
@@ -3407,10 +3416,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "US Army Tactical Mission Command (TMC)",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -3428,7 +3433,16 @@ MOCKDATA2.componentList = [ {
     "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Common Uses (SAMPLE)",
+    "value" : "UDOP, Information Sharing, Research"
+  }, {
+    "label" : "Available to public (SAMPLE)",
+    "value" : "YES"
+  }, {
+    "label" : "Support Common Interface 2.1 (SAMPLE)",
+    "value" : "No"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/core-map-api.png",
     "contentType" : "image/png",
@@ -3437,14 +3451,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://stash.di2e.net/projects/EMP/repos/map-docs/browse",
@@ -3468,10 +3484,7 @@ MOCKDATA2.componentList = [ {
     "link" : "https://confluence.di2e.net/display/EMP/Extensible+Mapping+Platform+Home"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Linux",
-    "comment" : "Tested on CentOS 5 and Ubuntu Server 11.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 73,
   "guid" : "9d61a682-3b5f-4756-96cd-41df323fb371",
@@ -3520,7 +3533,41 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Dawson TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1388769330000,
+    "updateDts" : 1388769330000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391447730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1398845730000
+    } ]
+  }, {
+    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "End User",
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
+    "responses" : [ {
+      "response" : "Version 3.1 added support.(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "End User",
+      "answeredDate" : 1393834530000
+    }, {
+      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391447730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Service Endpoint",
@@ -3538,10 +3585,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "STRATCOM J8",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -3557,17 +3600,18 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Life Cycle Stage",
     "codeDescription" : "Operations",
     "important" : false
-  }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
-    "important" : false
-  }, {
-    "typeDescription" : "Lifecycle Stage (SAMPLE)",
-    "codeDescription" : "Development",
-    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Extra Metadata (SAMPLE)",
+    "value" : "Unfiltered"
+  }, {
+    "label" : "Available to public (SAMPLE)",
+    "value" : "YES"
+  }, {
+    "label" : "Common Uses (SAMPLE)",
+    "value" : "UDOP, Information Sharing, Research"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/GAPS.jpg",
     "contentType" : "image/jpg",
@@ -3576,14 +3620,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "DI2E Framework Evaluation Report URL",
@@ -3602,10 +3648,7 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Erlang",
-    "comment" : "Version 3.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 74,
   "guid" : "2e7cb2fb-8672-4d8f-9f68-b2243b523a2f",
@@ -3613,7 +3656,10 @@ MOCKDATA2.componentList = [ {
   "description" : "The GAPS Gazetteer Service offers a set of geographical dictionary services that allows users to search for city and military bases, retrieving accurate latitude and longitude values for those locations.  The user may search based on name or location, with the gazetteer returning all entries that match the provided name or spatial area.  The GAPS Gazetteer Service imports gazetteer services from other data sources including NGA, USGS, DAFIF, and DISDI.\n\nCurrent Service End-Points\nSIPR:  \n      https://gapsprod1.stratcom.smil.mil/gazetteers/NgaGnsGazetteerService.asmx (NGA Gazetteer)\n      https://gapsprod1.stratcom.smil.mil/gazetteers/UsgsGnisGazetteerService.asmx (USGS Gazetteer)\n\nJWICS:            \n      http://jwicsgaps.usstratcom.ic.gov/ gazetteers/NgaGnsGazetteerService.asmx  (USGS Gazetteer)                       \n      http://jwicsgaps.usstratcom.ic.gov/ gazetteers/NgaGnsGazetteerService.asmx (USGS Gazetteer)          \n\nOverview\nGlobal Awareness Presentation Services (GAPS) is a web-based command-wide service created to provide analysts and other decision makers the capability to generate Net-Centric Situational Awareness (SA) visualization products from disparate and dispersed data services.  GAPS is interoperable with ongoing Department of Defense (DoD) wide C4ISR infrastructure efforts such as FSR and SKIWEB.  GAPS attempts to share this data/information of an event in a real-time basis on SIPRNET and JWICS.  GAPS allows users at all organizational levels to define, customize, and refine their specific User Defined Operational Picture (UDOP) based on mission and task. GAPS middleware capabilities serve as the \"facilitator\" of authoritative data source information by hosting over 3,000 dynamic and static data feeds and provides metrics and status on those feeds.  GAPS provides several Ozone Widget Framework (OWF) based components that offer UDOP service functionality inside of an OWF dashboard.  \n\nGAPS exposes a number of core UDOP Services through SOAP/RESTful services.  \n-GAPS Gazetteer Services\n-GAPS Data Catalog Services\n-GAPS Scenario Services",
   "parentComponent" : null,
   "subComponents" : [ ],
-  "relatedComponents" : [ ],
+  "relatedComponents" : [ {
+    "componentId" : 11,
+    "name" : "Common Map Widget API"
+  } ],
   "organization" : "STRATCOM J8",
   "releaseDate" : null,
   "version" : "2.5",
@@ -3672,10 +3718,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "STRATCOM J8",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -3692,12 +3734,8 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Operations",
     "important" : false
   }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
     "important" : false
   } ],
   "tags" : [ ],
@@ -3712,12 +3750,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "DI2E Framework Evaluation Report URL",
@@ -3737,8 +3777,8 @@ MOCKDATA2.componentList = [ {
   } ],
   "reviews" : [ ],
   "dependencies" : [ {
-    "dependancy" : "Ruby",
-    "comment" : "Version 2.0+"
+    "dependancy" : "Linux",
+    "comment" : "Tested on CentOS 5 and Ubuntu Server 11.0"
   } ]
 }, {
   "componentId" : 72,
@@ -3747,7 +3787,10 @@ MOCKDATA2.componentList = [ {
   "description" : "The GAPS Scenario Service is a SOAP based interface into the GAPS UDOP creation, execution and publishing mechanism.  The Scenario Service allows an external entity to perform Machine to Machine (M2M) calls in order to create and execute UDOPs.  This interface can be used to integrate with other systems in order to provide geospatial visualization to give contextual SA to end users.\n\nGAPS Scenarios are defined as data packages which are stored within the GAPS Repository. The GAPS Repository Service is a SOAP based interface into the GAPS Repository which stores and maintains UDOP scenarios and geospatial products from GAPS data sources.  The Repository Service additionally creates a series of DDMS metacards to describe all of the UDOPs and artifacts stored within the GAPS Repository.  These metacards can be further published to other metadata catalogs to facilitate discovery of GAPS UDOPs and aggregated data products.\n\nA Scenario consists of a UDOP template document, products generated from a UDOP template and metadata gathered from data sources during the execution of a UDOP template.   For example, a SKIWeb scenario would consist of a UDOP template that captures information about an event (location, time, description) and other data overlays to give it a spatio-temporal context, JPEG screenshots taken automatically at different view scales for the event on a globe, a movie file with animation for temporal data, a VDF file, a KML file to execute the UDOP in Google Earth, a timeline view and all of the metadata captured during the UDOP execution.\n\nThe following are the Service Endpoints on SIPR and JWICS.  GAPS does not have an UNCLASS instance:\nSIPR:\n       scenario service: https://gapsprod1.stratcom.smil.mil/ScenarioService/ScenarioService.asmx\n       repository service: https://gapsprod1.stratcom.smil.mil/VsaPortal/RespositoryService.asmx\nJWICS:\n      scenario service: http://jwicsgaps.usstratcom.ic.gov:8000/ScenarioService/ScenarioService.asmx\n      repository service: http://jwicsgaps.usstratcom.ic.gov:8000/VsaPortal/RepositoryService.asmx\n\nGAPS Overview\nGlobal Awareness Presentation Services (GAPS) is a web-based command-wide service created to provide analysts and other decision makers the capability to generate Net-Centric Situational Awareness (SA) visualization products from disparate and dispersed data services.  GAPS is interoperable with ongoing Department of Defense (DoD) wide C4ISR infrastructure efforts such as FSR and SKIWEB.  GAPS attempts to share this data/information of an event in a real-time basis on SIPRNET and JWICS.  GAPS allows users at all organizational levels to define, customize, and refine their specific User Defined Operational Picture (UDOP) based on mission and task. GAPS middleware capabilities serve as the \"facilitator\" of authoritative data source information by hosting over 3,000 dynamic and static data feeds and provides metrics and status on those feeds.  GAPS provides several Ozone Widget Framework (OWF) based components that offer UDOP service functionality inside of an OWF dashboard.  \n\nGAPS exposes a number of core UDOP Services through SOAP/RESTful services.  \n-GAPS Gazetteer Services\n-GAPS Data Catalog Services\n-GAPS Scenario Services",
   "parentComponent" : null,
   "subComponents" : [ ],
-  "relatedComponents" : [ ],
+  "relatedComponents" : [ {
+    "componentId" : 19,
+    "name" : "DCGS Integration Backbone (DIB)"
+  } ],
   "organization" : "STRATCOM J8",
   "releaseDate" : null,
   "version" : "2.5",
@@ -3806,10 +3849,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "STRATCOM J8",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -3826,8 +3865,8 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Operations",
     "important" : false
   }, {
-    "typeDescription" : "Accreditation Status (SAMPLE)",
-    "codeDescription" : "ATO",
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
     "important" : false
   } ],
   "tags" : [ ],
@@ -3840,14 +3879,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "DI2E Framework Evaluation Report URL",
@@ -3866,7 +3907,10 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ ]
+  "dependencies" : [ {
+    "dependancy" : "Ruby",
+    "comment" : "Version 2.0+"
+  } ]
 }, {
   "componentId" : 35,
   "guid" : "871e8252-1a22-4677-9a3d-fdd647d5d500",
@@ -3945,11 +3989,19 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Operations",
     "important" : false
   }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
+    "important" : false
+  }, {
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
+    "important" : false
+  }, {
     "typeDescription" : "Protection/ Impact Level (SAMPLE)",
     "codeDescription" : "DoD MAC Level",
     "important" : false
   } ],
-  "tags" : [ ],
+  "tags" : [ { text: "Visualization"} ],
   "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/gvs.png",
@@ -3959,14 +4011,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://software.forge.mil/sf/docman/do/listDocuments/projects.gvs",
@@ -3990,7 +4044,10 @@ MOCKDATA2.componentList = [ {
     "link" : "https://intellipedia.intelink.gov/wiki/Gvs"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ ]
+  "dependencies" : [ {
+    "dependancy" : "Windows",
+    "comment" : "Version 8.1"
+  } ]
 }, {
   "componentId" : 58,
   "guid" : "cd86387e-08ae-4efe-b783-e8fddeb87021",
@@ -4039,58 +4096,7 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ {
-    "question" : "Which os platforms does this support? (SAMPLE)",
-    "username" : "Abby TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
-    "responses" : [ {
-      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1391447730000
-    }, {
-      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1393834530000
-    } ]
-  }, {
-    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
-    "username" : "Colby TEST",
-    "userType" : "Developer",
-    "createDts" : 1362298530000,
-    "updateDts" : 1362298530000,
-    "responses" : [ {
-      "response" : "Version 3.1 added support.(SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1398845730000
-    }, {
-      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "End User",
-      "answeredDate" : 1399961730000
-    } ]
-  }, {
-    "question" : "Does this support the 2.0 specs? (SAMPLE)",
-    "username" : "Colby TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1381644930000,
-    "updateDts" : 1381644930000,
-    "responses" : [ {
-      "response" : "No,  they planned to add support next Version(SAMPLE)",
-      "username" : "Jack TEST",
-      "userType" : "End User",
-      "answeredDate" : 1391447730000
-    }, {
-      "response" : "Update: they backport support to version 1.6(SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "End User",
-      "answeredDate" : 1391447730000
-    } ]
-  } ],
+  "questions" : [ ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Service Endpoint",
@@ -4112,15 +4118,23 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NGA",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
+  }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
+    "important" : false
+  }, {
+    "typeDescription" : "Network(s) Fielded (SAMPLE)",
+    "codeDescription" : "NIPR, SIPR",
+    "important" : false
+  }, {
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
+    "important" : false
   } ],
-  "tags" : [ ],
+  "tags" : [ {text: "UDOP"} ],
   "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/gvs.png",
@@ -4130,14 +4144,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Cathy TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://home.gvs.nga.mil/home/documentation",
@@ -4161,7 +4177,10 @@ MOCKDATA2.componentList = [ {
     "link" : "https://intellipedia.intelink.gov/wiki/GVS"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ ]
+  "dependencies" : [ {
+    "dependancy" : "Windows",
+    "comment" : "Version 8.1"
+  } ]
 }, {
   "componentId" : 59,
   "guid" : "d10e748d-a555-4661-aec9-f192e2f131cc",
@@ -4232,10 +4251,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NGA",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -4244,16 +4259,12 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Operations",
     "important" : false
   }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
     "important" : false
   }, {
     "typeDescription" : "Network(s) Fielded (SAMPLE)",
     "codeDescription" : "NIPR, SIPR",
-    "important" : false
-  }, {
-    "typeDescription" : "Lifecycle Stage (SAMPLE)",
-    "codeDescription" : "Development",
     "important" : false
   } ],
   "tags" : [ ],
@@ -4266,14 +4277,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://home.gvs.nga.mil/home/documentation",
@@ -4368,10 +4381,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NGA",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -4387,10 +4396,6 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "License Type (SAMPLE)",
     "codeDescription" : "FOSS",
     "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
-    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -4402,14 +4407,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Abby TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Colby TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://home.gvs.nga.mil/home/documentation",
@@ -4441,10 +4448,7 @@ MOCKDATA2.componentList = [ {
   "description" : "GVS Shared Product Query provides you with the ability to display geospatial information layers in a Google Earth? client depicting data previously created and stored in the GVS Shared Product Buffer by other users.\n\nHome page: https://home.gvs.nga.mil/UPS/RSS for the manual query https://home.gvs.nga.mil/home/capabilities/queries/shared_products for the query tool\nWiki: A general GVS Wiki can be found here https://intellipedia.intelink.gov/wiki/GVS no specialized shared product wiki pages exist\n\nGVS Overview:  GVS has several core categories for developers of Geospatial products.  These categories are reflected in the evaluation structure and content itself.\n? Base Maps - Google Globe Google Maps, ArcGIS\n? Features - MIDB, Intelink, CIDNE SIGACTS, GE shared products, WARP, NES\n? Imagery - Commercial, WARP, NES\n? Overlays - Streets, transportation, boundaries\n? Discovery/Search - GeoQuery, Proximity Query, Google Earth, Globe Catalog, MapProxy, OMAR WCS\n? Converters - GeoRSS to XML, XLS to KML, Shapefile to KML, KML to Shapefile, Coordinates\n? Analytic Tools - Viewshed, Best Road Route\n? Drawing Tools - Ellipse Generator, KML Styles, Custom Icons, Custom Placemarks, Mil Std 2525 Symbols\n? Other - RSS Viewer, Network Link Generator, KML Report Creator",
   "parentComponent" : null,
   "subComponents" : [ ],
-  "relatedComponents" : [ {
-    "componentId" : 60,
-    "name" : "GVS - Features - CIDNE SIGACTS"
-  } ],
+  "relatedComponents" : [ ],
   "organization" : "NGA",
   "releaseDate" : 1401861600000,
   "version" : "see site",
@@ -4485,36 +4489,7 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ {
-    "question" : "Which os platforms does this support? (SAMPLE)",
-    "username" : "Jack TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1362298530000,
-    "updateDts" : 1362298530000,
-    "responses" : [ {
-      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1393834530000
-    }, {
-      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
-      "username" : "Cathy TEST",
-      "userType" : "Developer",
-      "answeredDate" : 1393834530000
-    } ]
-  }, {
-    "question" : "Are samples included? (SAMPLE)",
-    "username" : "Abby TEST",
-    "userType" : "End User",
-    "createDts" : 1367309730000,
-    "updateDts" : 1367309730000,
-    "responses" : [ {
-      "response" : "They are included in a separate download.(SAMPLE)",
-      "username" : "Cathy TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1398845730000
-    } ]
-  } ],
+  "questions" : [ ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Service Endpoint",
@@ -4536,10 +4511,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NGA",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -4548,8 +4519,12 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Operations",
     "important" : false
   }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
+    "typeDescription" : "Network(s) Fielded (SAMPLE)",
+    "codeDescription" : "NIPR, SIPR",
+    "important" : false
+  }, {
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
     "important" : false
   } ],
   "tags" : [ ],
@@ -4564,12 +4539,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://home.gvs.nga.mil/home/documentation",
@@ -4593,10 +4570,7 @@ MOCKDATA2.componentList = [ {
     "link" : "https://home.gvs.nga.mil/home/capabilities/queries/shared_products or  https://intellipedia.intelink.gov/wiki/GVS"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Erlang",
-    "comment" : "Version 3.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 62,
   "guid" : "aa40dec7-efc9-4b4c-b29a-8eb51876e135",
@@ -4604,10 +4578,7 @@ MOCKDATA2.componentList = [ {
   "description" : "GVS - Features - Intelink: Provides the capability to perform a temporal keyword search for news items, Intellipedia data, and intelligence reporting and finished products found on Intelink. A list of geo-referenced locations in response to a query based on a filter.\n\nGVS INTELINK GEO SEARCH WFS INTERFACE (https://home.gvs.nga.mil/GVSData/UE_Docs/GVS_Exposed_Service_Interfaces.pdf)\n\nInterface Details:\n? Access Protocol: HTTP WFS calls with URL-encoded parameters\n? Base Address:\nJWICS: http://home.gvs.nga.ic.gov/metacarta/wfs\nSIPRNet: http://home.gvs.nga.smil.mil/metacarta/wfs\n\nGVS Overview:  GVS has several core categories for developers of Geospatial products.  These categories are reflected in the evaluation structure and content itself.\n? Base Maps - Google Globe Google Maps, ArcGIS\n? Features - MIDB, Intelink, CIDNE SIGACTS, GE shared products, WARP, NES\n? Imagery - Commercial, WARP, NES\n? Overlays - Streets, transportation, boundaries\n? Discovery/Search - GeoQuery, Proximity Query, Google Earth, Globe Catalog, MapProxy, OMAR WCS\n? Converters - GeoRSS to XML, XLS to KML, Shapefile to KML, KML to Shapefile, Coordinates\n? Analytic Tools - Viewshed, Best Road Route\n? Drawing Tools - Ellipse Generator, KML Styles, Custom Icons, Custom Placemarks, Mil Std 2525 Symbols\n? Other - RSS Viewer, Network Link Generator, KML Report Creator",
   "parentComponent" : null,
   "subComponents" : [ ],
-  "relatedComponents" : [ {
-    "componentId" : 28,
-    "name" : "DI2E Framework OpenAM"
-  } ],
+  "relatedComponents" : [ ],
   "organization" : "NGA",
   "releaseDate" : 1401861600000,
   "version" : "see site",
@@ -4649,38 +4620,21 @@ MOCKDATA2.componentList = [ {
     "evaulationSections" : [ ]
   },
   "questions" : [ {
-    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
-    "username" : "Dawson TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1367309730000,
-    "updateDts" : 1367309730000,
-    "responses" : [ {
-      "response" : "Version 3.1 added support.(SAMPLE)",
-      "username" : "Cathy TEST",
-      "userType" : "End User",
-      "answeredDate" : 1398845730000
-    }, {
-      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
-      "username" : "Dawson TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1393834530000
-    } ]
-  }, {
     "question" : "Which os platforms does this support? (SAMPLE)",
     "username" : "Dawson TEST",
-    "userType" : "Project Manager",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
+    "userType" : "End User",
+    "createDts" : 1362298530000,
+    "updateDts" : 1362298530000,
     "responses" : [ {
       "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
       "username" : "Colby TEST",
       "userType" : "Project Manager",
-      "answeredDate" : 1398845730000
+      "answeredDate" : 1391447730000
     }, {
       "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
-      "username" : "Dawson TEST",
+      "username" : "Abby TEST",
       "userType" : "Project Manager",
-      "answeredDate" : 1398845730000
+      "answeredDate" : 1393834530000
     } ]
   } ],
   "attributes" : [ {
@@ -4704,10 +4658,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NGA",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -4715,13 +4665,18 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Life Cycle Stage",
     "codeDescription" : "Operations",
     "important" : false
-  }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Common Uses (SAMPLE)",
+    "value" : "UDOP, Information Sharing, Research"
+  }, {
+    "label" : "Available to public (SAMPLE)",
+    "value" : "YES"
+  }, {
+    "label" : "Support Common Interface 2.1 (SAMPLE)",
+    "value" : "No"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/gvs.png",
     "contentType" : "image/png",
@@ -4730,14 +4685,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://home.gvs.nga.mil/home/documentation",
@@ -4761,10 +4718,7 @@ MOCKDATA2.componentList = [ {
     "link" : "https://intellipedia.intelink.gov/wiki/GVS"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Tomcat",
-    "comment" : "Version 7 or 8"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 63,
   "guid" : "25dc2698-a99c-4f4e-b8c1-4e4734f0fbf5",
@@ -4813,7 +4767,24 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "End User",
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1399961730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1391447730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Service Endpoint",
@@ -4835,10 +4806,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NGA",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -4848,7 +4815,16 @@ MOCKDATA2.componentList = [ {
     "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Available to public (SAMPLE)",
+    "value" : "YES"
+  }, {
+    "label" : "Extra Metadata (SAMPLE)",
+    "value" : "Unfiltered"
+  }, {
+    "label" : "Common Uses (SAMPLE)",
+    "value" : "UDOP, Information Sharing, Research"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/gvs.png",
     "contentType" : "image/png",
@@ -4857,14 +4833,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://home.gvs.nga.mil/home/documentation",
@@ -4888,10 +4866,7 @@ MOCKDATA2.componentList = [ {
     "link" : "https://intellipedia.intelink.gov/wiki/GVS"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Tomcat",
-    "comment" : "Version 7 or 8"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 64,
   "guid" : "cfb2449d-86fe-4792-ada8-e5d965046026",
@@ -4940,7 +4915,24 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1391447730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391537730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Service Endpoint",
@@ -4962,10 +4954,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NGA",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -4975,7 +4963,13 @@ MOCKDATA2.componentList = [ {
     "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Extra Metadata (SAMPLE)",
+    "value" : "Unfiltered"
+  }, {
+    "label" : "Provides Web Hooks via RPC service(SAMPLE)",
+    "value" : "Yes"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/gvs.png",
     "contentType" : "image/png",
@@ -4986,12 +4980,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://home.gvs.nga.mil/home/documentation",
@@ -5015,20 +5011,14 @@ MOCKDATA2.componentList = [ {
     "link" : "https://intellipedia.intelink.gov/wiki/GVS"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Windows",
-    "comment" : "Version 8.1"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 65,
   "guid" : "fe3041eb-1e40-4203-987b-e6622695f55b",
   "name" : "HardwareWall",
   "description" : "The Boeing eXMeritus HardwareWall? is a highly configurable, commercial-off-the-shelf cross domain solution that enables rapid, automated, and secure data transfer between security domains:\n\neXMeritus has designed HardwareWall? as a secure data transfer system and an off-the-shelf Controlled Interface that meets and exceeds all mission and information assurance requirements for the world?s highest-level security directives.  Our systems have been deployed and certified in PL-3, PL-4 and PL-5 environments and continue to operate and evolve to meet ever changing requirements and threats.\n\nLinks:\nhttp://www.exmeritus.com/hardware_wall.html\nhttp://www.boeing.com/advertising/c4isr/isr/exmeritus_harware_wall.html\n\nHardwareWall? Applications\n?Files\n     ??High to low or low to high\n     ??Automated format and content review\n     ??Digital signatures\n     ??External utilities (e.g. virus scanning)\n\n?Streaming data\n     ??High to low or low to high\n     ??Automated format and content review\n     ??Signed records or messages\n\nHardwareWall? Capacity\n     ??Current installation moving large files at over 85MB/s          \n     ??Multiple methods to achieve multi-Gigabyte per second throughput:\n     ??Scales by replication\n     ??Scales by CPUs and interfaces\n     ??Demonstrated ability to stripe across multiple Gigabit Ethernet fibers",
   "parentComponent" : null,
-  "subComponents" : [ {
-    "componentId" : 12,
-    "name" : "Content Discovery and Retrieval Engine - Brokered Search Component"
-  } ],
+  "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "Boeing",
   "releaseDate" : 1402812000000,
@@ -5070,7 +5060,24 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Does this support the 2.0 specs? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "No,  they planned to add support next Version(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391537730000
+    }, {
+      "response" : "Update: they backport support to version 1.6(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "End User",
+      "answeredDate" : 1398845730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Application",
@@ -5109,7 +5116,13 @@ MOCKDATA2.componentList = [ {
     "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Common Uses (SAMPLE)",
+    "value" : "UDOP, Information Sharing, Research"
+  }, {
+    "label" : "Provides Web Hooks via RPC service(SAMPLE)",
+    "value" : "Yes"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/eXMeritus.jpg",
     "contentType" : "image/jpg",
@@ -5118,14 +5131,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Colby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "http://www.exmeritus.com/hardware_wall.html",
@@ -5149,20 +5164,14 @@ MOCKDATA2.componentList = [ {
     "link" : "http://www.exmeritus.com/hardware_wall.html"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Linux",
-    "comment" : "Tested on CentOS 5 and Ubuntu Server 11.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 36,
   "guid" : "7268ddbc-ad59-4c8c-b205-96d81d4615e4",
   "name" : "IC AppsMall Cookbook: Applications Development",
   "description" : "The Applications Development Cookbook is designed as an overview of principles and best practices for Web Application Development, with a focus on new web and related technologies & concepts that take full advantage of modern browser capabilities. The ideas introduced in this document are not intended to be all inclusive, instead, they are met to expose the reader to concepts and examples that can be adapted and applied to a broad array of development projects and tangential tasks. The content is structured so that a reader with basic technical skills can garner a high-level understanding of the concepts. Where applicable, more detailed information has been included, or identified, to allow further examination of individual areas. \n\nThis initial document is structured around four subject areas: JavaScript, User Experience (UX), HTML5, and Elastic Scalability. Each section provides a description, and then introduces key concepts[1]. \n\nJavaScript - this section provides a concise review of the main impediments developers with a few years of experience struggle with when using JavaScript. The resources section directs less experienced users to references that will teach them basic JavaScript. \n\nUser Experience (UX) ? this section provides a general overview of what UX is, as well as why and how it should, and can, be applied to application development projects. The content in this section has broad applicability, as it can inform decisions across a large spectrum: from aiding developers in designing more appealing applications to assisting managers in assuring they have marketable products. \n\nHTML5 ? the HTML5 portion of the cookbook provides developers unfamiliar with the proposed standards of the newest iteration of Hypertext Markup Language an introduction to key concepts. The section includes simple exercises to demonstrate utility. \n\nElastic Scalability ? the Elastic Scalability section provides an introduction to architecture principles that can help ensure an infrastructure is capable of meeting a modern web browser?s demands in accomplishing tasks traditionally held in the realm of the thick client.",
   "parentComponent" : null,
-  "subComponents" : [ {
-    "componentId" : 31,
-    "name" : "DI2E RESTful CDR Search Technical Profile"
-  } ],
+  "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "IC SOG",
   "releaseDate" : 1360047600000,
@@ -5184,7 +5193,24 @@ MOCKDATA2.componentList = [ {
     "evaluationSchedule" : [ ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
+    "username" : "Abby TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1381644930000,
+    "updateDts" : 1381644930000,
+    "responses" : [ {
+      "response" : "Version 3.1 added support.(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1399961730000
+    }, {
+      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391537730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Documentation",
@@ -5211,18 +5237,26 @@ MOCKDATA2.componentList = [ {
     "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Common Uses (SAMPLE)",
+    "value" : "UDOP, Information Sharing, Research"
+  }, {
+    "label" : "Support Common Interface 2.1 (SAMPLE)",
+    "value" : "No"
+  } ],
   "componentMedia" : [ ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
-    "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
-  }, {
-    "postionDescription" : "Government POC",
     "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
+  }, {
+    "postionDescription" : "Government POC",
+    "name" : "Colby TEST",
+    "email" : "sample_email@test.com",
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://intellipedia.intelink.gov/wiki/AppsMall_Cookbook:_Applications_Development",
@@ -5231,20 +5265,14 @@ MOCKDATA2.componentList = [ {
     "link" : "https://intellipedia.intelink.gov/wiki/AppsMall_Cookbook:_Applications_Development"
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Windows",
-    "comment" : "Version 8.1"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 37,
   "guid" : "dcb2db8f-fc5d-4db2-8e1b-cd1459cb34be",
   "name" : "ISF Enterprise Data Viewer Widget",
   "description" : "A widget designed to display search results in a tabular format.  It can page, sort, filter, and group results and organize items into working folders called \"Workspaces\" as well as perform full-record retrieval for supported result types.  It depends on the Persistence Service to store and retrieve results and optionally uses the Map widget to visualize results geospatially.\n\nThis was previously entered in the storefront as the Enterprise Search Results Widget.",
   "parentComponent" : null,
-  "subComponents" : [ {
-    "componentId" : 59,
-    "name" : "GVS - Base Maps - Google Globe - Summary Information"
-  } ],
+  "subComponents" : [ ],
   "relatedComponents" : [ ],
   "organization" : "NRO/GED",
   "releaseDate" : 1348380000000,
@@ -5308,10 +5336,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRO/GED",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -5340,12 +5364,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Colby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://stash.di2e.net/projects/ISF/repos/data-viewer/browse",
@@ -5369,10 +5395,7 @@ MOCKDATA2.componentList = [ {
     "link" : null
   } ],
   "reviews" : [ ],
-  "dependencies" : [ {
-    "dependancy" : "Linux",
-    "comment" : "Tested on CentOS 5 and Ubuntu Server 11.0"
-  } ]
+  "dependencies" : [ ]
 }, {
   "componentId" : 38,
   "guid" : "247533a9-3109-4edd-a1a8-52fdc5bd516e",
@@ -5443,10 +5466,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRO/GED",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -5469,14 +5488,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Cathy TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://stash.di2e.net/projects/ISF/repos/persistence-service/browse",
@@ -5499,33 +5520,7 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ {
-    "username" : "Jack TEST",
-    "userType" : "Developer",
-    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
-    "rating" : 5,
-    "title" : "Great but missing features (SAMPLE)",
-    "usedTimeCode" : "< 1 year",
-    "lastUsed" : 1381644930000,
-    "updateDate" : 1399961730000,
-    "organization" : "NGA",
-    "recommend" : true,
-    "pros" : [ ],
-    "cons" : [ ]
-  }, {
-    "username" : "Jack TEST",
-    "userType" : "End User",
-    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
-    "rating" : 2,
-    "title" : "Just what I was looking for (SAMPLE)",
-    "usedTimeCode" : "< 3 years",
-    "lastUsed" : 1367309730000,
-    "updateDate" : 1398845730000,
-    "organization" : "NGA",
-    "recommend" : true,
-    "pros" : [ "Well Tested" ],
-    "cons" : [ "Security Concerns" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 }, {
   "componentId" : 39,
@@ -5597,10 +5592,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRO/GED",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -5627,14 +5618,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Abby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://stash.di2e.net/projects/ISF/repos/search-criteria/browse",
@@ -5657,33 +5650,7 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ {
-    "username" : "Cathy TEST",
-    "userType" : "End User",
-    "comment" : "It's a good product.  The features are nice and performed well.  It quite configurable without a lot of setup and it worked out of the box.",
-    "rating" : 5,
-    "title" : "Good Product (SAMPLE)",
-    "usedTimeCode" : "< 1 year",
-    "lastUsed" : 1381644930000,
-    "updateDate" : 1391537730000,
-    "organization" : "Private Company",
-    "recommend" : true,
-    "pros" : [ ],
-    "cons" : [ ]
-  }, {
-    "username" : "Jack TEST",
-    "userType" : "End User",
-    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
-    "rating" : 2,
-    "title" : "Just what I was looking for (SAMPLE)",
-    "usedTimeCode" : "< 1 year",
-    "lastUsed" : 1381644930000,
-    "updateDate" : 1399961730000,
-    "organization" : "Private Company",
-    "recommend" : true,
-    "pros" : [ "Compact" ],
-    "cons" : [ "Poorly Tested" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 }, {
   "componentId" : 40,
@@ -5692,7 +5659,10 @@ MOCKDATA2.componentList = [ {
   "description" : "iSpatial is a commercially available geospatial framework designed as a set of ready-to-customize, baseline tools that can be rapidly adapted to meet use cases calling for geo-visualization.  iSpatial consists of four major areas of core functionality:  Authorizing, Searching, Managing and Collaborating.  iSpatial's APIs and software libraries can be accessed by developers to customize off the existing framework. It is a front-end browser-based interface developed in JavaScript and ExtJS, a collection of REST services that connect the user interface to the back end, and a PostgreSQL/PostGIS and MongoDB back end.\n\n \n\nThe iSpatial Core Services stack has four main components:  the Message Queue (MQ), an Authentication Proxy Service (TAPS), Common Data Access Service (CDAS) , and Agent Manager (AM).\n\niSpatial White Paper: http://www.t-sciences.com/wp-content/uploads/2013/04/iSpatial_v3_Technical_White_Paper.pdf\niSpatial http://www.t-sciences.com/wp-content/uploads/2014/01/iSpatial_Fed.pptx",
   "parentComponent" : null,
   "subComponents" : [ ],
-  "relatedComponents" : [ ],
+  "relatedComponents" : [ {
+    "componentId" : 64,
+    "name" : "GVS - Features - NES"
+  } ],
   "organization" : "Thermopylae Sciences and Technology",
   "releaseDate" : 1395813600000,
   "version" : "3.2.4",
@@ -5774,9 +5744,16 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Software License Type",
     "codeDescription" : "COTS",
     "important" : false
+  }, {
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
+    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Extra Metadata (SAMPLE)",
+    "value" : "Unfiltered"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/iSpatialLogosquare.png",
     "contentType" : "image/png",
@@ -5787,12 +5764,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "http://www.t-sciences.com/product/ispatial",
@@ -5820,8 +5799,24 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "http://www.t-sciences.com/product/ispatial"
   } ],
-  "reviews" : [ ],
-  "dependencies" : [ ]
+  "reviews" : [ {
+    "username" : "Colby TEST",
+    "userType" : "End User",
+    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
+    "rating" : 2,
+    "title" : "Great but missing features (SAMPLE)",
+    "usedTimeCode" : "< 3 Months",
+    "lastUsed" : 1367309730000,
+    "updateDate" : 1399961730000,
+    "organization" : "Private Company",
+    "recommend" : true,
+    "pros" : [ "Reliable" ],
+    "cons" : [ "Security Concerns" ]
+  } ],
+  "dependencies" : [ {
+    "dependancy" : "Windows",
+    "comment" : "Version 8.1"
+  } ]
 }, {
   "componentId" : 41,
   "guid" : "96c32c04-852d-4795-b659-235cfd0fdb05",
@@ -5829,7 +5824,10 @@ MOCKDATA2.componentList = [ {
   "description" : "This is a map widget developed by JC2CUI that conforms to the Common Map API - see below for more information on the API.\n\nUsing this API allows developers to focus on the problem domain rather than implementing a map widget themselves. It also allows the actual map implementation used to be chosen dynamically by the user at runtime rather than being chosen by the developer. Any map implementation that applies this API can be used. Currently, implementations using Google Earth, Google Maps V2, Google Maps V3, and OpenLayers APIs are available, and others can be written as needed.\n Another benefit of this API is that it allows multiple widgets to collaboratively display data on a single map widget rather than forcing the user to have a separate map for each widget, so the user does not have to struggle with a different map user interface for each widget. The API uses the OZONE Widget Framework (OWF) inter-widget communication mechanism to allow client widgets to interact with the map. Messages are sent to the appropriate channels (defined below), and the map updates its state accordingly. Other widgets interested in knowing the current map state can subscribe to these messages as well. It is worth noting that the map itself may publish data to these channels on occasion. For example, a map.feature.selected message may originate from a widget asking that a particular feature be selected or because a user has selected the feature on the map. While in most instances the map will not echo back another message to confirm that it has performed an operation, the map will send a view status message whenever the map view (zoom/pan) has been changed, either directly by the user or due to a view change message sent by another widget. This allows non-map widgets that wish to be aware of the current viewport to have that information without having to process all the various messages that can change its state.",
   "parentComponent" : null,
   "subComponents" : [ ],
-  "relatedComponents" : [ ],
+  "relatedComponents" : [ {
+    "componentId" : 73,
+    "name" : "GAPS - Data Catalog Service"
+  } ],
   "organization" : "JC2CUI",
   "releaseDate" : 1342850400000,
   "version" : "1.3",
@@ -5903,9 +5901,16 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "OWF Compatible Widget (Y/N)",
     "codeDescription" : "Yes",
     "important" : false
+  }, {
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
+    "important" : false
   } ],
   "tags" : [ ],
-  "metadata" : [ ],
+  "metadata" : [ {
+    "label" : "Extra Metadata (SAMPLE)",
+    "value" : "Unfiltered"
+  } ],
   "componentMedia" : [ {
     "link" : "images/oldsite/maps-icon.png",
     "contentType" : "image/png",
@@ -5914,14 +5919,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Dawson TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.intelink.gov/inteldocs/browse.php?fFolderId=431871",
@@ -5944,8 +5951,24 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "https://software.forge.mil/sf/frs/do/listReleases/projects.jc2cui/frs.common_map_widget"
   } ],
-  "reviews" : [ ],
-  "dependencies" : [ ]
+  "reviews" : [ {
+    "username" : "Dawson TEST",
+    "userType" : "Project Manager",
+    "comment" : "It's a good product.  The features are nice and performed well.  It quite configurable without a lot of setup and it worked out of the box.",
+    "rating" : 2,
+    "title" : "Good Product (SAMPLE)",
+    "usedTimeCode" : "< 3 Months",
+    "lastUsed" : 1381644930000,
+    "updateDate" : 1398845730000,
+    "organization" : "Private Company",
+    "recommend" : true,
+    "pros" : [ "Compact" ],
+    "cons" : [ "Security Concerns" ]
+  } ],
+  "dependencies" : [ {
+    "dependancy" : "Erlang",
+    "comment" : "Version 3.0"
+  } ]
 }, {
   "componentId" : 42,
   "guid" : "a2a4488f-a139-41a2-b455-a1b9ea87f7c8",
@@ -5978,9 +6001,9 @@ MOCKDATA2.componentList = [ {
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL 1",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1392138930000,
-      "levelStatus" : "H"
+      "estimatedCompeletionDate" : 1392138930000,
+      "actualCompeletionDate" : null,
+      "levelStatus" : "P"
     }, {
       "evaluationLevelCode" : "LEVEL 2",
       "estimatedCompeletionDate" : 1393002930000,
@@ -6016,10 +6039,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "AFRL",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -6046,14 +6065,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Colby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://software.forge.mil/sf/scm/do/listRepositories/projects.jview/scm",
@@ -6159,18 +6180,6 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "OWF Compatible Widget (Y/N)",
     "codeDescription" : "Yes",
     "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
-    "important" : false
-  }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
-  }, {
-    "typeDescription" : "Accreditation Status (SAMPLE)",
-    "codeDescription" : "ATO",
-    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -6184,12 +6193,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://github.com/missioncommand/mil-sym-java/blob/master/documentation/Mil%20Symbology%20Web%20Service%20Developer's%20Guide.docx",
@@ -6291,18 +6302,6 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Software License Method",
     "codeDescription" : "Licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License - http://creativecommons.org/licenses/by-nc-nd/3.0/",
     "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
-    "important" : false
-  }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
-    "important" : false
-  }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -6314,14 +6313,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "http://forgerock.com/products/open-identity-stack/openam/",
@@ -6395,21 +6396,38 @@ MOCKDATA2.componentList = [ {
     "evaulationSections" : [ ]
   },
   "questions" : [ {
-    "question" : "Does this support the 2.0 specs? (SAMPLE)",
-    "username" : "Abby TEST",
-    "userType" : "Developer",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
+    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
+    "username" : "Colby TEST",
+    "userType" : "End User",
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
     "responses" : [ {
-      "response" : "No,  they planned to add support next Version(SAMPLE)",
-      "username" : "Colby TEST",
-      "userType" : "Project Manager",
+      "response" : "Version 3.1 added support.(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "End User",
       "answeredDate" : 1391537730000
     }, {
-      "response" : "Update: they backport support to version 1.6(SAMPLE)",
+      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
       "username" : "Colby TEST",
-      "userType" : "End User",
+      "userType" : "Project Manager",
+      "answeredDate" : 1393834530000
+    } ]
+  }, {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Colby TEST",
+    "userType" : "Developer",
+    "createDts" : 1381644930000,
+    "updateDts" : 1381644930000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "Project Manager",
       "answeredDate" : 1398845730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391447730000
     } ]
   } ],
   "attributes" : [ {
@@ -6445,19 +6463,15 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
-    "important" : false
-  }, {
     "typeDescription" : "Accreditation Status (SAMPLE)",
     "codeDescription" : "ATO",
     "important" : false
   }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
     "important" : false
   } ],
-  "tags" : [ ],
+  "tags" : [ {text: "Reference"} ],
   "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/OpenSextanticon.png",
@@ -6467,14 +6481,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://github.com/OpenSextant/opensextant/tree/master/OpenSextantToolbox/doc",
@@ -6497,7 +6513,33 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "https://github.com/OpenSextant/opensextant"
   } ],
-  "reviews" : [ ],
+  "reviews" : [ {
+    "username" : "Cathy TEST",
+    "userType" : "Developer",
+    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
+    "rating" : 2,
+    "title" : "Just what I was looking for (SAMPLE)",
+    "usedTimeCode" : "< 1 month'",
+    "lastUsed" : 1362298530000,
+    "updateDate" : 1398845730000,
+    "organization" : "Private Company",
+    "recommend" : false,
+    "pros" : [ "Active Development" ],
+    "cons" : [ ]
+  }, {
+    "username" : "Dawson TEST",
+    "userType" : "Developer",
+    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
+    "rating" : 1,
+    "title" : "Great but missing features (SAMPLE)",
+    "usedTimeCode" : "< 3 years",
+    "lastUsed" : 1381644930000,
+    "updateDate" : 1393834530000,
+    "organization" : "DCGS Navy",
+    "recommend" : false,
+    "pros" : [ ],
+    "cons" : [ ]
+  } ],
   "dependencies" : [ ]
 }, {
   "componentId" : 46,
@@ -6548,21 +6590,38 @@ MOCKDATA2.componentList = [ {
     "evaulationSections" : [ ]
   },
   "questions" : [ {
-    "question" : "Which os platforms does this support? (SAMPLE)",
-    "username" : "Jack TEST",
-    "userType" : "End User",
-    "createDts" : 1388769330000,
-    "updateDts" : 1388769330000,
+    "question" : "Does this support the 2.0 specs? (SAMPLE)",
+    "username" : "Colby TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1362298530000,
+    "updateDts" : 1362298530000,
     "responses" : [ {
-      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
-      "username" : "Abby TEST",
+      "response" : "No,  they planned to add support next Version(SAMPLE)",
+      "username" : "Jack TEST",
       "userType" : "End User",
-      "answeredDate" : 1391537730000
+      "answeredDate" : 1393834530000
     }, {
-      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
-      "username" : "Abby TEST",
+      "response" : "Update: they backport support to version 1.6(SAMPLE)",
+      "username" : "Colby TEST",
       "userType" : "Project Manager",
-      "answeredDate" : 1391537730000
+      "answeredDate" : 1398845730000
+    } ]
+  }, {
+    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
+    "username" : "Dawson TEST",
+    "userType" : "Developer",
+    "createDts" : 1362298530000,
+    "updateDts" : 1362298530000,
+    "responses" : [ {
+      "response" : "Version 3.1 added support.(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "End User",
+      "answeredDate" : 1393834530000
+    }, {
+      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "End User",
+      "answeredDate" : 1398845730000
     } ]
   } ],
   "attributes" : [ {
@@ -6594,19 +6653,15 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Pilot",
     "important" : false
   }, {
-    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
-    "codeDescription" : "DoD MAC Level",
-    "important" : false
-  }, {
     "typeDescription" : "Lifecycle Stage (SAMPLE)",
     "codeDescription" : "Development",
     "important" : false
   }, {
-    "typeDescription" : "License Restrictions (SAMPLE)",
-    "codeDescription" : "Per CPU",
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
     "important" : false
   } ],
-  "tags" : [ ],
+  "tags" : [ {text: "UDOP"} ],
   "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/OpenStack.png",
@@ -6616,14 +6671,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Cathy TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://confluence.di2e.net/display/DI2E/Heterogeneous+OpenStack+Grizzly+Release",
@@ -6646,7 +6703,33 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ ],
+  "reviews" : [ {
+    "username" : "Cathy TEST",
+    "userType" : "Project Manager",
+    "comment" : "I had issues trying to obtain the component and once I got it is very to difficult to install.",
+    "rating" : 2,
+    "title" : "Hassle (SAMPLE)",
+    "usedTimeCode" : "< 3 Months",
+    "lastUsed" : 1362298530000,
+    "updateDate" : 1398845730000,
+    "organization" : "NGA",
+    "recommend" : false,
+    "pros" : [ "Well tested" ],
+    "cons" : [ ]
+  }, {
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
+    "rating" : 1,
+    "title" : "Great but missing features (SAMPLE)",
+    "usedTimeCode" : "< 1 month'",
+    "lastUsed" : 1381644930000,
+    "updateDate" : 1399961730000,
+    "organization" : "DCGS Army",
+    "recommend" : false,
+    "pros" : [ ],
+    "cons" : [ ]
+  } ],
   "dependencies" : [ ]
 }, {
   "componentId" : 47,
@@ -6678,15 +6761,32 @@ MOCKDATA2.componentList = [ {
   },
   "questions" : [ {
     "question" : "Are samples included? (SAMPLE)",
-    "username" : "Colby TEST",
+    "username" : "Jack TEST",
     "userType" : "Project Manager",
-    "createDts" : 1367309730000,
-    "updateDts" : 1367309730000,
+    "createDts" : 1381644930000,
+    "updateDts" : 1381644930000,
     "responses" : [ {
       "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "End User",
+      "answeredDate" : 1399961730000
+    } ]
+  }, {
+    "question" : "Are there alternate licenses? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1362298530000,
+    "updateDts" : 1362298530000,
+    "responses" : [ {
+      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
       "username" : "Cathy TEST",
       "userType" : "Project Manager",
-      "answeredDate" : 1391447730000
+      "answeredDate" : 1393834530000
+    }, {
+      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391537730000
     } ]
   } ],
   "attributes" : [ {
@@ -6714,19 +6814,15 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
-    "codeDescription" : "DoD MAC Level",
-    "important" : false
-  }, {
-    "typeDescription" : "Funded (SAMPLE)",
-    "codeDescription" : "Yes",
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
     "important" : false
   }, {
     "typeDescription" : "Accreditation Status (SAMPLE)",
     "codeDescription" : "ATO",
     "important" : false
   } ],
-  "tags" : [ ],
+  "tags" : [ {text: "Mapping"} ],
   "metadata" : [ ],
   "componentMedia" : [ {
     "link" : "images/oldsite/OpenStack.png",
@@ -6736,14 +6832,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Abby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://confluence.di2e.net/download/attachments/8847504/OpenStack-LessonsLearned.pdf?api=v2",
@@ -6756,7 +6854,33 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ ],
+  "reviews" : [ {
+    "username" : "Abby TEST",
+    "userType" : "End User",
+    "comment" : "I had issues trying to obtain the component and once I got it is very to difficult to install.",
+    "rating" : 2,
+    "title" : "Hassle (SAMPLE)",
+    "usedTimeCode" : "> 3 years",
+    "lastUsed" : 1362298530000,
+    "updateDate" : 1398845730000,
+    "organization" : "DCGS Army",
+    "recommend" : false,
+    "pros" : [ "Compact" ],
+    "cons" : [ ]
+  }, {
+    "username" : "Colby TEST",
+    "userType" : "Developer",
+    "comment" : "It's a good product.  The features are nice and performed well.  It quite configurable without a lot of setup and it worked out of the box.",
+    "rating" : 1,
+    "title" : "Good Product (SAMPLE)",
+    "usedTimeCode" : "< 1 month'",
+    "lastUsed" : 1381644930000,
+    "updateDate" : 1391447730000,
+    "organization" : "DCGS Navy",
+    "recommend" : false,
+    "pros" : [ ],
+    "cons" : [ ]
+  } ],
   "dependencies" : [ ]
 }, {
   "componentId" : 48,
@@ -6788,20 +6912,49 @@ MOCKDATA2.componentList = [ {
   },
   "questions" : [ {
     "question" : "Are there alternate licenses? (SAMPLE)",
-    "username" : "Colby TEST",
+    "username" : "Cathy TEST",
     "userType" : "Developer",
-    "createDts" : 1381644930000,
-    "updateDts" : 1381644930000,
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
     "responses" : [ {
       "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
-      "username" : "Cathy TEST",
+      "username" : "Abby TEST",
       "userType" : "Project Manager",
-      "answeredDate" : 1398845730000
+      "answeredDate" : 1393834530000
     }, {
       "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1393834530000
+    } ]
+  }, {
+    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
+    "username" : "Abby TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "Version 3.1 added support.(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1391447730000
+    }, {
+      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1391447730000
+    } ]
+  }, {
+    "question" : "Are samples included? (SAMPLE)",
+    "username" : "Abby TEST",
+    "userType" : "End User",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "They are included in a separate download.(SAMPLE)",
       "username" : "Dawson TEST",
-      "userType" : "Project Manager",
-      "answeredDate" : 1391537730000
+      "userType" : "Developer",
+      "answeredDate" : 1398845730000
     } ]
   } ],
   "attributes" : [ {
@@ -6829,16 +6982,8 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Network(s) Fielded (SAMPLE)",
-    "codeDescription" : "NIPR, SIPR",
-    "important" : false
-  }, {
-    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
-    "codeDescription" : "DoD MAC Level",
-    "important" : false
-  }, {
-    "typeDescription" : "License Type (SAMPLE)",
-    "codeDescription" : "FOSS",
+    "typeDescription" : "Lifecycle Stage (SAMPLE)",
+    "codeDescription" : "Development",
     "important" : false
   } ],
   "tags" : [ ],
@@ -6851,14 +6996,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Jack TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Abby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.owasp.org/index.php/Esapi",
@@ -6911,7 +7058,53 @@ MOCKDATA2.componentList = [ {
     "evaluationSchedule" : [ ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Are there alternate licenses? (SAMPLE)",
+    "username" : "Dawson TEST",
+    "userType" : "Developer",
+    "createDts" : 1381644930000,
+    "updateDts" : 1381644930000,
+    "responses" : [ {
+      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391537730000
+    }, {
+      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "Developer",
+      "answeredDate" : 1399961730000
+    } ]
+  }, {
+    "question" : "Are samples included? (SAMPLE)",
+    "username" : "Abby TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1362298530000,
+    "updateDts" : 1362298530000,
+    "responses" : [ {
+      "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1399961730000
+    } ]
+  }, {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1388769330000,
+    "updateDts" : 1388769330000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Jack TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1399961730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391537730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Documentation",
@@ -6936,6 +7129,10 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "N/A",
     "important" : false
+  }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -6947,14 +7144,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Jack TEST",
+    "name" : "Cathy TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.owasp.org/index.php/Category:OWASP_Guide_Project",
@@ -6962,20 +7161,7 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "https://www.owasp.org/index.php/Category:OWASP_Guide_Project"
   } ],
-  "reviews" : [ {
-    "username" : "Dawson TEST",
-    "userType" : "Developer",
-    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
-    "rating" : 3,
-    "title" : "Great but missing features (SAMPLE)",
-    "usedTimeCode" : "> 3 years",
-    "lastUsed" : 1328379330000,
-    "updateDate" : 1393834530000,
-    "organization" : "Private Company",
-    "recommend" : false,
-    "pros" : [ ],
-    "cons" : [ "Legacy system" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 }, {
   "componentId" : 50,
@@ -7025,7 +7211,53 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "Developer",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "Version 3.1 added support.(SAMPLE)",
+      "username" : "Abby TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1398845730000
+    }, {
+      "response" : "They depreciated support in version 4.0 since it was a rarely used feature.(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391447730000
+    } ]
+  }, {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1362298530000,
+    "updateDts" : 1362298530000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391447730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391447730000
+    } ]
+  }, {
+    "question" : "Are samples included? (SAMPLE)",
+    "username" : "Cathy TEST",
+    "userType" : "Developer",
+    "createDts" : 1367309730000,
+    "updateDts" : 1367309730000,
+    "responses" : [ {
+      "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391537730000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Application",
@@ -7050,6 +7282,10 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
+  }, {
+    "typeDescription" : "License Restrictions (SAMPLE)",
+    "codeDescription" : "Per CPU",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -7063,12 +7299,14 @@ MOCKDATA2.componentList = [ {
     "postionDescription" : "Technical POC",
     "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.owfgoss.org/downloads/Marketplace/5.0/Marketplace-5.0.1-GA/",
@@ -7076,20 +7314,7 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "https://www.owfgoss.org/downloads/Marketplace/5.0/Marketplace-5.0.1-GA/"
   } ],
-  "reviews" : [ {
-    "username" : "Colby TEST",
-    "userType" : "End User",
-    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
-    "rating" : 3,
-    "title" : "Great but missing features (SAMPLE)",
-    "usedTimeCode" : "< 1 year",
-    "lastUsed" : 1388769330000,
-    "updateDate" : 1391537730000,
-    "organization" : "NSA",
-    "recommend" : false,
-    "pros" : [ ],
-    "cons" : [ "Poorly Tested" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 }, {
   "componentId" : 51,
@@ -7139,7 +7364,53 @@ MOCKDATA2.componentList = [ {
     } ],
     "evaulationSections" : [ ]
   },
-  "questions" : [ ],
+  "questions" : [ {
+    "question" : "Are samples included? (SAMPLE)",
+    "username" : "Colby TEST",
+    "userType" : "End User",
+    "createDts" : 1388769330000,
+    "updateDts" : 1388769330000,
+    "responses" : [ {
+      "response" : "They are included in a separate download.(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "End User",
+      "answeredDate" : 1399961730000
+    } ]
+  }, {
+    "question" : "Are there alternate licenses? (SAMPLE)",
+    "username" : "Colby TEST",
+    "userType" : "Project Manager",
+    "createDts" : 1362298530000,
+    "updateDts" : 1362298530000,
+    "responses" : [ {
+      "response" : "You can ask their support team for a custom commerical license that should cover you needs.(SAMPLE)",
+      "username" : "Colby TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391447730000
+    }, {
+      "response" : "We've try to get an alternate license and we've been waiting for over 6 months for thier legal department.(SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "End User",
+      "answeredDate" : 1391447730000
+    } ]
+  }, {
+    "question" : "Which os platforms does this support? (SAMPLE)",
+    "username" : "Jack TEST",
+    "userType" : "End User",
+    "createDts" : 1328379330000,
+    "updateDts" : 1328379330000,
+    "responses" : [ {
+      "response" : "CentOS 6.5 and MorphOS(SAMPLE)",
+      "username" : "Dawson TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1391537730000
+    }, {
+      "response" : "'I think they also have Windows  and ReactOS support. (SAMPLE)",
+      "username" : "Cathy TEST",
+      "userType" : "Project Manager",
+      "answeredDate" : 1393834530000
+    } ]
+  } ],
   "attributes" : [ {
     "typeDescription" : "Type",
     "codeDescription" : "Application",
@@ -7176,6 +7447,10 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "Software License Type",
     "codeDescription" : "GOSS Licensed under Apache License, Version 2",
     "important" : false
+  }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -7187,14 +7462,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://www.owfgoss.org/",
@@ -7217,20 +7494,7 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ {
-    "username" : "Cathy TEST",
-    "userType" : "End User",
-    "comment" : "This was perfect it solved our issues and provided tools for things we didn't even anticipate.",
-    "rating" : 3,
-    "title" : "Just what I was looking for (SAMPLE)",
-    "usedTimeCode" : "> 3 years",
-    "lastUsed" : 1381644930000,
-    "updateDate" : 1391447730000,
-    "organization" : "DCGS Army",
-    "recommend" : false,
-    "pros" : [ ],
-    "cons" : [ "Bulky" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 }, {
   "componentId" : 53,
@@ -7302,15 +7566,23 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRL",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
   }, {
     "typeDescription" : "Life Cycle Stage",
+    "codeDescription" : "Development",
+    "important" : false
+  }, {
+    "typeDescription" : "Funded (SAMPLE)",
+    "codeDescription" : "Yes",
+    "important" : false
+  }, {
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
+    "important" : false
+  }, {
+    "typeDescription" : "Lifecycle Stage (SAMPLE)",
     "codeDescription" : "Development",
     "important" : false
   } ],
@@ -7324,14 +7596,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Colby TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Cathy TEST",
+    "name" : "Dawson TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "http://www.spacedynamics.org/products/vantage",
@@ -7354,20 +7628,7 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "email David.Marchant@sdl.usu.edu"
   } ],
-  "reviews" : [ {
-    "username" : "Abby TEST",
-    "userType" : "End User",
-    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
-    "rating" : 3,
-    "title" : "Great but missing features (SAMPLE)",
-    "usedTimeCode" : "< 3 Months",
-    "lastUsed" : 1367309730000,
-    "updateDate" : 1391447730000,
-    "organization" : "DCGS Army",
-    "recommend" : false,
-    "pros" : [ ],
-    "cons" : [ "Poorly Tested" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 }, {
   "componentId" : 54,
@@ -7439,10 +7700,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "No",
     "important" : false
   }, {
-    "typeDescription" : "Government Point of Contact Organization",
-    "codeDescription" : "NRL",
-    "important" : false
-  }, {
     "typeDescription" : "ITAR Export Approved",
     "codeDescription" : "No",
     "important" : false
@@ -7458,6 +7715,18 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "OWF Compatible Widget (Y/N)",
     "codeDescription" : "Yes",
     "important" : false
+  }, {
+    "typeDescription" : "Lifecycle Stage (SAMPLE)",
+    "codeDescription" : "Development",
+    "important" : false
+  }, {
+    "typeDescription" : "Protection/ Impact Level (SAMPLE)",
+    "codeDescription" : "DoD MAC Level",
+    "important" : false
+  }, {
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -7469,14 +7738,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
     "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://confluence.di2e.net/display/DI2E/WESS+Documentation",
@@ -7499,20 +7770,7 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : "https://stash.di2e.net/projects/USU/repos/wess-widget/browse"
   } ],
-  "reviews" : [ {
-    "username" : "Colby TEST",
-    "userType" : "End User",
-    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
-    "rating" : 2,
-    "title" : "Great but missing features (SAMPLE)",
-    "usedTimeCode" : "< 1 month'",
-    "lastUsed" : 1328379330000,
-    "updateDate" : 1391447730000,
-    "organization" : "DCGS Navy",
-    "recommend" : true,
-    "pros" : [ "Well tested", "Active Development" ],
-    "cons" : [ "Legacy system" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 }, {
   "componentId" : 55,
@@ -7595,6 +7853,18 @@ MOCKDATA2.componentList = [ {
     "typeDescription" : "OWF Compatible Widget (Y/N)",
     "codeDescription" : "Yes",
     "important" : false
+  }, {
+    "typeDescription" : "License Type (SAMPLE)",
+    "codeDescription" : "FOSS",
+    "important" : false
+  }, {
+    "typeDescription" : "Lifecycle Stage (SAMPLE)",
+    "codeDescription" : "Development",
+    "important" : false
+  }, {
+    "typeDescription" : "Accreditation Status (SAMPLE)",
+    "codeDescription" : "ATO",
+    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -7606,14 +7876,16 @@ MOCKDATA2.componentList = [ {
   } ],
   "contacts" : [ {
     "postionDescription" : "Technical POC",
-    "name" : "Dawson TEST",
+    "name" : "Abby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   }, {
     "postionDescription" : "Government POC",
-    "name" : "Jack TEST",
+    "name" : "Colby TEST",
     "email" : "sample_email@test.com",
-    "phone" : "555-555-5555"
+    "phone" : "555-555-5555",
+    "organization" : "sample organization"
   } ],
   "resources" : [ {
     "name" : "https://wiki.macefusion.com/display/Widgets/Installing+Vega+%283D+Map+Widget%29+into+OWF",
@@ -7636,22 +7908,74 @@ MOCKDATA2.componentList = [ {
     "description" : null,
     "link" : null
   } ],
-  "reviews" : [ {
-    "username" : "Jack TEST",
-    "userType" : "End User",
-    "comment" : "This is a great product however, it's missing what I think are critical features.  Hopefully, they are working on it for future updates.",
-    "rating" : 2,
-    "title" : "Great but missing features (SAMPLE)",
-    "usedTimeCode" : "< 6 Months",
-    "lastUsed" : 1367309730000,
-    "updateDate" : 1399961730000,
-    "organization" : "NSA",
-    "recommend" : true,
-    "pros" : [ "Well tested", "Compact" ],
-    "cons" : [ "Security Concerns" ]
-  } ],
+  "reviews" : [ ],
   "dependencies" : [ ]
 } ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*jshint quotmark:single */
