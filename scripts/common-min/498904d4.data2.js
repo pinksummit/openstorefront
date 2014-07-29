@@ -115,7 +115,19 @@ MOCKDATA2.componentList = [ {
       "answeredDate" : 1398845730000
     } ]
   } ],
-  "attributes" : [ {
+  "attributes" : [  {
+    "type" : "DI2E-SVCV4-A",
+    "typeDescription" : "SvcV-4 Function",
+    "code" : "3.1",
+    "codeDescription" : "3.1 Planning and Direction",
+    "important" : false
+  }, {
+    "type" : "DI2E-SVCV4-A",
+    "typeDescription" : "SvcV-4 Function",
+    "code" : "1.4",
+    "codeDescription" : "1.4 Orchestration Management",
+    "important" : false
+  }, {
     "type" : "TYPE",
     "typeDescription" : "Type",
     "code" : "APP",
@@ -151,7 +163,7 @@ MOCKDATA2.componentList = [ {
     "code" : "OPR",
     "codeDescription" : "Operations",
     "important" : false
-  } ],
+  }],
   "tags" : [ ],
   "metadata" : [ {
     "label" : "Provides Web Hooks via RPC service(SAMPLE)",
