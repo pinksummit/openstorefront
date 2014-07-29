@@ -5306,28 +5306,28 @@ MOCKDATA.filters = [ {
     "allowMutlipleFlg" : false,
     "codes" : [ {
       "code" : "NA",
-      "label" : "NA – No Evaluation Planned",
-      "description" : "",
+      "label" : "NA - No Evaluation Planned",
+      "description" : "Planned Evaluation does not apply to DI2E Priorities, Focus Areas, Reference Architecture, Storefront (e.g. Guidebooks, reusable Contract Language, Lessons Learned, etc.). N/A indicates no evaluation is expected.",
       "fullTextAvailable" : false
     }, {
       "code" : "LEVEL0",
-      "label" : "Level 0 – Available for Reuse/Not Evaluated",
-      "description" : "",
+      "label" : "Level 0 - Available for Reuse/Not Evaluated",
+      "description" : "Asset is added to the Storefront for reuse or consumption. Asset has not been evaluated for Enterprise readiness or Conformance. Asset will enter DI2E Clearinghouse Process to be assessed for potential reuse. Asset has completed the Component Prep and Analysis phase.",
       "fullTextAvailable" : false
     }, {
       "code" : "LEVEL1",
-      "label" : "Level 1 – Initial Reuse Analysis",
-      "description" : "",
+      "label" : "Level 1 - Initial Reuse Analysis",
+      "description" : "Inspection portion of DI2E Framework Evaluation Checklist complete. These questions focus mainly on the reuse potential (Visible, Accessible, and Understandable) by analysis of the information provided. This level does not represent the pass or fail, the Consumer must read the Evaluation Report.",
       "fullTextAvailable" : false
     }, {
       "code" : "LEVEL2",
-      "label" : "Level 2 – Integration and Test",
-      "description" : "",
+      "label" : "Level 2 - Integration and Test",
+      "description" : "Integration and Test portion of the DI2E Framework Evaluation Checklist complete. These questions focus on the interoperability and ease of reuse, and will normally include an I&T plan. This level does not indicate a pass or fail of the conformance test. Consumer will read the Test Report linked in the storefront entry for program functionality.",
       "fullTextAvailable" : false
     }, {
       "code" : "LEVEL3",
-      "label" : "Level 3 – DI2E Framework Reference Implementation",
-      "description" : "",
+      "label" : "Level 3 - DI2E Framework Reference Implementation",
+      "description" : "Asset has been determined to be reusable and interoperable, appropriately documented, and conformant to applicable DI2E Framework specifications and standards and is integrated into the DI2E Reference Ecosystem.",
       "fullTextAvailable" : false
     } ]
   }, {
