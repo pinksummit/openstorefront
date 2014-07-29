@@ -66,7 +66,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Are samples included? (SAMPLE)",
@@ -288,7 +288,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ {
+    "evaluationSections" : [ {
       "name" : "Discoverable",
       "score" : 0
     }, {
@@ -505,7 +505,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ {
+    "evaluationSections" : [ {
       "name" : "Discoverable",
       "score" : 1
     }, {
@@ -708,7 +708,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which os platforms does this support? (SAMPLE)",
@@ -857,7 +857,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Are samples included? (SAMPLE)",
@@ -1012,7 +1012,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Are samples included? (SAMPLE)",
@@ -1162,7 +1162,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -1345,7 +1345,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -1517,7 +1517,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -1666,7 +1666,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -1818,7 +1818,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -1933,7 +1933,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which os platforms does this support? (SAMPLE)",
@@ -2073,7 +2073,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Are samples included? (SAMPLE)",
@@ -2197,7 +2197,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -2296,7 +2296,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -2395,7 +2395,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -2494,7 +2494,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -2593,7 +2593,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
@@ -2721,7 +2721,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Does this support the 2.0 specs? (SAMPLE)",
@@ -2869,7 +2869,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Are there alternate licenses? (SAMPLE)",
@@ -3039,7 +3039,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
@@ -3177,7 +3177,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -3284,7 +3284,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -3396,7 +3396,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -3533,7 +3533,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Are there alternate licenses? (SAMPLE)",
@@ -3698,7 +3698,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which os platforms does this support? (SAMPLE)",
@@ -3864,7 +3864,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ {
+    "evaluationSections" : [ {
       "name" : "Discoverable",
       "score" : 2
     }, {
@@ -4130,7 +4130,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -4240,7 +4240,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -4392,7 +4392,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -4544,7 +4544,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Does this support the 2.0 specs? (SAMPLE)",
@@ -4717,7 +4717,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Does this support the 2.0 specs? (SAMPLE)",
@@ -4884,7 +4884,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -5048,7 +5048,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -5212,7 +5212,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -5361,7 +5361,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -5540,7 +5540,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -5723,7 +5723,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -5901,7 +5901,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -6026,7 +6026,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -6155,7 +6155,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -6312,7 +6312,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Does this support the 2.0 specs? (SAMPLE)",
@@ -6514,7 +6514,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
@@ -6727,7 +6727,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which os platforms does this support? (SAMPLE)",
@@ -6900,7 +6900,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Which version supports y-docs 1.5+? (SAMPLE)",
@@ -7068,7 +7068,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ {
+    "evaluationSections" : [ {
       "name" : "Discoverable",
       "score" : 3
     }, {
@@ -7277,7 +7277,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -7435,7 +7435,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -7564,7 +7564,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -7722,7 +7722,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -7830,7 +7830,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -7932,7 +7932,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -8042,7 +8042,7 @@ MOCKDATA2.componentList = [ {
     "currentLevelCode" : "NA",
     "reviewedVersion" : null,
     "evaluationSchedule" : [ ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -8157,7 +8157,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -8284,7 +8284,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -8425,7 +8425,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ {
     "question" : "Are there alternate licenses? (SAMPLE)",
@@ -8573,7 +8573,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
@@ -8758,7 +8758,7 @@ MOCKDATA2.componentList = [ {
       "actualCompeletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaulationSections" : [ ]
+    "evaluationSections" : [ ]
   },
   "questions" : [ ],
   "attributes" : [ {
