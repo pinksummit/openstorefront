@@ -158,7 +158,7 @@ MOCKDATA2.componentList = [ {
     "value" : "Yes"
   } ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/CAS.jpg",
+    "link" : "images/old_site/CAS.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -388,7 +388,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/clavin_logo.png",
+    "link" : "images/old_site/clavin_logo.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -935,7 +935,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/satellite-icon.png",
+    "link" : "images/old_site/satellite-icon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -1090,7 +1090,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/satellite-icon.png",
+    "link" : "images/old_site/satellite-icon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -1215,7 +1215,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/satellite-icon.png",
+    "link" : "images/old_site/satellite-icon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -1392,7 +1392,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/CoTIcon.png",
+    "link" : "images/old_site/CoTIcon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -2021,7 +2021,7 @@ MOCKDATA2.componentList = [ {
     "value" : "Unfiltered"
   } ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/DIBProjectLogo.png",
+    "link" : "images/old_site/DIBProjectLogo.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -2941,7 +2941,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/IdAMLogoMed-Size.png",
+    "link" : "images/old_site/IdAMLogoMed-Size.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -3099,7 +3099,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/IdAMLogoMed-Size.png",
+    "link" : "images/old_site/IdAMLogoMed-Size.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -3222,7 +3222,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/DI2E Framework RA.png",
+    "link" : "images/old_site/DI2E Framework RA.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -3471,7 +3471,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/ddf-logo.jpg",
+    "link" : "images/old_site/ddf-logo.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -3797,7 +3797,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/eDibIcon.png",
+    "link" : "images/old_site/eDibIcon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -4043,7 +4043,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/core-map-api.png",
+    "link" : "images/old_site/core-map-api.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -4173,7 +4173,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/GAPS.jpg",
+    "link" : "images/old_site/GAPS.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -4283,7 +4283,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/GAPS.jpg",
+    "link" : "images/old_site/GAPS.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -4435,7 +4435,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/GAPS.jpg",
+    "link" : "images/old_site/GAPS.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -4627,7 +4627,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -4794,7 +4794,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -4937,7 +4937,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -5101,7 +5101,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -5265,7 +5265,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -5410,7 +5410,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -5592,7 +5592,7 @@ MOCKDATA2.componentList = [ {
     "value" : "YES"
   } ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -5775,7 +5775,7 @@ MOCKDATA2.componentList = [ {
     "value" : "Unfiltered"
   } ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/gvs.png",
+    "link" : "images/old_site/gvs.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -5950,7 +5950,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/eXMeritus.jpg",
+    "link" : "images/old_site/eXMeritus.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -6216,7 +6216,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/grid.jpg",
+    "link" : "images/old_site/grid.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -6403,7 +6403,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/Database-Icon.jpg",
+    "link" : "images/old_site/Database-Icon.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -6611,7 +6611,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/Search.jpg",
+    "link" : "images/old_site/Search.jpg",
     "contentType" : "image/jpg",
     "caption" : null,
     "description" : null
@@ -6799,7 +6799,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/iSpatialLogosquare.png",
+    "link" : "images/old_site/iSpatialLogosquare.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -6972,7 +6972,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/maps-icon.png",
+    "link" : "images/old_site/maps-icon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -7190,7 +7190,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/JView_Logo_133_81[1].png",
+    "link" : "images/old_site/JView_Logo_133_81[1].png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -7341,7 +7341,7 @@ MOCKDATA2.componentList = [ {
     "value" : "Yes"
   } ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/maps-icon.png",
+    "link" : "images/old_site/maps-icon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -7475,7 +7475,7 @@ MOCKDATA2.componentList = [ {
     "value" : "YES"
   } ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/security.png",
+    "link" : "images/old_site/security.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -7628,7 +7628,7 @@ MOCKDATA2.componentList = [ {
     "value" : "Unfiltered"
   } ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/OpenSextanticon.png",
+    "link" : "images/old_site/OpenSextanticon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -7773,7 +7773,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/OpenStack.png",
+    "link" : "images/old_site/OpenStack.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -7875,7 +7875,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/OpenStack.png",
+    "link" : "images/old_site/OpenStack.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -7977,7 +7977,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/ologo.png",
+    "link" : "images/old_site/ologo.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -8077,7 +8077,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/ologo.png",
+    "link" : "images/old_site/ologo.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -8204,7 +8204,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/OMPIcon.png",
+    "link" : "images/old_site/OMPIcon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -8343,7 +8343,7 @@ MOCKDATA2.componentList = [ {
   } ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/Ozone-Banner_30x110.png",
+    "link" : "images/old_site/Ozone-Banner_30x110.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -8491,7 +8491,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/wess_logo.png",
+    "link" : "images/old_site/wess_logo.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -8634,7 +8634,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/wess_logo.png",
+    "link" : "images/old_site/wess_logo.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
@@ -8813,7 +8813,7 @@ MOCKDATA2.componentList = [ {
   "tags" : [ ],
   "metadata" : [ ],
   "componentMedia" : [ {
-    "link" : "images/oldsite/maps-icon.png",
+    "link" : "images/old_site/maps-icon.png",
     "contentType" : "image/png",
     "caption" : null,
     "description" : null
