@@ -47,23 +47,25 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      // "estimatedCompeletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
+      // "actualCompeletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -281,23 +283,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : "1.0",
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1392138930000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1392138930000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ {
@@ -498,23 +500,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : "1.0",
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1392138930000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1392138930000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ {
@@ -850,23 +852,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -1005,23 +1007,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -1155,23 +1157,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -1338,23 +1340,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -1510,23 +1512,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -1926,23 +1928,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -2862,23 +2864,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -3032,23 +3034,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -3389,23 +3391,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -3691,23 +3693,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -3857,23 +3859,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : "1.0",
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1392138930000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1392138930000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ {
@@ -4123,23 +4125,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -4233,23 +4235,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -4385,23 +4387,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -4537,23 +4539,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -4710,23 +4712,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -4877,23 +4879,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -5041,23 +5043,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -5205,23 +5207,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -5354,23 +5356,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -5533,23 +5535,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -5716,23 +5718,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -5894,23 +5896,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -6148,23 +6150,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -6305,23 +6307,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -6507,23 +6509,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -6720,23 +6722,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -6893,23 +6895,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -7061,23 +7063,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : "1.0",
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1392138930000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1392138930000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ {
@@ -7270,23 +7272,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -7428,23 +7430,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -7557,23 +7559,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -7715,23 +7717,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -8150,23 +8152,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -8277,23 +8279,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -8418,23 +8420,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -8566,23 +8568,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
@@ -8751,23 +8753,23 @@ MOCKDATA2.componentList = [ {
     "reviewedVersion" : null,
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
-      "estimatedCompeletionDate" : null,
-      "actualCompeletionDate" : 1389460530000,
+      "estimatedCompletionDate" : null,
+      "actualCompletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
-      "estimatedCompeletionDate" : 1392138930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1392138930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL2",
-      "estimatedCompeletionDate" : 1393002930000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393002930000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     }, {
       "evaluationLevelCode" : "LEVEL3",
-      "estimatedCompeletionDate" : 1393694130000,
-      "actualCompeletionDate" : null,
+      "estimatedCompletionDate" : 1393694130000,
+      "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
     "evaluationSections" : [ ]
