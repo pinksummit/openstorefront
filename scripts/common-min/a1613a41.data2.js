@@ -48,9 +48,7 @@ MOCKDATA2.componentList = [ {
     "evaluationSchedule" : [ {
       "evaluationLevelCode" : "LEVEL0",
       "estimatedCompletionDate" : null,
-      // "estimatedCompeletionDate" : null,
       "actualCompletionDate" : 1389460530000,
-      // "actualCompeletionDate" : 1389460530000,
       "levelStatus" : "C"
     }, {
       "evaluationLevelCode" : "LEVEL1",
