@@ -2754,6 +2754,12 @@ MOCKDATA2.componentList = [ {
       } ]
     } ],
     "attributes" : [ {
+      "type" : "DI2E-SVCV4-A",
+      "typeDescription": "SvcV-4 Function",
+      "code" : "1.2.1",
+      "codeDescription": "1.2.1 Identity and Access Management",
+      "important": false
+    }, {
       "type" : "TYPE",
       "typeDescription" : "Type",
       "code" : "SPEC",
@@ -7451,6 +7457,12 @@ MOCKDATA2.componentList = [ {
     },
     "questions" : [ ],
     "attributes" : [ {
+      "type" : "DI2E-SVCV4-A",
+      "code" : "1.2.1",
+      "typeDescription" : "SvcV-4 Function",
+      "codeDescription" : "1.2.1 Identity and Access Management",
+      "important" : false
+    }, {
       "type" : "TYPE",
       "typeDescription" : "Type",
       "code" : "APP",
@@ -9622,6 +9634,9 @@ MOCKDATA2.resultsList = [ {
     "views" : 93,
     "totalNumberOfReviews" : 11,
     "attributes" : [ {
+      "type" : "DI2E-SVCV4-A",
+      "code" : "1.2.1",
+    }, {
       "type" : "TYPE",
       "code" : "SPEC"
     }, {
@@ -10722,6 +10737,9 @@ MOCKDATA2.resultsList = [ {
     "views" : 175,
     "totalNumberOfReviews" : 7,
     "attributes" : [ {
+      "type" : "DI2E-SVCV4-A",
+      "code" : "1.2.1",
+    }, {
       "type" : "TYPE",
       "code" : "APP"
     }, {
@@ -11113,8 +11131,8 @@ MOCKDATA2.resultsList = [ {
   }, {
     "listingType" : "Article",
     "componentId" : null,
-    "name" : "Security Management",
-    "description" : "Security Management Article.....",
+    "name" : "IDAM Landing Page",
+    "description" : "Detailed information on the SvcV-4 Section 1.2.1 Identity and Access Management.....",
     "organization" : "PMO",
     "lastActivityDate" : 1406659762226,
     "updateDts" : 1406659762226,
@@ -11122,8 +11140,11 @@ MOCKDATA2.resultsList = [ {
     "views" : 0,
     "totalNumberOfReviews" : 0,
     "attributes" : [ {
-      "articleAttributeType" : "CATEGORY",
-      "articleAttributeCode" : "SECM",
+      "type" : "CATEGORY",
+      "code" : "SECM",
+    }, {
+      "type" : "DI2E-SVCV4-A",
+      "code" : "1.2.1",
     } ],
     "tags" : [ ],
     "route" : "views/temp/landingpage.html"
