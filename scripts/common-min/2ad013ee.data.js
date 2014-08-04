@@ -3498,7 +3498,7 @@ MOCKDATA.filters = [ {
   }, {
     "type" : "DI2ESTATE",
     "description" : "DI2E State",
-    "visibleFlg" : false,
+    "visibleFlg" : true,
     "requiredFlg" : false,
     "archtechtureFlg" : false,
     "importantFlg" : false,
@@ -3530,95 +3530,6 @@ MOCKDATA.filters = [ {
       "fullTextAvailable" : false
     } ]
   }, {
-    "type" : "CATEGORY",
-    "description" : "Category",
-    "visibleFlg" : false,
-    "requiredFlg" : false,
-    "archtechtureFlg" : false,
-    "importantFlg" : false,
-    "allowMutlipleFlg" : false,
-    "codes" : [ {
-      "code" : "ANPP",
-      "label" : "Analysis, Prediction and Production",
-      "description" : "Includes assets that provide the ability to integrate, evaluate, interpret, and predict knowledge and information to develop intelligence and forecast the future state to enable awareness and provide actionable information",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "BADATA",
-      "label" : "BA Data Dissemination and Relay",
-      "description" : "Includes assets that provide the ability to present, distribute, or make available intelligence, information and environmental content and products that enable understanding of the environment to military and national decision-makers",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "COLLAB",
-      "label" : "Collaboration",
-      "description" : "Includes assets that allow people to easily share knowledge, status, thoughts, and related information artifacts.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "COLLECTION",
-      "label" : "Collection",
-      "description" : "Includes assets that provide the ability to gather data and obtain required information to satisfy information needs.Includes assets that provide the ability to gather data and obtain required information to satisfy information needs.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "DATAA",
-      "label" : "Data Analytics",
-      "description" : "Includes assets that provide advanced data analytics by finding relationships within and among DI2E data holdings. In particular several Data Enrichment services providing entity extraction and association and content categorization.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "DATAD",
-      "label" : "Data Discovery",
-      "description" : "Includes assets that supports a user's query to discover information by conducting searches and enable advanced manipulation search request and results",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "DATAH",
-      "label" : "Data Handling",
-      "description" : "Includes assets that provide data management and processing functions used to maintain and manage DI2E data stores.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "DATAM",
-      "label" : "Data Mediation",
-      "description" : "Includes assets that enable the dynamic resolution of representational differences among disparate data",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "EMAN",
-      "label" : "Enterprise Management",
-      "description" : "Includes assets to enable consistent service level agreement and quality of service reporting; service/site monitoring; consistent use of domain names; and time synchronization.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "ORCHM",
-      "label" : "Orchestration Management",
-      "description" : "Includes assets that provide automated SOA service as well as human operation modeling and execution.Includes assets that provide automated SOA service as well as human operation modeling and execution.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "OTH",
-      "label" : "Other",
-      "description" : "Includes assets that are not covered by the DI2E SvcV-4 categories.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "PLAN",
-      "label" : "Planning and Direction",
-      "description" : "Includes assets that provide the ability to synchronize and integrate the activities of collection, processing, exploitation, analysis and dissemination resources to meet BA information requirements.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "PROCESS",
-      "label" : "Processing and Exploitation",
-      "description" : "Includes assets that provide the ability to transform collected information into forms suitable for further analysis and/or action by man or machine.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "SECM",
-      "label" : "Security Management",
-      "description" : "Includes assets by which people and systems are identified, vetted, credentialed, authenticated, authorized for access to resources, and held accountable for their actions.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "SERVM",
-      "label" : "Service Management",
-      "description" : "Includes assets that provide publishing of, querying about, subscription and configuration management of services.",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "VIZ",
-      "label" : "Visualization",
-      "description" : "Includes assets that enable users to view and analyze data.",
-      "fullTextAvailable" : false
-    } ]
-  }, {
     "type" : "OWFCOMP",
     "description" : "OWF Compatible",
     "visibleFlg" : false,
@@ -3634,30 +3545,6 @@ MOCKDATA.filters = [ {
     }, {
       "code" : "N",
       "label" : "No",
-      "description" : "",
-      "fullTextAvailable" : false
-    } ]
-  }, {
-    "type" : "SERVREPO",
-    "description" : "Service Registry / Repository",
-    "visibleFlg" : false,
-    "requiredFlg" : false,
-    "archtechtureFlg" : false,
-    "importantFlg" : false,
-    "allowMutlipleFlg" : false,
-    "codes" : [ {
-      "code" : "ER2",
-      "label" : "ER2",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "FORGE.MIL",
-      "label" : "http://forge.mil/",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "DSE",
-      "label" : "DSE",
       "description" : "",
       "fullTextAvailable" : false
     } ]
@@ -3770,8 +3657,8 @@ MOCKDATA.filters = [ {
     } ]
   }, {
     "type" : "TYPE",
-    "description" : "Type",
-    "visibleFlg" : false,
+    "description" : "Component Type",
+    "visibleFlg" : true,
     "requiredFlg" : false,
     "archtechtureFlg" : false,
     "importantFlg" : false,
@@ -3859,7 +3746,7 @@ MOCKDATA.filters = [ {
   }, {
     "type" : "DI2E-SVCV4-A",
     "description" : "DI2E SvcV-4 Alignment",
-    "visibleFlg" : false,
+    "visibleFlg" : true,
     "requiredFlg" : false,
     "archtechtureFlg" : false,
     "importantFlg" : false,
@@ -5299,7 +5186,7 @@ MOCKDATA.filters = [ {
   }, {
     "type" : "DI2ELEVEL",
     "description" : "DI2E Evaluation Level",
-    "visibleFlg" : false,
+    "visibleFlg" : true,
     "requiredFlg" : false,
     "archtechtureFlg" : false,
     "importantFlg" : false,
@@ -5360,89 +5247,6 @@ MOCKDATA.filters = [ {
       "fullTextAvailable" : false
     }, {
       "code" : "OTHER",
-      "label" : "Other",
-      "description" : "",
-      "fullTextAvailable" : false
-    } ]
-  }, {
-    "type" : "CLASSIFICATION",
-    "description" : "Security Classification of Description",
-    "visibleFlg" : false,
-    "requiredFlg" : false,
-    "archtechtureFlg" : false,
-    "importantFlg" : false,
-    "allowMutlipleFlg" : false,
-    "codes" : [ {
-      "code" : "U",
-      "label" : "Unclassified",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "U/FOUO",
-      "label" : "Unclassified/FOUO",
-      "description" : "Offical Use Only",
-      "fullTextAvailable" : false
-    } ]
-  }, {
-    "type" : "PRILICENSE",
-    "description" : "Primary License",
-    "visibleFlg" : false,
-    "requiredFlg" : false,
-    "archtechtureFlg" : false,
-    "importantFlg" : false,
-    "allowMutlipleFlg" : false,
-    "codes" : [ {
-      "code" : "APCH2",
-      "label" : "Apache License 2.0",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "BSD3",
-      "label" : "BSD 3-Clause \"New\" or \"Revised\" license",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "BD2",
-      "label" : "BSD 2-Clause \"Simplified\" or \"FreeBSD\" license",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "GPL",
-      "label" : "GNU General Public License (GPL)",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "LGPL",
-      "label" : "GNU Library or \"Lesser\" General Public License (LGPL)",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "MIT",
-      "label" : "MIT license",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "MPL2",
-      "label" : "Mozilla Public License 2.0",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "CDDL",
-      "label" : "Common Development and Distribution License",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "EPL",
-      "label" : "Eclipse Public License",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "PUBLIC",
-      "label" : "Public Domain",
-      "description" : "",
-      "fullTextAvailable" : false
-    }, {
-      "code" : "OTH",
       "label" : "Other",
       "description" : "",
       "fullTextAvailable" : false
