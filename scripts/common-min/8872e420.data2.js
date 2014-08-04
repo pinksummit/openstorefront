@@ -117,12 +117,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "LICTYPE",
     "typeDescription" : "License Type",
     "code" : "OPENSRC",
@@ -329,12 +323,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL1",
     "codeDescription" : "Level 1 - Initial Reuse Analysis",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "LICCLASS",
     "typeDescription" : "License Classification",
@@ -863,12 +851,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -1026,12 +1008,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -1184,12 +1160,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -1308,12 +1278,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -1453,18 +1417,6 @@ MOCKDATA2.componentList = [ {
     "code" : null,
     "codeDescription" : null,
     "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   } ],
   "tags" : [ ],
   "metadata" : [ ],
@@ -1551,12 +1503,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -1799,18 +1745,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -1953,12 +1887,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -2142,12 +2070,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -2245,12 +2167,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -2366,12 +2282,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -2528,12 +2438,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -2670,12 +2574,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -2817,12 +2715,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -2954,12 +2846,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -3090,12 +2976,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "LIFECYCSTG",
     "typeDescription" : "Lifecycle Stage",
     "code" : "DEV",
@@ -3213,12 +3093,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -3388,12 +3262,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -3500,42 +3368,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "LICTYPE",
     "typeDescription" : "License Type",
@@ -3703,12 +3535,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -3862,18 +3688,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -5763,12 +5577,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "Y",
@@ -5953,12 +5761,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -6115,12 +5917,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -6318,12 +6114,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -6480,12 +6270,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -6635,20 +6419,8 @@ MOCKDATA2.componentList = [ {
   }, {
     "type" : "DI2E-SVCV4-A",
     "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
     "code" : "2.2",
     "codeDescription" : "2.2 Visualization",
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
     "important" : false
   }, {
     "type" : "LICCLASS",
@@ -7448,24 +7220,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -7638,12 +7392,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -7857,12 +7605,6 @@ MOCKDATA2.componentList = [ {
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
   }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
-  }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
     "code" : "N",
@@ -8014,12 +7756,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
@@ -8253,12 +7989,6 @@ MOCKDATA2.componentList = [ {
     "code" : "LEVEL0",
     "codeDescription" : "Level 0 - Available for Reuse/Not Evaluated",
     "important" : true
-  }, {
-    "type" : "DI2E-SVCV4-A",
-    "typeDescription" : "DI2E SvcV-4 Alignment",
-    "code" : null,
-    "codeDescription" : null,
-    "important" : false
   }, {
     "type" : "CEEAR",
     "typeDescription" : "Commercial Exportable via EAR",
