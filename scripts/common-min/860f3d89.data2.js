@@ -251,7 +251,70 @@ MOCKDATA2.componentList = [ {
       "actualCompletionDate" : null,
       "levelStatus" : "N"
     } ],
-    "evaluationSections" : [ ]
+    "evaluationSections" : [ {
+      "name" : "Discoverable",
+      "score" : 3
+    }, {
+      "name" : "Accessible",
+      "score" : 4
+    }, {
+      "name" : "Documentation",
+      "score" : 3
+    }, {
+      "name" : "Deployable",
+      "score" : 4
+    }, {
+      "name" : "Usable",
+      "score" : 5
+    }, {
+      "name" : "Error Handling",
+      "score" : 2
+    }, {
+      "name" : "Integrable",
+      "score" : 1
+    }, {
+      "name" : "I/O Validation",
+      "score" : 2
+    }, {
+      "name" : "Testing",
+      "score" : 0
+    }, {
+      "name" : "Monitoring",
+      "score" : 2
+    }, {
+      "name" : "Performance",
+      "score" : 1
+    }, {
+      "name" : "Scalability",
+      "score" : 1
+    }, {
+      "name" : "Security",
+      "score" : 4
+    }, {
+      "name" : "Maintainability",
+      "score" : 3
+    }, {
+      "name" : "Community",
+      "score" : 3
+    }, {
+      "name" : "Change Management",
+      "score" : 2
+    }, {
+      "name" : "CA",
+      "score" : 3
+    }, {
+      "name" : "Licensing",
+      "score" : 4
+    }, {
+      "name" : "Roadmap",
+      "score" : 0
+    }, {
+      "name" : "Willingness",
+      "score" : 5
+    }, {
+      "name" : "Architecture Alignment",
+      "score" : 5
+    } ]
   },
   "questions" : [ ],
   "attributes" : [ {
