@@ -187,10 +187,8 @@ MOCKDATA2.componentList = [ {
     "updateDate" : 1391537730000,
     "organization" : "NSA",
     "recommend" : false,
-    "pros" : [ {
+    "pros" : [  {
       "text" : "Well Tested"
-    }, {
-      "text" : "Well tested"
     } ],
     "cons" : [ {
       "text" : "Poorly Tested"
@@ -393,7 +391,7 @@ MOCKDATA2.componentList = [ {
     "organization" : "DCGS Navy",
     "recommend" : false,
     "pros" : [ {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     }, {
       "text" : "Compact"
     } ],
@@ -1552,7 +1550,7 @@ MOCKDATA2.componentList = [ {
     "pros" : [ {
       "text" : "Compact"
     }, {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     } ],
     "cons" : [ ]
   }, {
@@ -1816,7 +1814,7 @@ MOCKDATA2.componentList = [ {
     "organization" : "DCGS Navy",
     "recommend" : false,
     "pros" : [ {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     } ],
     "cons" : [ ]
   } ],
@@ -1955,7 +1953,7 @@ MOCKDATA2.componentList = [ {
     "organization" : "NSA",
     "recommend" : false,
     "pros" : [ {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     }, {
       "text" : "Open Source"
     } ],
@@ -3162,7 +3160,7 @@ MOCKDATA2.componentList = [ {
     "organization" : "Private Company",
     "recommend" : false,
     "pros" : [ {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     }, {
       "text" : "Compact"
     } ],
@@ -3615,7 +3613,7 @@ MOCKDATA2.componentList = [ {
     "pros" : [ {
       "text" : "Open Source"
     }, {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     } ],
     "cons" : [ {
       "text" : "Poor Documentation"
@@ -3963,9 +3961,7 @@ MOCKDATA2.componentList = [ {
     "updateDate" : 1391447730000,
     "organization" : "DCGS Navy",
     "recommend" : false,
-    "pros" : [ {
-      "text" : "Well tested"
-    }, {
+    "pros" : [  {
       "text" : "Well Tested"
     } ],
     "cons" : [ ]
@@ -4137,7 +4133,7 @@ MOCKDATA2.componentList = [ {
     "organization" : "DCGS Navy",
     "recommend" : true,
     "pros" : [ {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     } ],
     "cons" : [ ]
   }, {
@@ -4152,7 +4148,7 @@ MOCKDATA2.componentList = [ {
     "organization" : "NGA",
     "recommend" : true,
     "pros" : [ {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     }, {
       "text" : "Reliable"
     } ],
@@ -5335,7 +5331,7 @@ MOCKDATA2.componentList = [ {
     "organization" : "Private Company",
     "recommend" : false,
     "pros" : [ {
-      "text" : "Well tested"
+      "text" : "Well Tested"
     } ],
     "cons" : [ ]
   }, {
@@ -6024,9 +6020,7 @@ MOCKDATA2.componentList = [ {
     "updateDate" : 1393834530000,
     "organization" : "DCGS Army",
     "recommend" : false,
-    "pros" : [ {
-      "text" : "Well tested"
-    }, {
+    "pros" : [  {
       "text" : "Well Tested"
     } ],
     "cons" : [ ]
