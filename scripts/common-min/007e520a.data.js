@@ -605,7 +605,7 @@ MOCKDATA.filters = [ {
   }, {
     "type" : "JARALIGNMENT",
     "description" : "JARM ESL Alignment",
-    "visibleFlg" : true,
+    "visibleFlg" : false,
     "requiredFlg" : false,
     "archtechtureFlg" : true,
     "importantFlg" : true,
@@ -983,7 +983,7 @@ MOCKDATA.filters = [ {
   }, {
     "type" : "JCAALIGNMENT",
     "description" : "JCA Alignment",
-    "visibleFlg" : true,
+    "visibleFlg" : false,
     "requiredFlg" : false,
     "archtechtureFlg" : true,
     "importantFlg" : true,
@@ -3833,7 +3833,7 @@ MOCKDATA.filters = [ {
   }, {
     "type" : "JCFALIGNMENT",
     "description" : "JCFSL Alignment",
-    "visibleFlg" : true,
+    "visibleFlg" : false,
     "requiredFlg" : false,
     "archtechtureFlg" : true,
     "importantFlg" : true,
