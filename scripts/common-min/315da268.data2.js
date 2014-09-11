@@ -10473,7 +10473,7 @@ MOCKDATA2.resultsList = [ {
   "articleAttributeType" : null,
   "articleAttributeCode" : null,
   "name" : "JView",
-  "description" : "JView is a Java-based API (application programmer's interface) that was developed to reduce the time, cost, & effort associated with the creation of computer visualization applications.    JView provides the programmer with the ability to quickly develop 2-dimensional and 3-dimensional visualization <a href='https://extranet.rl.af.mil/jview/.' title='https://extranet.rl.af.mil/jview/.' target='_blank'> .</a> Formal configuration management and distribution of JView is performed through the Information Management Services program. ...",
+  "description" : "JView is a Java-based API (application programmer's interface) that was developed to reduce the time, cost, & effort associated with the creation of computer visualization applications.    JView provides the programmer with the ability to quickly develop 2-dimensional and 3-dimensional visualization with map information <a href='https://extranet.rl.af.mil/jview/.' title='https://extranet.rl.af.mil/jview/.' target='_blank'> .</a> Formal configuration management and distribution of JView is performed through the Information Management Services program. ...",
   "organization" : "AFRL",
   "lastActivityDate" : null,
   "updateDts" : 1405370213000,
