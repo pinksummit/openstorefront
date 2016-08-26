@@ -8,24 +8,17 @@ Version 2.0
 # 1. Overview
 ------
 
-The DI2E Clearinghouse application is a software cataloging system that
-is used to catalog entries of interest to the DI2E community. 
-Entries include Government off the shelf (GOTS), commercial off the
-shelf (COTS), and Open Source software (OSS). The evaluations
-done by DI2E's Centers of Excellence are displayed in the Clearinghouse 
-and give details on the following:
+Small Satellite Portfolio application is a registry of Small-Satellite Equipment, Software and Services.
+The application provides:
 
--   Ownership
--   Where/How to access the software
--   Software vitals
--   Conformance
+-   Search and Discovery
 -   Links to documentation, source code, and other artifacts
--   Evaluation information
+-   User Review and Questions
+-   Management of registry entries
 
-**DI2E Clearinghouse is developed by Space Dynamics Laboratory for DI2E and is
+**The application is developed by Space Dynamics Laboratory for Small Satellite Portfolio and is
 licensed under Apache V2.**
 
-![Logo](../webapp/client/images/help/di2elogo-sm.png)
 ![Logo](../webapp/client/images/help/sdl.png)
 
 ## 1.1 Release Notes
