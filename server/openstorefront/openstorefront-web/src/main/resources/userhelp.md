@@ -1152,14 +1152,19 @@ To create and implement a template:
 	a.  Click on the **Add** button in the toolbar.
  
     b.  Add Template Blocks to see the visual arrangement and order of fields that will be displayed.
+        
+			i.   Add either a layout or a single temple block.  The initial blank canvas only allows one item.
+			ii.  Add blocks to layouts by dragging and dropping block to the header of the layout to add to.
+			iii. Repeat until desired template is created.
 	
-	c.  Select some Sample Data from an existing entry to see how the data will be represented in
+	c. Select some Sample Data from an existing entry to see how the data will be represented in
 	    the Visual Design tab.
 	
 	d.  The **Code** tab allows for pre and post code to be added.
 	
-	e.  The **Preview** tab shows what an entry using this template will look like.
-	
+	e.  The **Preview** tab shows what an entry using this template will look like. **NOTE:** Preview tab may not show anything until sample data is loaded.  Most blocks only show if data that it relies on is available.  This allows for sparse data to display for the users.
+Some complex designs may require coding.
+
 	f.  Name the template and click Save/Continue when finished.
 	
 	g.  The name should now appear in the Entry Templates table.  Ensure that the template is Active.
@@ -1762,8 +1767,33 @@ scheduled interval.
 **Note:** You can also edit a scheduled report by selecting a report and clicking **Edit** in the toolbar.
 Make any changes to the form and click **Generate**.
 	
+### 3.3.7 Security @ADMIN-TRACKING
+
+The Security Management area consists of the Security Policy and the Shiro Config.
+
+The security policy controls the how the application handles security related items.    Such as adding CORS support.
+Some policies only apply to the built-in security realm.
+
+Shiro Config is used for troubleshoot security realm configuration as well as making it easier to update URL policies.  The application will need to be restarted to apply the changes.  
+Also, note the application will create a backup file of the current policy so an admin can roll it back, if needed.   Only the previous version is backed up.
+
+
+### 3.3.8 Security Roles @ADMIN-TRACKING
+
+This section is used to match up Roles with Users, Permissions, and Data Restrictions.
+
+A table is shown of all of the Security Roles which can be edited and managed.
+ 
+ * Within each role a list of users can be assigned using the **Manage Users** button.  A user can be assigned to more than one role.
+ 
+ * The **Manage Permissions** button is used to assign specific permissions to each role.  Permissions include areas such as various ADMIN permissions, Evaluator, Reports, and API documentation permissions.
+ 
+ * Finally, the **Manage Data Restrictions** section is used to determine what data each Role can access.  Two tabs exist for Data Sources (ER2 and DI2E) and for Data Sensitivity which incorporates Distribution A - F, ITAR, Public, and Sensitive data.
+ 
+**NOTE:**  Data Sources and Data Sensitivity values can be managed from the Data Management->Lookups, see section 3.2.9.
+
 	
-### 3.3.7 System @ADMIN-SYSTEM-MANAGEMENT
+### 3.3.9 System @ADMIN-SYSTEM-MANAGEMENT
 ------
 
 System Tools are provided to aid in troubleshooting.
@@ -1782,33 +1812,23 @@ System Tools and their Purpose:
 -  **Search Control** -           Allows for re-indexing listings.
 -  **Recent Changes Email** -     Allows for sending/previewing a recent change email.
 
+### 3.3.10 System Archives @ADMIN-SYSTEM-MANAGEMENT
 
-### 3.3.8 Security @ADMIN-TRACKING
+System Archives let you back up, or archive the database, as well as import an Archive.
+An archive consists of the database containing entries, user profiles, permissions, and so forth.
+**NOTE:** The archive currently does NOT include externally stored data (ie. media, resources, etc.)
 
-The Security Management area consists of the Security Policy and the Shiro Config.
+From the System Archives section a new Archive can be generated.  Select DB Export to export everything currently available.
+Select  General to specify which entries and highlights are exported.  After the Archive is finished processing, it can be downloaded for safekeeping at a local location.
 
-The security policy controls the how the application handles security related items.    Such as adding CORS support.
-Some policies only apply to the built-in security realm.
+To restore an archive click on _Import Archive_ and select the downloaded file.
+**WARNING:** Importing an archive will temporarily interrupt the application and may cause some jobs to fail.  This process can take several minutes, depending on the size of the Import.
 
-Shiro Config is used for troubleshoot security realm configuration as well as making it easier to update URL policies.  The application will need to be restarted to apply the changes.  
-Also, note the application will create a backup file of the current policy so an admin can roll it back, if needed.   Only the previous version is backed up.
-
-### 3.3.9 Security Roles @ADMIN-TRACKING
-
-This section is used to match up Roles with Users, Permissions, and Data Restrictions.
-
-A table is shown of all of the Security Roles which can be edited and managed.
- 
- * Within each role a list of users can be assigned using the **Manage Users** button.  A user can be assigned to more than one role.
- 
- * The **Manage Permissions** button is used to assign specific permissions to each role.  Permissions include areas such as various ADMIN permissions, Evaluator, Reports, and API documentation permissions.
- 
- * Finally, the **Manage Data Restrictions** section is used to determine what data each Role can access.  Two tabs exist for Data Sources (ER2 and DI2E) and for Data Sensitivity which incorporates Distribution A - F, ITAR, Public, and Sensitive data.
- 
-**NOTE:**  Data Sources and Data Sensitivity values can be managed from the Data Management->Lookups, see section 3.2.9.
+AFTER the import is finished re-indexing will be needed.  This is done from the Application Management, System, Search Control tab by clicking on **Re-index Listings**.  
 
 
-### 3.3.10 Tracking @ADMIN-TRACKING
+
+### 3.3.11 Tracking @ADMIN-TRACKING
 
 The application tracks internal user logins, Entry/Resources views,
 and Article views. The application also can be integrated with external
@@ -1821,7 +1841,7 @@ The events are also aggregated into various system generated reports which
 are accessible via the Reports Admin Tool.
 
 
-### 3.3.11 API Documentation @API-DOCS
+### 3.3.12 API Documentation @API-DOCS
 ------
 
 This contains the documentation for the Application Programming Interface, or API.  It
