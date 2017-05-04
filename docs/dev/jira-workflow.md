@@ -46,3 +46,21 @@ Example: Updating development documentation.
 
 ## Build
 A build ticket is created for each release.  It contains all move instructions, environment changes, and configuration changes needed for the release.
+
+## Label legend
+
+**source-customer** – External user suggestion / direct
+
+**source-community** – From community feedback / indirect
+
+**source-pmo** – DI2E project management group
+
+**source-systemadmin** – system administer request
+
+**source-developer** – developer request
+
+**source-testing** – QA testing request
+
+**source-regression** – found during regression testing
+
+
