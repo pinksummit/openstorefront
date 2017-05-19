@@ -49,8 +49,9 @@ public class PropertiesManager
 
 	public static final String PW_PROPERTY = ".pw";
 
+	// <editor-fold defaultstate="collapsed"  desc="Property Keys">
 	public static final String KEY_ENABLE_WEBSOCKETS = "websockets.enabled";
-	
+
 	public static final String KEY_USE_REST_PROXY = "service.rest.proxy";
 	public static final String KEY_DB_CONNECT_MIN = "db.connectionpool.min";
 	public static final String KEY_DB_CONNECT_MAX = "db.connectionpool.max";
@@ -144,6 +145,7 @@ public class PropertiesManager
 
 	public static final String KEY_NODE_NAME = "node.name";
 
+	// </editor-fold>
 	private static AtomicBoolean started = new AtomicBoolean(false);
 	private static SortedProperties properties;
 
@@ -169,7 +171,7 @@ public class PropertiesManager
 	public static String getModuleVersion()
 	{
 		loadVersionProperties();
-		
+
 		String key = "app.module.version";
 		String moduleVersion = properties.getProperty(key);
 
@@ -223,6 +225,23 @@ public class PropertiesManager
 		}
 		return value;
 	}
+	
+	/**
+	 * Note: this will trim the value....the extra spaces can cause issues
+	 *
+	 * @param key
+	 * @param defaultValue
+	 * @return
+	 */
+	public String get(String key, String defaultValue)
+	{
+		return getValue(key, defaultValue);
+	}
+	
+	public void set(String key, String value)
+	{
+		setProperty(key, value);
+	}
 
 	public static void setProperty(String key, String value)
 	{
@@ -266,7 +285,7 @@ public class PropertiesManager
 			defaults.put(KEY_SYSTEM_ARCHIVE_MAX_PROCESSMINTUES, "60");
 
 			String propertiesFilename = FileSystemManager.getConfig("openstorefront.properties").getPath();
-			
+
 			if (Paths.get(propertiesFilename).toFile().createNewFile()) {
 				LOG.log(Level.WARNING, "Open Storefront properties file was missing from location a new file was created.  Location: {0}", propertiesFilename);
 			}
@@ -285,8 +304,8 @@ public class PropertiesManager
 			LOCK.unlock();
 		}
 	}
-	
-	private static void loadVersionProperties() 
+
+	private static void loadVersionProperties()
 	{
 		try (InputStream in = FileSystemManager.getApplicationResourceFile("/filter/version.properties")) {
 			Properties versionProperties = new Properties();
@@ -297,13 +316,13 @@ public class PropertiesManager
 			properties.putAll(versionProperties);
 		} catch (IOException e) {
 			throw new OpenStorefrontRuntimeException(e);
-		}		
+		}
 	}
 
 	private static void saveProperties()
 	{
 		LOCK.lock();
-		String propertiesFilename = FileSystemManager.getConfig("openstorefront.properties").getPath();		
+		String propertiesFilename = FileSystemManager.getConfig("openstorefront.properties").getPath();
 		try (BufferedOutputStream bout = new BufferedOutputStream(new FileOutputStream(propertiesFilename))) {
 			properties.store(bout, "Open Storefront Properties");
 		} catch (IOException e) {

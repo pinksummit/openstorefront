@@ -56,7 +56,7 @@ public class ValidationUtil
 			new ValidValueRule()
 	);
 
-	private ValidationUtil()
+	public ValidationUtil()
 	{
 	}
 

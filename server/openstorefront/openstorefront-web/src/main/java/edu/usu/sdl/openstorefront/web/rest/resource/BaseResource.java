@@ -15,10 +15,13 @@
  */
 package edu.usu.sdl.openstorefront.web.rest.resource;
 
+import edu.usu.sdl.openstorefront.common.manager.PropertiesManager;
 import edu.usu.sdl.openstorefront.core.entity.Component;
 import edu.usu.sdl.openstorefront.core.entity.SecurityPermission;
 import edu.usu.sdl.openstorefront.core.entity.StandardEntity;
 import edu.usu.sdl.openstorefront.security.SecurityUtil;
+import edu.usu.sdl.openstorefront.validation.ValidationUtil;
+import javax.inject.Inject;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -30,8 +33,15 @@ import javax.ws.rs.core.Response;
 public abstract class BaseResource
 {
 
-	protected final edu.usu.sdl.openstorefront.service.ServiceProxy service = new edu.usu.sdl.openstorefront.service.ServiceProxy();
-
+	@Inject
+	protected edu.usu.sdl.openstorefront.service.ServiceProxy service;
+	
+	@Inject
+	protected PropertiesManager properties;
+	
+	@Inject 
+	protected ValidationUtil validator;
+	
 	protected Response sendSingleEntityResponse(Object entity)
 	{
 		return sendSingleEntityResponse(entity, Response.Status.NOT_FOUND);

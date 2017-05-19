@@ -28,6 +28,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.inject.Inject;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.core.MediaType;
@@ -60,7 +61,8 @@ public abstract class BaseAction
 	protected ActionBeanContext context;
 	protected String projectId;
 
-	protected final ServiceProxy service = new ServiceProxy();
+	@Inject
+	protected ServiceProxy service;
 
 	public String getApplicationVersion()
 	{

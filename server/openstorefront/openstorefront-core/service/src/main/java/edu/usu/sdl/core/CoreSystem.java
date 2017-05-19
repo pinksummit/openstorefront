@@ -48,6 +48,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.inject.Inject;
 import net.java.truevfs.access.TVFS;
 import net.sourceforge.stripes.util.ResolverUtil;
 
@@ -63,32 +64,48 @@ public class CoreSystem
 
 	private static AtomicBoolean started = new AtomicBoolean(false);
 	private static String systemStatus = "Starting application...";
+	private static List<Initializable> managers;
 
-	public CoreSystem()
+	@Inject
+	public CoreSystem(PropertiesManager propertiesManager,
+			OsgiManager osgiManager,
+			FileSystemManager fileSystemManager,
+			DBManager dataBaseManager,
+			SearchServerManager searchServerManager,
+			OSFCacheManager cacheManager,
+			JiraManager jiraManager,
+			ConfluenceManager confluenceManager,
+			LookupImporter lookupImporter,
+			MailManager mailManager,
+			JobManager jobManager,
+			UserAgentManager userAgentManager,
+			AsyncTaskManager asyncTaskManager,
+			ReportManager reportManager,
+			LDAPManager LDAPManager,
+			HelpImporter helpImporter,
+			DBLogManager DBLogManager,
+			PluginManager pluginManager)
 	{
+		//Order is important
+		managers = Arrays.asList(propertiesManager,
+			osgiManager,
+			fileSystemManager,
+			dataBaseManager,
+			searchServerManager,
+			cacheManager,
+			jiraManager,
+			confluenceManager,
+			lookupImporter,
+			mailManager,
+			jobManager,
+			userAgentManager,
+			asyncTaskManager,
+			reportManager,
+			LDAPManager,
+			helpImporter,
+			DBLogManager,
+			pluginManager);
 	}
-
-	//Order is important
-	private static List<Initializable> managers = Arrays.asList(
-			new PropertiesManager(),
-			new OsgiManager(),
-			new FileSystemManager(),
-			new DBManager(),
-			new SearchServerManager(),
-			new OSFCacheManager(),
-			new JiraManager(),
-			new ConfluenceManager(),
-			new LookupImporter(),
-			new MailManager(),
-			new JobManager(),
-			new UserAgentManager(),
-			new AsyncTaskManager(),
-			new ReportManager(),
-			new LDAPManager(),
-			new HelpImporter(),
-			new DBLogManager(),
-			new PluginManager()
-	);
 
 	@PostConstruct
 	public void startup()
