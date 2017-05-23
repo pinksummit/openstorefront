@@ -39,7 +39,9 @@ import edu.usu.sdl.openstorefront.validation.ValidationUtil;
 import edu.usu.sdl.openstorefront.web.init.ApplicationInit;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.servlet.ServletContext;
 import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Context;
 import org.glassfish.hk2.api.ServiceLocator;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.glassfish.jersey.process.internal.RequestScoped;
@@ -57,8 +59,8 @@ public class RestConfiguration
 	public static final String APPLICATION_BASE_PATH = "api";
 
 	@Inject
-	public RestConfiguration(ServiceLocator locator)
-	{		
+	public RestConfiguration(ServiceLocator locator, @Context ServletContext context)
+	{
 		// jersy 2.x does not support @Immediate once https://github.com/jersey/jersey/issues/2563 is resolved for the version we are using
 		// replace register(new ApplicationInit()); with ServiceLocatorUtilities.enableImmediateScope(locator);
 		register(new ApplicationInit());
@@ -88,6 +90,26 @@ public class RestConfiguration
 				bind(PluginManager.class).to(PluginManager.class).in(Singleton.class);
 				bind(ServiceProxy.class).to(ServiceProxy.class).in(RequestScoped.class);
 				bind(ValidationUtil.class).to(ValidationUtil.class).in(RequestScoped.class);
+			}
+		});
+		register(new ContainerLifecycleListener()
+		{
+			public void onStartup(Container container)
+			{
+				ServletContainer servletContainer = (ServletContainer) container;
+				ServiceLocator serviceLocator = container.getApplicationHandler().getServiceLocator();
+				GuiceBridge.getGuiceBridge().initializeGuiceBridge(serviceLocator);
+				GuiceIntoHK2Bridge guiceBridge = serviceLocator.getService(GuiceIntoHK2Bridge.class);
+				Injector injector = (Injector) servletContainer.getServletContext().getAttribute(Injector.class.getName());
+				guiceBridge.bridgeGuiceInjector(injector);
+			}
+
+			public void onReload(Container container)
+			{
+			}
+
+			public void onShutdown(Container container)
+			{
 			}
 		});
 		packages(true, "edu.usu.sdl.openstorefront");

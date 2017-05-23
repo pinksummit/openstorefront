@@ -26,7 +26,6 @@ import javax.inject.Inject;
 import javax.servlet.ServletContext;
 import javax.ws.rs.core.Context;
 import org.atmosphere.cpr.AtmosphereFramework;
-import org.glassfish.hk2.api.ServiceLocator;
 
 /**
  * Use to init the application and shut it down properly
@@ -37,14 +36,11 @@ public class ApplicationInit
 {
 
 	private static final Logger LOG = Logger.getLogger(ApplicationInit.class.getName());
-	public static final String KEY = ServiceLocator.class.getName();
 	// inject Items that need started at sytem startup
 	@Inject
 	private CoreSystem coreSystem;
 	@Context
 	private ServletContext context;
-	@Inject
-	private ServiceLocator locator;
 
 	@PostConstruct
 	public void contextInitialized()
@@ -58,15 +54,11 @@ public class ApplicationInit
 		AtmosphereFramework atmosphereFramework = (AtmosphereFramework) context.getAttribute("AtmosphereServlet");
 		AtmosphereNotificationListerner atmosphereNotificationListerner = new AtmosphereNotificationListerner(atmosphereFramework);
 		ServiceProxy.getProxy().getNotificationService().registerNotificationListerner(atmosphereNotificationListerner);
-
-		context.setAttribute(KEY, locator);
-
 	}
 
 	@PreDestroy
 	public void contextDestroyed()
 	{
-		context.removeAttribute(KEY);
 		AtmosphereFramework atmosphereFramework = (AtmosphereFramework) context.getAttribute("AtmosphereServlet");
 		if (atmosphereFramework != null) {
 			LOG.log(Level.INFO, "Shutdown Atmosphere");

@@ -145,7 +145,12 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+		<dependency>
+			<groupId>com.silvermindsoftware.stripes</groupId>
+			<artifactId>stripes-guice</artifactId>
+			<version>3.3</version>
+			<scope>compile</scope>
+		</dependency>
 
 		<!--
 		<dependency>
@@ -342,15 +347,15 @@
 											</fileset>
 										</copy>								
 
-									</target>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>					
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
--->
+										</target>
+									</configuration>
+								</execution>
+							</executions>
+						</plugin>					
+					</plugins>
+				</build>
+			</profile>
+		</profiles>
+	-->
 
 </project>
