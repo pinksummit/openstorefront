@@ -20,7 +20,7 @@
 			<plugin>
 				<groupId>com.github.webdriverextensions</groupId>
 				<artifactId>webdriverextensions-maven-plugin</artifactId>
-				<version>3.1.1</version>
+				<version>3.1.3</version>
 				<executions>
 					<execution>
 						<goals>
@@ -34,137 +34,124 @@
 							<name>internetexplorerdriver</name>
 							<platform>windows</platform>
 							<bit>32</bit>
-							<version>3.3.0</version>
+							<version>3.8.0</version>
 						</driver>
 						<driver>
 							<name>internetexplorerdriver</name>
 							<platform>windows</platform>
 							<bit>64</bit>
-							<version>3.3.0</version>
+							<version>3.8.0</version>
 						</driver>
 						<driver>
 							<name>chromedriver</name>
 							<platform>windows</platform>
 							<bit>32</bit>
-							<version>2.28</version>
-						</driver>					
-						<!--					
-											<driver>
-												<name>chromedriver</name>
-												<platform>mac</platform>
-												<bit>64</bit>
-												<version>2.28</version>
-											</driver>
-											<driver>
-												<name>chromedriver</name>
-												<platform>linux</platform>
-												<bit>32</bit>
-												<version>2.28</version>
-											</driver>
-											<driver>
-												<name>chromedriver</name>
-												<platform>linux</platform>
-												<bit>64</bit>
-												<version>2.28</version>
-											</driver>
-											<driver>
-												<name>phantomjs</name>
-												<platform>windows</platform>
-												<bit>64</bit>
-												<version>2.1.1</version>
-											</driver>
-											<driver>
-												<name>phantomjs</name>
-												<platform>mac</platform>
-												<bit>64</bit>
-												<version>2.1.1</version>
-											</driver>
-											<driver>
-												<name>phantomjs</name>
-												<platform>linux</platform>
-												<bit>32</bit>
-												<version>2.1.1</version>
-											</driver>
-											<driver>
-												<name>phantomjs</name>
-												<platform>linux</platform>
-												<bit>64</bit>
-												<version>2.1.1</version>
-											</driver>
-						-->										
+							<version>2.34</version>
+						</driver>
+<!--						<driver>
+							<name>chromedriver</name>
+							<platform>mac</platform>
+							<bit>64</bit>
+							<version>2.34</version>
+						</driver>
+						<driver>
+							<name>chromedriver</name>
+							<platform>linux</platform>
+							<bit>32</bit>
+							<version>2.34</version>
+						</driver>
+						<driver>
+							<name>chromedriver</name>
+							<platform>linux</platform>
+							<bit>64</bit>
+							<version>2.34</version>
+						</driver>-->
+						<driver>
+							<name>phantomjs</name>
+							<platform>windows</platform>
+							<bit>64</bit>
+							<version>2.1.1</version>
+						</driver>
+<!--						<driver>
+							<name>phantomjs</name>
+							<platform>mac</platform>
+							<bit>64</bit>
+							<version>2.1.1</version>
+						</driver>
+						<driver>
+							<name>phantomjs</name>
+							<platform>linux</platform>
+							<bit>32</bit>
+							<version>2.1.1</version>
+						</driver>
+						<driver>
+							<name>phantomjs</name>
+							<platform>linux</platform>
+							<bit>64</bit>
+							<version>2.1.1</version>
+						</driver>-->
 						<driver>
 							<name>geckodriver</name>
 							<platform>windows</platform>
 							<bit>64</bit>
-							<version>0.15.0</version>
+							<version>0.19.1</version>
 						</driver>
-						<!--					
-											<driver>
-												<name>geckodriver</name>
-												<platform>windows</platform>
-												<bit>32</bit>
-												<version>0.15.0</version>
-											</driver>					
-											<driver>
-												<name>geckodriver</name>
-												<platform>mac</platform>
-												<bit>64</bit>
-												<version>0.15.0</version>
-											</driver>
-											<driver>
-												<name>geckodriver</name>
-												<platform>linux</platform>
-												<bit>64</bit>
-												<version>0.15.0</version>
-											</driver>
-											<driver>
-												<name>geckodriver</name>
-												<platform>linux</platform>
-												<bit>32</bit>
-												<version>0.15.0</version>
-											</driver>
-						-->					
+						<driver>
+							<name>geckodriver</name>
+							<platform>windows</platform>
+							<bit>32</bit>
+							<version>0.19.1</version>
+						</driver>
+<!--						<driver>
+							<name>geckodriver</name>
+							<platform>mac</platform>
+							<bit>64</bit>
+							<version>0.19.1</version>
+						</driver>
+						<driver>
+							<name>geckodriver</name>
+							<platform>linux</platform>
+							<bit>64</bit>
+							<version>0.19.1</version>
+						</driver>
+						<driver>
+							<name>geckodriver</name>
+							<platform>linux</platform>
+							<bit>32</bit>
+							<version>0.19.1</version>
+						</driver>-->
 						<driver>
 							<name>edgedriver</name>
 							<platform>windows</platform>
 							<bit>64</bit>
-							<version>4.15063</version>
-							<url>https://download.microsoft.com/download/3/2/D/32D3E464-F2EF-490F-841B-05D53C848D15/MicrosoftWebDriver.exe</url>
+							<version>5.16299</version>
 						</driver>
-						<!--					
-											<driver>
-												<name>operadriver</name>
-												<platform>windows</platform>
-												<bit>32</bit>
-												<version>0.2.2</version>
-											</driver>
-											<driver>
-												<name>operadriver</name>
-												<platform>windows</platform>
-												<bit>64</bit>
-												<version>0.2.2</version>
-											</driver>
-											<driver>
-												<name>operadriver</name>
-												<platform>mac</platform>
-												<bit>64</bit>
-												<version>0.2.2</version>
-											</driver>
-											<driver>
-												<name>operadriver</name>
-												<platform>linux</platform>
-												<bit>32</bit>
-												<version>0.2.2</version>
-											</driver>
-											<driver>
-												<name>operadriver</name>
-												<platform>linux</platform>
-												<bit>64</bit>
-												<version>0.2.2</version>
-											</driver>
-						-->					
+<!--						<driver>
+							<name>operadriver</name>
+							<platform>windows</platform>
+							<bit>32</bit>
+							<version>2.30</version>
+						</driver>
+						<driver>
+							<name>operadriver</name>
+							<platform>windows</platform>
+							<bit>64</bit>
+							<version>2.30</version>
+						</driver>
+						<driver>
+							<name>operadriver</name>
+							<platform>mac</platform>
+							<bit>64</bit>
+							<version>2.30</version>
+						</driver>
+						<driver>
+							<name>operadriver</name>
+							<platform>linux</platform>
+							<bit>64</bit>
+							<version>2.30</version>
+						</driver>-->
 					</drivers>
-				</configuration>		
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>		
