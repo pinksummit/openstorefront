@@ -35,27 +35,31 @@ Ext.define('OSF.customSubmission.field.ContactsGrid', {
 
 	layout: 'hbox',
 	defaultType: 'radiofield',
-	listeners: {
-		change: function () {
-			console.log("CHANGED");
-		}
-	},
 	items: [
 		{
 			boxLabel: 'Yes',
 			name: 'question',
 			inputValue: true,
-			// listeners: {
-			// 	change: function (a,b,c,d) {
-			// 		console.log("THIS: ", d);
-			// 		this.customSubmissionField.setCommentFieldDisabled(false);
-			// 	}
-			// }
+			listeners: {
+				change: function () {
+
+					if (this.checked) {
+						this.up('fieldcontainer').getCommentField().setDisabled(false);
+					}
+				}
+			}
 		},
 		{
 			boxLabel: 'No',
 			name: 'question',
-			inputValue: false
+			inputValue: false,
+			listeners: {
+				change: function (val) {
+					if (this.checked) {
+						this.up('fieldcontainer').getCommentField().setDisabled(true);
+					}
+				}
+			}
 		}
 	]
 });

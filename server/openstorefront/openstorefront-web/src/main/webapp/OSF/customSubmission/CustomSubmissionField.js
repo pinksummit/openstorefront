@@ -28,10 +28,7 @@ Ext.define('OSF.customSubmission.CustomSubmissionField', {
 		labelTip: '',		// tool tip (?)
 		labelCode: '',		// A code to be displayed prior to question
 		label: '',
-		// fieldComment: '',
 		fieldMapping: '',	// relative to an entry, what will this question be mapped to?
-		// isScoped: false,	// if true, displays combo with public/private options
-		// isIfYes: false,	// if true, disables question unless 'yes' is selected
 		labelAlign: 'top',
 		labelWidth: '33%',
 		codeMargin: 15,
@@ -59,8 +56,20 @@ Ext.define('OSF.customSubmission.CustomSubmissionField', {
 		this._resetFieldLabel();
 	},
 
+	getValue: function () {
+		console.warn('No value handling has been made the the field type: ', this.fieldType);
+	},
+
 	handleChange: function () {
 		console.warn('No change handling has been made the the field type: ', this.fieldType);
+	},
+
+	getCommentField: function () {
+		return this.customSubmissionSection ? this.customSubmissionSection.commentField : undefined;
+	},
+
+	getScopeField: function () {
+		return this.customSubmissionSection ? this.customSubmissionSection.scopeField : undefined;
 	},
 
 	initField: function (fieldComponent) {

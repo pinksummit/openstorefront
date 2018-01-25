@@ -30,7 +30,7 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 		canComment: false,
 		scopeLabel: '&nbsp',
 		fieldComment: '',
-		commentLabel: 'If yes, state why.'
+		commentLabel: 'If yes, state why'
 	},
 	customSubmissionField: null,
 	scopeField: null,
@@ -68,13 +68,9 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 			this.commentField = Ext.create('Ext.form.field.TextArea', {
 				fieldLabel: this.getCommentLabel(),
 				disabled: true,
-				labelAlign: 'top'
+				labelAlign: 'top',
+				width: '50%'
 			});
-
-			var commentField = this.commentField;
-			config.setCommentFieldDisabled = function (commentFieldDisabled) {
-				commentField.setDisabled(commentFieldDisabled);
-			};
 
 			try {
 				this.customSubmissionField = Ext.create('OSF.customSubmission.field.' + config.fieldType, config);
@@ -97,7 +93,7 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 	//
 	// =============================================
 
-	// Places the Custom Submission Field in the first column, and the CSF scope in the second column (if specified.)
+	// Places the Custom Submission Field and Comment field in the first column, and the CSF scope in the second column (if specified.)
 	_placeFields: function () {
 
 		var customField = this.customSubmissionField;
@@ -114,26 +110,7 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 		}
 
 		if (this.getIsScoped()) {
-			// var scopeStore = Ext.create('Ext.data.Store', {
-			// 	field: ['value', 'label'],
-			// 	data: [{
-			// 		value: 'public', label: 'Public',
-			// 	}, {
-			// 		value: 'private', label: 'Private',
-			// 	}]
-			// });
-			// col2.add(Ext.create('Ext.form.ComboBox', {
-			// 	labelAlign: 'top',
-			// 	fieldLabel: this.getScopeLabel(),
-			// 	valueField: 'value',
-			// 	displayField: 'label',
-			// 	store: scopeStore,
-			// 	allowBlank: false,
-			// 	editable: false,
-			// 	value: 'public',
-			// 	name: 'scope',
-			// 	labelSeparator: ''
-			// }));
+			col2.add(this.scopeField);
 		}
 	}
 });
