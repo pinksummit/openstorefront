@@ -33,6 +33,11 @@ Ext.define('OSF.customSubmission.field.ContactsGrid', {
 		this.mixins.root.initField(this);
 	},
 
+	getValue: function () {
+		return this.items.items[0].getValue();
+	},
+	allowBlank: false,
+
 	layout: 'hbox',
 	defaultType: 'radiofield',
 	items: [

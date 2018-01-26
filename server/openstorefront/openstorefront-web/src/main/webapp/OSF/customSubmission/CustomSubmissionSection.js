@@ -48,7 +48,7 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 			this.setCommentLabel(config.commentLabel ? config.commentLabel : this.getCommentLabel());
 			this.setCanComment(config.canComment ? config.canComment : this.getCanComment());
 			this.name = config.name;
-			this.nameLabel = this.nameLabel ? this.nameLabel : this.name.replace(/(^| )(\w)/g, function(x) {return x.toUpperCase();});
+			// this.nameLabel = this.nameLabel ? this.nameLabel : this.name.replace(/(^| )(\w)/g, function(x) {return x.toUpperCase();});
 			config.customSubmissionSection = this;
 
 			// define scopeField

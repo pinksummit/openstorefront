@@ -20,7 +20,7 @@
  * @author cyearsley@usurf.usu.edu
  */
 
- Ext.define('OSF.customSubmission.form.ContactsForm', {
+ Ext.define('OSF.customSubmission.form.Contacts', {
  	extend: 'Ext.form.Panel',
  	items: []
  });

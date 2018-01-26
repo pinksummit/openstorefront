@@ -41,14 +41,54 @@ Ext.define('OSF.customSubmission.CustomSubmissionGrid', {
 					text: 'Add',
 					iconCls: 'fa fa-lg fa-plus icon-button-color-save',
 					handler: function () {
+
 						var grid = this.up('panel');
+						console.log("FORM: ", grid.form);
 						var win = Ext.create('Ext.window.Window', {
 							title: 'New ' + grid.fieldTitle,
 							width: 1000,
 							height: 700,
 							padding: 20,
 							scrollable: true,
-							items: [grid.form]
+							items: [grid.form],
+							////////////////
+							dockedItems: [
+								{
+									xtype: 'toolbar',
+									dock: 'bottom',
+									items: [
+										{
+											text: 'Save',
+											itemId: 'saveButton',
+											formBind: true,
+											iconCls: 'fa fa-lg fa-save icon-button-color-save',
+											handler: function () {
+
+												var formWindow = this.up('window');
+												var form = grid.form;
+
+												if (form.isValid()) {
+													// add the record to the grid...
+													var newRecord = {};
+													Ext.Array.forEach(form.items.items, function (el) {
+														newRecord[el.name] = el.getValue();
+													});
+													grid.store.add(newRecord);
+													formWindow.close();
+												}
+											}
+										},
+										{
+											text: 'Cancel',
+											iconCls: 'fa fa-lg fa-close icon-button-color-warning',
+											handler: function () {
+												this.up('window').close();
+											}
+										}
+									]
+								}
+							]
+							///////////////////
 						}).show();
 					}
 				},
@@ -73,12 +113,21 @@ Ext.define('OSF.customSubmission.CustomSubmissionGrid', {
 		this.setTitle(config.fieldTitle + (config.titleTip ? ' <i style="margin-left: 3px;" class="fa fa-lg fa-question-circle"  data-qtip="' + config.titleTip + '"></i>' : ''));
 		this.form = config.form;
 		this.fieldTitle = config.fieldTitle;
+
+		// define the columns...
 		var columns = [];
+		var storeFields = [];
+		Ext.Array.forEach(config.form.items.items, function (el, index) {
+			columns.push({dataIndex: el.name, text: el.nameLabel ? el.nameLabel : el.name.replace(/(^| )(\w)/g, function(x) {return x.toUpperCase();})});
+			storeFields.push(el.name);
+		});
+
+		// set grid store
+		this.setStore(Ext.create('Ext.data.Store', {
+			fields: storeFields
+		}));
 
 		// add columns to grid
-		Ext.Array.forEach(config.form.items.items, function (el, index) {
-			columns.push({dataIndex: el.name, text: el.nameLabel});
-		});
 		this.setColumns(columns);
 	}
 });
