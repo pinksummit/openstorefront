@@ -30,7 +30,8 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 		canComment: false,
 		scopeLabel: '&nbsp',
 		fieldComment: '',
-		commentLabel: 'If yes, state why'
+		commentLabel: 'If yes, state why',
+		nameLabel: null
 	},
 	customSubmissionField: null,
 	scopeField: null,
@@ -46,6 +47,8 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 			this.setFieldComment(config.fieldComment ? config.fieldComment : this.getFieldComment());
 			this.setCommentLabel(config.commentLabel ? config.commentLabel : this.getCommentLabel());
 			this.setCanComment(config.canComment ? config.canComment : this.getCanComment());
+			this.name = config.name;
+			this.nameLabel = this.nameLabel ? this.nameLabel : this.name.replace(/(^| )(\w)/g, function(x) {return x.toUpperCase();});
 			config.customSubmissionSection = this;
 
 			// define scopeField
@@ -85,6 +88,10 @@ Ext.define('OSF.customSubmission.CustomSubmissionSection', {
 		}
 
 
+	},
+
+	getValue: function () {
+		return this.customSubmissionField.getValue();
 	},
 
 	// =============================================
