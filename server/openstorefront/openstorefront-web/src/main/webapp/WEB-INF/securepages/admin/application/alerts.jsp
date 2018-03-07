@@ -133,6 +133,11 @@
 									if (option.alertOnUserNeedsApproval) {
 										listOfOptions.push('<span class="alerts-option-items"> User Need Approval </span>');
 									}
+								} else if (record.get('componentTypeAlertOptions')) {
+									option = record.get('componentTypeAlertOptions');
+									Ext.Array.forEach(option, function (element) {
+										listOfOptions.push('<span class="alerts-option-items"> ' + element.componentType + ' </span>');
+									})
 								}
 								return '<div style="height: 25px;">' + listOfOptions.join(' ') + '</div>';
 							}
@@ -336,6 +341,8 @@
 											Ext.getCmp('systemErrorOptions').hide();
 											Ext.getCmp('userDataOptions').hide();
 											Ext.getCmp('userManagementOptions').hide();
+											Ext.getCmp('alertEntryForm-entryTypes').hide();
+											Ext.getCmp('alertEntryForm-entryTypes').allowBlank = true;
 											switch (newValue) {
 												case 'SYSERROR':
 													Ext.getCmp('systemErrorOptions').show();
@@ -345,6 +352,10 @@
 													break;
 												case 'USERMANG':
 													Ext.getCmp('userManagementOptions').show();
+													break;
+												case 'CMPSUB':
+													Ext.getCmp('alertEntryForm-entryTypes').allowBlank = false;
+													Ext.getCmp('alertEntryForm-entryTypes').show();
 													break;
 											}
 										}
@@ -358,11 +369,28 @@
 									}
 								},
 								{
+									xtype: 'tagfield',
+									fieldLabel: 'Select a Component Type<span class="field-required" />',
+									id: 'alertEntryForm-entryTypes',
+									name: 'entryTypeAlertOption',
+									valueField: 'componentType',
+									displayField: 'label',
+									allowBlank: false,
+									store: {
+										autoLoad: true,
+										proxy: {
+											type: 'ajax',
+											url: 'api/v1/resource/componenttypes'
+										}
+									}
+								},
+								{
 									xtype: 'textfield',
 									fieldLabel: 'Email Addresses<span class="field-required"></span>',
 									// id is 'email' for validation purposes.
 									id: 'email',
-									name: 'emailAddresses'
+									name: 'emailAddresses',
+									allowBlank: false
 								},
 								{
 									xtype: 'fieldcontainer',
@@ -512,6 +540,15 @@
 														alertOnUserRegistration: flatData.alertOnUserRegistration,
 														alertOnUserNeedsApproval: flatData.alertOnUserNeedsApproval
 													};
+												}
+
+												if (flatData.alertType === 'CMPSUB') {
+													var compIDs = flatData.entryTypeAlertOption;
+													var componentTypes = [];
+													Ext.Array.forEach(compIDs, function(el) {
+														componentTypes.push({"componentType": el});
+													});
+													data.componentTypeAlertOptions = componentTypes;
 												}
 
 
