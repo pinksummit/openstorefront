@@ -20,7 +20,7 @@
 
 Ext.define('OSF.component.StandardComboBox', {
 	extend: 'Ext.form.field.ComboBox',
-	alias: 'osf.widget.StandardComboBox',
+	alias: 'widget.StandardComboBox',
 
 	emptyText: 'Select',
 	labelSeparator: '',
@@ -47,14 +47,25 @@ Ext.define('OSF.component.StandardComboBox', {
 
 });
 
-Ext.define('OSF.component.MultiSelectComboBox', {
+/***
+ * Creates a combo box that allows selection of multiple users chosen via typing
+ * in part of their names or choosing them from a list. 
+ * Example usage:
+ * 
+ * var selectionCombo = Ext.create('OSF.component.UserMultiSelectComboBox', {
+ *						addAll: true, //optionally adds an All option to end of list
+ *						width: 375,
+ *						margin: '50',
+ *					});
+ */
+Ext.define('OSF.component.UserMultiSelectComboBox', {
 	extend: 'Ext.form.field.Tag',
-	alias: 'osf.widget.MultiSelectComboBox',
+	alias: 'widget.MultiSelectComboBox',
 
+	name: 'pickUser',
+	fieldLabel: 'Choose a User',
 	emptyText: 'Start typing here to filter choices',
 	labelAlign: 'top',
-	width: 375,
-	margin: '0 20 0 0',
 	
 	labelSeparator: '',
 	valueField: 'code',
@@ -66,6 +77,7 @@ Ext.define('OSF.component.MultiSelectComboBox', {
 	forceSelection: true,
 	
 	//querryMode must be local or the auto filtering of entries won't work right
+	// in all cases. Correctly supporting this may require backend changes
 	queryMode: 'local',
 		
 	addAll: false,
@@ -77,7 +89,7 @@ Ext.define('OSF.component.MultiSelectComboBox', {
 			url: 'api/v1/resource/userprofiles/lookup'
 		}
 	},
-
+	
 	initComponent: function () {
 		
 		this.callParent();
@@ -100,7 +112,7 @@ Ext.define('OSF.component.MultiSelectComboBox', {
 
 Ext.define('OSF.component.SecurityComboBox', {
 	extend: 'Ext.form.field.ComboBox',
-	alias: 'osf.widget.SecurityComboBox',
+	alias: 'widget.SecurityComboBox',
 
 	emptyText: 'Select',
 	labelSeparator: '',
@@ -152,7 +164,7 @@ Ext.define('OSF.component.SecurityComboBox', {
 
 Ext.define('OSF.component.DataSensitivityComboBox', {
 	extend: 'Ext.form.field.ComboBox',
-	alias: 'osf.widget.DataSensitivityComboBox',
+	alias: 'widget.DataSensitivityComboBox',
 
 	emptyText: 'Select',
 	labelSeparator: '',
@@ -233,7 +245,7 @@ Ext.define('OSF.component.DataSensitivityComboBox', {
 
 Ext.define('OSF.component.DataSourceComboBox', {
 	extend: 'Ext.form.field.ComboBox',
-	alias: 'osf.widget.DataSourceComboBox',
+	alias: 'widget.DataSourceComboBox',
 
 	emptyText: 'Select',
 	labelSeparator: '',
@@ -649,7 +661,7 @@ Ext.define('OSF.component.UserMenu', {
 
 Ext.define('OSF.component.ChangeLogWindow', {
 	extend: 'Ext.window.Window',
-	alias: 'osf.widget.ChangeLogWindow',
+	alias: 'widget.ChangeLogWindow',
 
 	title: 'Change History',
 	modal: false,
