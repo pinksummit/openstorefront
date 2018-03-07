@@ -47,6 +47,57 @@ Ext.define('OSF.component.StandardComboBox', {
 
 });
 
+Ext.define('OSF.component.MultiSelectComboBox', {
+	extend: 'Ext.form.field.Tag',
+	alias: 'osf.widget.MultiSelectComboBox',
+
+	emptyText: 'Start typing here to filter choices',
+	labelAlign: 'top',
+	width: 375,
+	margin: '0 20 0 0',
+	
+	labelSeparator: '',
+	valueField: 'code',
+	displayField: 'description',
+	
+	typeAhead: true,
+	anyMatch: true,
+	editable: true,
+	forceSelection: true,
+	
+	//querryMode must be local or the auto filtering of entries won't work right
+	queryMode: 'local',
+		
+	addAll: false,
+
+	store: {
+		autoLoad: true,
+		proxy: {
+			type: 'ajax',
+			url: 'api/v1/resource/userprofiles/lookup'
+		}
+	},
+
+	initComponent: function () {
+		
+		this.callParent();
+		var me = this;
+		
+		// Need to set a listener here so that we have access to 
+		// the addAll variable AND the store data
+		this.store.setListeners({
+			load: function (store, records, opts) {
+				if (me.addAll) {
+					store.add({
+						code: null,
+						description: 'All'
+					});
+				}
+			}
+		});
+	}
+});
+
 Ext.define('OSF.component.SecurityComboBox', {
 	extend: 'Ext.form.field.ComboBox',
 	alias: 'osf.widget.SecurityComboBox',
