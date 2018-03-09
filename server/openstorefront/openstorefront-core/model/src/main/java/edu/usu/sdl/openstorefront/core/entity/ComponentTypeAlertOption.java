@@ -46,23 +46,23 @@ public class ComponentTypeAlertOption
 	{
 	}
 
-	public String getComponentType()
-	{
-		return componentType;
-	}
-
 	public String getStorageVersion()
 	{
 		return storageVersion;
 	}
 
-	public void setComponentType(String componentType)
-	{
-		this.componentType = componentType;
-	}
-
 	public void setStorageVersion(String storageVersion)
 	{
 		this.storageVersion = storageVersion;
+	}
+
+	public String getComponentType()
+	{
+		return componentType;
+	}
+
+	public void setComponentType(String componentType)
+	{
+		this.componentType = componentType;
 	}
 }

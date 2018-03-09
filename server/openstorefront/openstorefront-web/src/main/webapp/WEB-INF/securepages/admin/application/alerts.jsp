@@ -134,9 +134,9 @@
 										listOfOptions.push('<span class="alerts-option-items"> User Need Approval </span>');
 									}
 								} else if (record.get('componentTypeAlertOptions')) {
-									option = record.get('componentTypeAlertOptions');
-									Ext.Array.forEach(option, function (element) {
-										listOfOptions.push('<span class="alerts-option-items"> ' + element.componentType + ' </span>');
+									labels = record.get('componentTypeAlertOptionLabels')
+									Ext.Array.forEach(labels, function(element) {
+										listOfOptions.push('<span class="alerts-option-items"> ' + element + ' </span>');
 									})
 								}
 								return '<div style="height: 25px;">' + listOfOptions.join(' ') + '</div>';
@@ -353,6 +353,7 @@
 												case 'USERMANG':
 													Ext.getCmp('userManagementOptions').show();
 													break;
+												case 'CHGREQ':
 												case 'CMPSUB':
 													Ext.getCmp('alertEntryForm-entryTypes').allowBlank = false;
 													Ext.getCmp('alertEntryForm-entryTypes').show();
@@ -542,7 +543,7 @@
 													};
 												}
 
-												if (flatData.alertType === 'CMPSUB') {
+												if (flatData.alertType === 'CMPSUB' || flatData.alertType === 'CHGREQ') {
 													var compIDs = flatData.entryTypeAlertOption;
 													var componentTypes = [];
 													Ext.Array.forEach(compIDs, function(el) {
