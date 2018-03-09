@@ -135,9 +135,11 @@
 									}
 								} else if (record.get('componentTypeAlertOptions')) {
 									labels = record.get('componentTypeAlertOptionLabels')
-									Ext.Array.forEach(labels, function(element) {
-										listOfOptions.push('<span class="alerts-option-items"> ' + element + ' </span>');
-									})
+									if (labels) {
+										Ext.Array.forEach(labels, function(element) {
+											listOfOptions.push('<span class="alerts-option-items"> ' + element + ' </span>');
+										})
+									}
 								}
 								return '<div style="height: 25px;">' + listOfOptions.join(' ') + '</div>';
 							}
