@@ -851,6 +851,36 @@ public class ComponentRESTResource
 		return sendSingleEntityResponse(component);
 	}
 
+	@PUT
+	@RequireSecurity(SecurityPermission.ADMIN_ENTRY_MANAGEMENT)
+	@APIDescription("Changes the Entry Type of an existing component to another existing Entry Type")
+	@Consumes(MediaType.TEXT_PLAIN)
+	@Path("/{id}/changeComponentType")
+	public Response changeType(
+			@PathParam("id")
+			@RequiredParam String componentId,
+			String newType)
+	{
+		// Search to see that the ID is valid
+		Component component = service.getPersistenceService().findById(Component.class, componentId);
+		if (component != null) {
+			// Search to see if the newType is valid
+			ComponentType found = new ComponentType();
+			found.setComponentType(newType);
+			found = found.find();
+			if (found != null) {
+				// Update the database
+				service.getComponentService().changeComponentType(componentId, newType);
+				// Update the in memory component
+				component.setComponentType(newType);
+			} else {
+				Response response = Response.status(Response.Status.NOT_FOUND).build();
+				return response;
+			}
+		}
+		return sendSingleEntityResponse(component);
+	}
+
 	@DELETE
 	@RequireSecurity(SecurityPermission.ADMIN_ENTRY_MANAGEMENT)
 	@APIDescription("Inactivates Component and removes any assoicated user watches.")

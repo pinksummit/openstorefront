@@ -804,6 +804,16 @@ public interface ComponentService
 	 */
 	@ServiceInterceptor(TransactionInterceptor.class)
 	public Component changeOwner(String componentId, String newOwner);
+	
+	/**
+	 * Changes the Entry Type of an existing component to another existing Entry Type.
+	 *
+	 * @param componentId The ID of the component to change
+	 * @param newType A string consisting of the type to change an existing components type into
+	 * @return modified component
+	 */
+	@ServiceInterceptor(TransactionInterceptor.class)
+	public Component changeComponentType(String componentId, String newType);
 
 	/**
 	 * Creates a pending component record for the given component Id

@@ -2600,6 +2600,29 @@ public class CoreComponentServiceImpl
 		return component;
 	}
 
+	public Component changeComponentType(String componentId, String newType)
+	{
+		// Find the component in the database
+		Component component = persistenceService.findById(Component.class, componentId);
+		if (component != null) {
+			// Find the componentType in the database
+			ComponentType found = persistenceService.findById(ComponentType.class, newType);
+			if (found != null) {
+				// TODO: update data with user that initiated the change
+				// TODO: update data with datetime of the change
+				// TODO: flush caches and reindex, possibly through BaseComponentServiceImpl's updateComponentLastActivity or cleanupCache functions
+				component.setComponentType(newType);
+				component.populateBaseUpdateFields();
+				persistenceService.persist(component);
+			} else {
+				throw new OpenStorefrontRuntimeException("Unable to find component type.", "Check name of type: " + newType);
+			}
+		} else {
+			throw new OpenStorefrontRuntimeException("Unable to find component.", "Check id passed: " + componentId);
+		}
+		return component;
+	}
+
 	public Component createPendingChangeComponent(String parentComponentId)
 	{
 		//copy (this is a seperate transaction)
