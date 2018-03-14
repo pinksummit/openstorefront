@@ -2608,12 +2608,19 @@ public class CoreComponentServiceImpl
 			// Find the componentType in the database
 			ComponentType found = persistenceService.findById(ComponentType.class, newType);
 			if (found != null) {
-				// TODO: update data with user that initiated the change
-				// TODO: update data with datetime of the change
-				// TODO: flush caches and reindex, possibly through BaseComponentServiceImpl's updateComponentLastActivity or cleanupCache functions
+				
+				// update component with the new component type
 				component.setComponentType(newType);
+				
+				// update component with the current users username and date of change
 				component.populateBaseUpdateFields();
+				
+				// Save updated component to the database. Up to now all changes are in memory changes only
 				persistenceService.persist(component);
+				
+				// flush caches and reindex via existing jobs
+				updateComponentLastActivity(componentId);
+				
 			} else {
 				throw new OpenStorefrontRuntimeException("Unable to find component type.", "Check name of type: " + newType);
 			}

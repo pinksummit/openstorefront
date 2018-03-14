@@ -807,6 +807,9 @@ public interface ComponentService
 	
 	/**
 	 * Changes the Entry Type of an existing component to another existing Entry Type.
+	 * 
+	 * This operation flushes the component cache, triggers a re-index for the component (at a later time via standard job scripts),
+	 * and sends a notification to any watchers of the component or changed component types
 	 *
 	 * @param componentId The ID of the component to change
 	 * @param newType A string consisting of the type to change an existing components type into

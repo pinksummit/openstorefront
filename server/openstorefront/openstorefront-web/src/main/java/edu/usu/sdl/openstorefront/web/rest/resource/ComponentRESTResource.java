@@ -853,7 +853,11 @@ public class ComponentRESTResource
 
 	@PUT
 	@RequireSecurity(SecurityPermission.ADMIN_ENTRY_MANAGEMENT)
-	@APIDescription("Changes the Entry Type of an existing component to another existing Entry Type")
+	@APIDescription(
+			"Changes the Entry Type of an existing component to another existing Entry Type"
+			+ "\nNOTE: This operation flushes the component cache, triggers a re-index for the component (at a later time via standard job scripts),"
+			+ "and sends a notification to any watchers of the component or changed component types"
+	)
 	@Consumes(MediaType.TEXT_PLAIN)
 	@Path("/{id}/changeComponentType")
 	public Response changeType(
@@ -869,13 +873,10 @@ public class ComponentRESTResource
 			found.setComponentType(newType);
 			found = found.find();
 			if (found != null) {
-				// Update the database
-				service.getComponentService().changeComponentType(componentId, newType);
-				// Update the in memory component
-				component.setComponentType(newType);
+				// Update the database and in memory component
+				component = service.getComponentService().changeComponentType(componentId, newType);				
 			} else {
-				Response response = Response.status(Response.Status.NOT_FOUND).build();
-				return response;
+				return Response.status(Response.Status.NOT_FOUND).build();
 			}
 		}
 		return sendSingleEntityResponse(component);
