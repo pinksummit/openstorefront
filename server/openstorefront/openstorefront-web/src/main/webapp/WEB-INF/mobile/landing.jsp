@@ -29,11 +29,12 @@
 								{
 									iconCls: 'fa fa-2x fa-bars',
 									scale: 'medium',
+									arrowVisible: false,
 									menu: {
 										items: [
-											{
-												text: 'User Profile',
-												scale: 'medium'
+											{											
+												text: '<span style="font-size: 24px;">User Profile</span>',
+												iconCls: 'fa fa-2x fa-user'
 											}
 										]
 									}
@@ -44,13 +45,51 @@
 					
 				});
 				
+				var topics = Ext.create('Ext.view.View', {
+					scrollable: true,
+					store: {
+						autoLoad: true,
+						proxy: {
+							type: 'ajax',
+							url: 'api/v1/resource/componenttypes'
+						}
+					},
+					itemSelector: 'div.thumb-wrap',
+					tpl: new Ext.XTemplate(
+						'<tpl for=".">',
+							'<div style="margin-bottom: 10px; padding: 10px; border: 1px solid darkgrey;" class="thumb-wrap">',
+							' <span style="font-size: 2em;line-height: 100%">{label}</span>',
+							'</div>',
+						'</tpl>'
+					),
+					listeners: {
+						itemclick: function(view, record, itemEl, index, e, opts) {
+							performSearch(null, record.get('componentType'));
+						}
+					}
+				});
+				//<div sytle="text-align: center;"><i class="fa fa-2x fa-users" style:="margin-right: 10px;"></i></div>
+				
 				var body = Ext.create('Ext.panel.Panel', {
 					region: 'center',
-					scrollable: true,
+					layout: 'fit',
 					items: [
-						
+						topics
 					],
 					dockedItems: [
+						{
+							xtype: 'panel',
+							dock: 'top',
+							layout: 'center',							
+							items: [
+								{
+									xtype: 'image',
+									src: 'images/di2elogo-lg.png',
+									width: 375,
+									height: 125
+								}
+							]
+						},
 						{
 							xtype: 'panel',
 							dock: 'top',
@@ -102,7 +141,7 @@
 
 													case e.ENTER:
 														var query = value;
-														field.up('panel').performSearch(query);
+														performSearch(query);
 														break;
 
 													case e.HOME:
@@ -129,13 +168,65 @@
 									width: 50,									
 									handler: function () {
 										var query = this.up('panel').getComponent('searchText').getValue();
-										this.up('panel').performSearch(query);
+										performSearch(query);
 									}
 								}
 							]
+						},
+						{
+							xtype: 'panel',
+							dock: 'top',
+							html: '<h3>Topics</h3>'
 						}
 					]
 				});
+				
+				var performSearch = function(query, entryType) {
+					
+					if (!query || Ext.isEmpty(query)) {
+						query = '*';
+					}
+	
+					var searchElements = [
+						{
+							"searchType": 'INDEX',
+							"field": null,
+							"value": query,
+							"mergeCondition": "AND"
+						}
+					];
+
+					if (entryType) {
+						searchElements.push({
+							"searchType": "COMPONENT",
+							"field": 'componentType',
+							"value": entryType,
+							"caseInsensitive": false,
+							"numberOperation": "EQUALS",
+							"stringOperation": "EQUALS",
+							"mergeCondition": "OR"
+						});
+					}
+
+					var searchRequest;
+					var searchObj = {
+						"sortField": null,
+						"sortDirection": "ASC",
+						"startOffset": 0,
+						"max": 2147483647,
+						"searchElements": searchElements
+					};
+
+					searchRequest = {
+						type: 'Advance',
+						query: searchObj
+					};
+
+					CoreUtil.sessionStorage().setItem('searchRequest', Ext.encode(searchRequest));
+
+					window.location.href = 'Mobile.action?Search';
+					
+				};
 				
 				var viewport = Ext.create('Ext.container.Viewport', {
 					layout: 'border',

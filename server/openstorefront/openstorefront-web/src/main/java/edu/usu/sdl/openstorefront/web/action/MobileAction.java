@@ -19,6 +19,7 @@ package edu.usu.sdl.openstorefront.web.action;
 
 import net.sourceforge.stripes.action.DefaultHandler;
 import net.sourceforge.stripes.action.ForwardResolution;
+import net.sourceforge.stripes.action.HandlesEvent;
 import net.sourceforge.stripes.action.Resolution;
 
 /**
@@ -33,6 +34,18 @@ public class MobileAction
 	public Resolution loadPage()
 	{
 		return new ForwardResolution("/WEB-INF/mobile/landing.jsp");
+	}
+
+	@HandlesEvent("Search")
+	public Resolution searchPage()
+	{
+		return new ForwardResolution("/WEB-INF/mobile/searchResults.jsp");
+	}
+
+	@HandlesEvent("Details")
+	public Resolution details()
+	{
+		return new ForwardResolution("/WEB-INF/mobile/details.jsp");
 	}
 
 }
