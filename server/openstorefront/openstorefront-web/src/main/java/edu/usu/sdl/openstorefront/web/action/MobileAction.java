@@ -48,4 +48,10 @@ public class MobileAction
 		return new ForwardResolution("/WEB-INF/mobile/details.jsp");
 	}
 
+	@HandlesEvent("Modern")
+	public Resolution modern()
+	{
+		return new ForwardResolution("/WEB-INF/mobile/modern.jsp");
+	}
+
 }

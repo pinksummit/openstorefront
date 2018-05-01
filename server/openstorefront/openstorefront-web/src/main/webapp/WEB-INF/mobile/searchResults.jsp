@@ -18,14 +18,12 @@
 							cls: 'nav-back-color',
 							items: [
 								{
-									text: '< Back',
+									iconCls: 'fa fa-2x fa-arrow-left icon-vertical-correction mobile-nav',
+									style: 'background: transparent; color: white; border: 0px solid; ',
 									handler: function() {
 										window.location.href='Mobile.action';
 									}
-								},
-								{
-									xtype: 'tbfill'
-								},
+								},							
 								{
 									xtype: 'tbtext',
 									text: 'Results',
@@ -35,9 +33,10 @@
 									xtype: 'tbfill'
 								},
 								{
-									iconCls: 'fa fa-2x fa-bars',
+									iconCls: 'fa fa-2x fa-bars mobile-nav',
 									scale: 'medium',
 									arrowVisible: false,
+									style: 'background: transparent; color: white; border: 0px solid; ',
 									menu: {
 										items: [
 											{											

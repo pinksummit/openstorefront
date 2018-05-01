@@ -16,6 +16,26 @@ limitations under the License.
 
 <%@page  contentType="text/css" %>
 
+.mobile-nav {
+	color: white;
+}
+
+.mobile-searchresult-table {
+	background: whitesmoke;
+}
+
+.mobile-searchresult-title{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+	font-weight: bold;
+	font-size: 14px;
+	background: darkgrey;
+	color: White;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 @media print {
     .pageBreak {		
 		page-break-after: always;

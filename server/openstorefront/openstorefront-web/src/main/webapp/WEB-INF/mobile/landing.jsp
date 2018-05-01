@@ -27,9 +27,10 @@
 									xtype: 'tbfill'
 								},
 								{
-									iconCls: 'fa fa-2x fa-bars',
+									iconCls: 'fa fa-2x fa-bars mobile-nav',
 									scale: 'medium',
 									arrowVisible: false,
+									style: 'background: transparent; color: white; border: 0px solid; ',
 									menu: {
 										items: [
 											{											
@@ -204,7 +205,7 @@
 							"caseInsensitive": false,
 							"numberOperation": "EQUALS",
 							"stringOperation": "EQUALS",
-							"mergeCondition": "OR"
+							"mergeCondition": "AND"
 						});
 					}
 
