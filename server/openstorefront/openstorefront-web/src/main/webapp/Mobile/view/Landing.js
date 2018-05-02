@@ -27,7 +27,7 @@ Ext.define('mobile.view.Landing', {
 	],
 	
 	fullscreen: true,
-	autoDestroy: false,
+	//autoDestroy: false,
 	
 	navigationBar: {
 		cls: 'nav-back-color',

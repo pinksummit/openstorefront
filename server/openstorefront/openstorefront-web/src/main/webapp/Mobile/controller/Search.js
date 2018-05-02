@@ -46,9 +46,9 @@ Ext.define('mobile.controller.Search', {
 	},
 	
 	onSearch: function(field, e, opts) {
-		if (!this.searchResults) {
+		//if (!this.searchResults) {
 			this.searchResults = Ext.create('mobile.view.SearchResults');
-		}
+		//}
 		this.getLanding().push(this.searchResults);
 		
 		this.searchResults.performSearch(field.getValue());
@@ -56,9 +56,9 @@ Ext.define('mobile.controller.Search', {
 
 	onCategorySelect: function (list, index, node, record, e, opts) {
 
-		if (!this.searchResults) {
+		//if (!this.searchResults) {
 			this.searchResults = Ext.create('mobile.view.SearchResults');
-		}
+		//}
 		
 		this.getLanding().push(this.searchResults);
 		
@@ -69,9 +69,9 @@ Ext.define('mobile.controller.Search', {
 	onResultSelect: function (list, index, node, record, e, opts) {
 
 
-		if (!this.details) {
+		//if (!this.details) {
 			this.details = Ext.create('mobile.view.Details');
-		}
+		//}
 
 		this.details.setRecord(record);
 
