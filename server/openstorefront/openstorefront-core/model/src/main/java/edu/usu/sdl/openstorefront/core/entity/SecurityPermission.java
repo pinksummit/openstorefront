@@ -292,7 +292,7 @@ public class SecurityPermission
 	public static final String ADMIN_MESSAGE_MANAGEMENT_DELETE = "ADMIN-MESSAGE-MANAGEMENT-DELETE";
 
 	//Notification Events 
-    public static final String GROUPBY_NOTIFICATION_EVENT_MANAGEMENT = "Notification Events";
+	public static final String GROUPBY_NOTIFICATION_EVENT_MANAGEMENT = "Notification Events";
 	public static final String ADMIN_NOTIFICATION_EVENT_CREATE = "ADMIN-NOTIFICATION-EVENT-CREATE";
 	public static final String ADMIN_NOTIFICATION_EVENT_DELETE = "ADMIN-NOTIFICATION-EVENT-DELETE";
 
