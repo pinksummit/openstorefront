@@ -577,8 +577,9 @@ Ext.define('OSF.component.SubmissionPanel', {
 
 			var multipleAttributesWin = Ext.create('Ext.window.Window', {
 				title: 'Add Attributes',
-				iconCls: 'fa fa-lg fa-plus icon-small-vertical-correction',
+				iconCls: 'fa fa-lg fa-plus icon-small-vertical-correction',				
 				modal: true,
+				alwaysOnTop: true,
 				width: 700,
 				closeAction: 'destroy',
 				height: '50%',
