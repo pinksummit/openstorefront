@@ -19,23 +19,20 @@ import edu.usu.sdl.openstorefront.core.annotation.APIDescription;
 import edu.usu.sdl.openstorefront.core.annotation.DataType;
 import edu.usu.sdl.openstorefront.core.api.Service;
 import edu.usu.sdl.openstorefront.core.api.ServiceProxyFactory;
-import edu.usu.sdl.openstorefront.web.rest.resource.LookupTypeResource;
+import edu.usu.sdl.openstorefront.core.entity.SecurityPermission;
 import edu.usu.sdl.openstorefront.core.entity.SecurityPolicy;
+import java.util.List;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
-
-
-
 
 /**
  *
  * @author bmichaelis
  */
-
 @Path("v1/resource/securitypermission")
 @APIDescription("Provides access to security permission information")
 public class SecurityPermissionResource
@@ -48,7 +45,11 @@ public class SecurityPermissionResource
 	public Response getPermission()
 	{
 		Service service = ServiceProxyFactory.getServiceProxy();
-		return sendSingleEntityResponse(service.getLookupService().findLookup(LookupTypeResource));
+		List<SecurityPermission> securityPermissionList = service.getLookupService().findLookup(SecurityPermission.class);
+		GenericEntity<List<SecurityPermission>> entity = new GenericEntity<List<SecurityPermission>>(securityPermissionList)
+		{
+		};
+		return sendSingleEntityResponse(entity);
 	}
 
 }
