@@ -355,7 +355,8 @@
 										},
 										{
 											xtype: 'menuseparator',
-											requiredPermissions: ['WORKFLOW-LINK-ASSIGN-ANY']
+											permissionLogicalOperator: 'AND',
+											requiredPermissions: ['WORKFLOW-LINK-ASSIGN-ANY', 'ADMIN-ROLE-MANAGEMENT-READ']
 										},                                       
 										{
 											text: 'Reassign',
@@ -379,12 +380,18 @@
 					listeners: {
 						selectionchange: function(selectionModel, records, opts){
 							checkGridTools();
-							var record = linkGrid.getSelection()[0];
-							var progressViewCmp = Ext.getCmp('workplan-progress-view');
-							if (record) {
-								progressViewCmp.addSteps(record);
-							} else {
-								progressViewCmp.setVisible(false);
+							if (records.length > 0) {
+								var record = linkGrid.getSelection()[0];							
+								var steps = record.get('steps');
+								var currentStep = record.get('currentStop');
+								var statusCmp = Ext.getCmp('workplan-progress-management-worklink-status');
+								statusCmp.removeAll();
+								Ext.Array.forEach(steps, function (el, index) {
+									statusCmp.add({
+										xtype: 'container',
+										html: '<div style="width: 100%; margin-right: 1em;">' + el.name + '</div>'
+									});
+								});
 							}
 						}
 					},
