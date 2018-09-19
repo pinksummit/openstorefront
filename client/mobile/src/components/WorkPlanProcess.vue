@@ -67,9 +67,9 @@ export default {
     this.isLoading = true;
     if (this.$route.params.id) {
       this.id = this.$route.params.id;
+      this.getWorkLink();
     }
 
-    this.getWorkLink();
   },
   data () {
     return {
