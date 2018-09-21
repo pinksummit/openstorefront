@@ -63,7 +63,11 @@
 	</properties>
     
 	<dependencies>
-			
+         	<dependency>
+                        <groupId>net.di2e.idam.keycloak.adapter</groupId>
+                        <artifactId>di2e-idam-keycloak-authservletfilter</artifactId>
+                        <version>4.4.0.DI2E.1</version>
+                </dependency>		
 		<dependency>
 			<groupId>com.sencha</groupId>
 			<artifactId>extjs</artifactId>
