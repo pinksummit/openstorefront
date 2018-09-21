@@ -1,0 +1,14 @@
+{
+  "realm": "DI2E DevCloud",
+  "auth-server-url": "https://dcstgdock02w1a.aws-devcloud.di2e.net:8443/auth",
+  "ssl-required": "external",
+  "resource": "storefront",
+  "public-client": true,
+  "use-resource-role-mappings": false,
+  "truststore" : "/usr/share/tomcat/conf/tomcat.jks",
+  "truststore-password" : "tomcat",
+  "client-keystore" : "/usr/share/tomcat/conf/tomcat.jks",
+  "client-keystore-password" : "tomcat",
+  "client-key-password" : "tomcat",
+  "confidential-port": 0
+}
