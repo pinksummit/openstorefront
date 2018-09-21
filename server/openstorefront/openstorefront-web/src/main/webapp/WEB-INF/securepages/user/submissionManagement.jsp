@@ -938,9 +938,14 @@
 							// reset the entryType so it uses the record's entry type (not the entry type of the template)
 							// Since the template entry type can be blank
 							template.entryType = componentType;
+							var thisTitleBar = 'Submission  <h4 style="background-color: black; color:red">' +
+																'<i class="fa fa-warning" style="font-size:30px;"></i>' +
+																	'CAUTION! DO NOT ADD ANY PROPRIETARY INFORMATION INTO THIS FORM.' +
+																'<i class="fa fa-warning" style="font-size:30px;"></i>' +
+															'</h4>';
 
 							var submissionWin = Ext.create('Ext.window.Window', {
-								title: 'Submission',
+								title: thisTitleBar,
 								layout: 'fit',
 								modal: true,
 								closeAction: 'destroy',
