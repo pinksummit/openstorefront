@@ -30,7 +30,7 @@
 		<filter-name>SystemStatusFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-  <!--    
+   
     <filter>
         <filter-name>Keycloak Filter</filter-name>
         <filter-class>net.di2e.idam.keycloak.adapter.DI2EKeycloakOIDCServletFilter</filter-class>
@@ -40,7 +40,7 @@
         <url-pattern>/keycloak/*</url-pattern>
 	<url-pattern>/openstorefront/*</url-pattern>
     </filter-mapping>
--->	
+	
 <!--  
 	<filter>
 		<filter-name>MockHeaderFilter</filter-name>
@@ -74,7 +74,7 @@
         <dispatcher>REQUEST</dispatcher>
         <dispatcher>FORWARD</dispatcher>        
         <dispatcher>ERROR</dispatcher>
-    </filter-mapping>-->
+    </filter-mapping>
 		
     <filter>
         <filter-name>noCache</filter-name>
