@@ -18,6 +18,18 @@
 		<connection>scm:git:https://github.com/di2e/openstorefront</connection>				
 		<url>https://github.com/di2e/openstorefront</url>
 	</scm>	
+        <distributionManagement>
+                <snapshotRepository>
+                        <id>devcloud-snapshots</id>
+                        <name>DevCloud Snapshots</name>
+                        <url>https://nexus.di2e.net/nexus/content/repositories/Private_DEVCLOUD_Snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                        <id>devcloud-releases</id>
+                        <name>DevCloud Releases</name>
+                        <url>https://nexus.di2e.net/nexus/content/repositories/Private_DEVCLOUD_Releases/</url>
+                </repository>
+        </distributionManagement>
 
 	<repositories>
 		<repository>
@@ -40,6 +52,11 @@
 		  <url>http://xmappr.googlecode.com/svn/repo/</url>
 		</repository>		
 		-->
+                <repository>
+                        <id>devcloud-releases</id>
+                        <name>DevCloud Releases</name>
+                        <url>https://nexus.di2e.net/nexus/content/repositories/Private_DEVCLOUD_Releases/</url>
+                </repository>
 	</repositories>
 
 	<pluginRepositories>
