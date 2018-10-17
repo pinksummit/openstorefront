@@ -16,8 +16,8 @@
     
     <context-param>
         <param-name>
-			javax.servlet.jsp.jstl.fmt.localizationContext
-		</param-name>
+		javax.servlet.jsp.jstl.fmt.localizationContext
+	</param-name>
         <param-value>StripesResources</param-value>
     </context-param>
 
@@ -35,10 +35,11 @@
         <filter-name>Keycloak Filter</filter-name>
         <filter-class>net.di2e.idam.keycloak.adapter.DI2EKeycloakOIDCServletFilter</filter-class>
     </filter>
+    
     <filter-mapping>
         <filter-name>Keycloak Filter</filter-name>
         <url-pattern>/keycloak/*</url-pattern>
-	<url-pattern>/openstorefront/*</url-pattern>
+	<url-pattern>/*</url-pattern>
     </filter-mapping>
 	
 <!--  
