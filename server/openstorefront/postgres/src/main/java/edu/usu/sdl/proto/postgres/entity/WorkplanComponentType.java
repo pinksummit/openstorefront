@@ -26,14 +26,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 	@NamedQuery(name = "WorkplanComponentType.findAll", query = "SELECT w FROM WorkplanComponentType w")
 	, @NamedQuery(name = "WorkplanComponentType.findByComponentType", query = "SELECT w FROM WorkplanComponentType w WHERE w.workplanComponentTypePK.componentType = :componentType")
 	, @NamedQuery(name = "WorkplanComponentType.findByWorkplanId", query = "SELECT w FROM WorkplanComponentType w WHERE w.workplanComponentTypePK.workplanId = :workplanId")})
-public class WorkplanComponentType implements Serializable
+public class WorkplanComponentType
+		implements Serializable
 {
 
 	private static final long serialVersionUID = 1L;
 	@EmbeddedId
 	protected WorkplanComponentTypePK workplanComponentTypePK;
-	@JoinColumn(name = "workplanId", referencedColumnName = "workPlanId", insertable = false, updatable = false)
-    @ManyToOne(optional = false)
+	@JoinColumn(name = "\"workplanId\"", referencedColumnName = "\"workPlanId\"", insertable = false, updatable = false)
+	@ManyToOne(optional = false)
 	private Workplan workplan;
 
 	public WorkplanComponentType()

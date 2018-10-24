@@ -17,18 +17,19 @@ import javax.validation.constraints.Size;
  * @author dshurtleff
  */
 @Embeddable
-public class WorkplanComponentTypePK implements Serializable
+public class WorkplanComponentTypePK
+		implements Serializable
 {
 
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "componentType")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"componentType\"")
 	private String componentType;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "workplanId")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"workplanId\"")
 	private String workplanId;
 
 	public WorkplanComponentTypePK()

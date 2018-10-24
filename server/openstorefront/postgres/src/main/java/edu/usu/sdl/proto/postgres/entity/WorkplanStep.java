@@ -34,37 +34,38 @@ import javax.xml.bind.annotation.XmlRootElement;
 	, @NamedQuery(name = "WorkplanStep.findByRoleLogicCondition", query = "SELECT w FROM WorkplanStep w WHERE w.roleLogicCondition = :roleLogicCondition")
 	, @NamedQuery(name = "WorkplanStep.findByStepOrder", query = "SELECT w FROM WorkplanStep w WHERE w.stepOrder = :stepOrder")
 	, @NamedQuery(name = "WorkplanStep.findByApprovalStateToMatch", query = "SELECT w FROM WorkplanStep w WHERE w.approvalStateToMatch = :approvalStateToMatch")})
-public class WorkplanStep implements Serializable
+public class WorkplanStep
+		implements Serializable
 {
 
 	private static final long serialVersionUID = 1L;
 	@Id
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "workPlanStepId")
+	@Basic(optional = false)
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"workPlanStepId\"")
 	private String workPlanStepId;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "name")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "name")
 	private String name;
 	@Size(max = 2147483647)
-    @Column(name = "description")
+	@Column(name = "description")
 	private String description;
 	@Size(max = 20)
-    @Column(name = "roleLogicCondition")
+	@Column(name = "\"roleLogicCondition\"")
 	private String roleLogicCondition;
 	@Basic(optional = false)
-    @NotNull
-    @Column(name = "stepOrder")
+	@NotNull
+	@Column(name = "\"stepOrder\"")
 	private int stepOrder;
 	@Size(max = 20)
-    @Column(name = "approvalStateToMatch")
+	@Column(name = "\"approvalStateToMatch\"")
 	private String approvalStateToMatch;
-	@JoinColumn(name = "workPlanId", referencedColumnName = "workPlanId")
-    @ManyToOne(optional = false)
-	private Workplan workPlanId;
+	@JoinColumn(name = "\"workPlanId\"", referencedColumnName = "\"workPlanId\"")
+	@ManyToOne(optional = false)
+	private Workplan workplan;
 
 	public WorkplanStep()
 	{
@@ -142,14 +143,14 @@ public class WorkplanStep implements Serializable
 		this.approvalStateToMatch = approvalStateToMatch;
 	}
 
-	public Workplan getWorkPlanId()
+	public Workplan getWorkplan()
 	{
-		return workPlanId;
+		return workplan;
 	}
 
-	public void setWorkPlanId(Workplan workPlanId)
+	public void setWorkplan(Workplan workplan)
 	{
-		this.workPlanId = workPlanId;
+		this.workplan = workplan;
 	}
 
 	@Override

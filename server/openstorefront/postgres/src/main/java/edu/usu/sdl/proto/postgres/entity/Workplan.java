@@ -52,83 +52,84 @@ import javax.xml.bind.annotation.XmlTransient;
 	, @NamedQuery(name = "Workplan.findByUpdateUser", query = "SELECT w FROM Workplan w WHERE w.updateUser = :updateUser")
 	, @NamedQuery(name = "Workplan.findByUpdateDts", query = "SELECT w FROM Workplan w WHERE w.updateDts = :updateDts")
 	, @NamedQuery(name = "Workplan.findByAdminModified", query = "SELECT w FROM Workplan w WHERE w.adminModified = :adminModified")})
-public class Workplan implements Serializable
+public class Workplan
+		implements Serializable
 {
 
 	private static final long serialVersionUID = 1L;
 	@Id
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 80)
-    @Column(name = "workPlanId")
+	@Basic(optional = false)
+	@NotNull
+	@Size(min = 1, max = 80)
+	@Column(name = "\"workPlanId\"")
 	private String workPlanId;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "name")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "name")
 	private String name;
 	@Size(max = 255)
-    @Column(name = "inProgressColor")
+	@Column(name = "\"inProgressColor\"")
 	private String inProgressColor;
 	@Size(max = 255)
-    @Column(name = "pendingColor")
+	@Column(name = "\"pendingColor\"")
 	private String pendingColor;
 	@Size(max = 255)
-    @Column(name = "completeColor")
+	@Column(name = "\"completeColor\"")
 	private String completeColor;
 	@Size(max = 255)
-    @Column(name = "subStatusColor")
+	@Column(name = "\"subStatusColor\"")
 	private String subStatusColor;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 20)
-    @Column(name = "workPlanType")
+	@NotNull
+	@Size(min = 1, max = 20)
+	@Column(name = "\"workPlanType\"")
 	private String workPlanType;
 	@Size(max = 255)
-    @Column(name = "evaluationTemplateId")
+	@Column(name = "\"evaluationTemplateId\"")
 	private String evaluationTemplateId;
-	@Column(name = "appliesToChildComponentTypes")
+	@Column(name = "\"appliesToChildComponentTypes\"")
 	private Boolean appliesToChildComponentTypes;
-	@Column(name = "defaultWorkPlan")
+	@Column(name = "\"defaultWorkPlan\"")
 	private Boolean defaultWorkPlan;
 	@Size(max = 255)
-    @Column(name = "adminRole")
+	@Column(name = "\"adminRole\"")
 	private String adminRole;
 	@Size(max = 255)
-    @Column(name = "securityMarkingType")
+	@Column(name = "\"securityMarkingType\"")
 	private String securityMarkingType;
 	@Size(max = 255)
-    @Column(name = "dataSensitivity")
+	@Column(name = "\"dataSensitivity\"")
 	private String dataSensitivity;
 	@Basic(optional = false)
-    @NotNull
-    @Column(name = "activeStatus")
-	private Character activeStatus;
+	@NotNull
+	@Column(name = "\"activeStatus\"")
+	private String activeStatus;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "createUser")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"createUser\"")
 	private String createUser;
 	@Basic(optional = false)
-    @NotNull
-    @Column(name = "createDts")
-    @Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	@Column(name = "\"createDts\"")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date createDts;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "updateUser")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"updateUser\"")
 	private String updateUser;
 	@Basic(optional = false)
-    @NotNull
-    @Column(name = "updateDts")
-    @Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	@Column(name = "\"updateDts\"")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date updateDts;
-	@Column(name = "adminModified")
+	@Column(name = "\"adminModified\"")
 	private Boolean adminModified;
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "workplan")
 	private List<WorkplanComponentType> workplanComponentTypeList;
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "workPlanId")
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "workplan")
 	private List<WorkplanStep> workplanStepList;
 
 	public Workplan()
@@ -140,7 +141,7 @@ public class Workplan implements Serializable
 		this.workPlanId = workPlanId;
 	}
 
-	public Workplan(String workPlanId, String name, String workPlanType, Character activeStatus, String createUser, Date createDts, String updateUser, Date updateDts)
+	public Workplan(String workPlanId, String name, String workPlanType, String activeStatus, String createUser, Date createDts, String updateUser, Date updateDts)
 	{
 		this.workPlanId = workPlanId;
 		this.name = name;
@@ -282,12 +283,12 @@ public class Workplan implements Serializable
 		this.dataSensitivity = dataSensitivity;
 	}
 
-	public Character getActiveStatus()
+	public String getActiveStatus()
 	{
 		return activeStatus;
 	}
 
-	public void setActiveStatus(Character activeStatus)
+	public void setActiveStatus(String activeStatus)
 	{
 		this.activeStatus = activeStatus;
 	}

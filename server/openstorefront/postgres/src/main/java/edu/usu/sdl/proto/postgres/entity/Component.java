@@ -62,128 +62,129 @@ import javax.xml.bind.annotation.XmlRootElement;
 	, @NamedQuery(name = "Component.findByUpdateUser", query = "SELECT c FROM Component c WHERE c.updateUser = :updateUser")
 	, @NamedQuery(name = "Component.findByUpdateDts", query = "SELECT c FROM Component c WHERE c.updateDts = :updateDts")
 	, @NamedQuery(name = "Component.findByAdminModified", query = "SELECT c FROM Component c WHERE c.adminModified = :adminModified")})
-public class Component implements Serializable
+public class Component
+		implements Serializable
 {
 
 	private static final long serialVersionUID = 1L;
 	@Id
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 80)
-    @Column(name = "componentId")
+	@Basic(optional = false)
+	@NotNull
+	@Size(min = 1, max = 80)
+	@Column(name = "\"componentId\"")
 	private String componentId;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "name")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "name")
 	private String name;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 2147483647)
-    @Column(name = "description")
+	@NotNull
+	@Size(min = 1, max = 2147483647)
+	@Column(name = "description")
 	private String description;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "componentType")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"componentType\"")
 	private String componentType;
 	@Size(max = 255)
-    @Column(name = "guid")
+	@Column(name = "guid")
 	private String guid;
 	@Size(max = 255)
-    @Column(name = "externalId")
+	@Column(name = "\"externalId\"")
 	private String externalId;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "organization")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "organization")
 	private String organization;
-	@Column(name = "releaseDate")
-    @Temporal(TemporalType.DATE)
+	@Column(name = "\"releaseDate\"")
+	@Temporal(TemporalType.DATE)
 	private Date releaseDate;
 	@Size(max = 255)
-    @Column(name = "version")
+	@Column(name = "version")
 	private String version;
 	@Size(max = 80)
-    @Column(name = "approvedUser")
+	@Column(name = "\"approvedUser\"")
 	private String approvedUser;
-	@Column(name = "approvedDts")
-    @Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "\"approvedDts\"")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date approvedDts;
 	@Size(max = 80)
-    @Column(name = "changeApprovalMode")
+	@Column(name = "\"changeApprovalMode\"")
 	private String changeApprovalMode;
-	@Column(name = "lastActivityDts")
-    @Temporal(TemporalType.TIME)
+	@Column(name = "\"lastActivityDts\"")
+	@Temporal(TemporalType.TIME)
 	private Date lastActivityDts;
-	@Column(name = "submittedDts")
-    @Temporal(TemporalType.TIME)
+	@Column(name = "\"submittedDts\"")
+	@Temporal(TemporalType.TIME)
 	private Date submittedDts;
 	@Size(max = 255)
-    @Column(name = "notifyOfApprovalEmail")
+	@Column(name = "\"notifyOfApprovalEmail\"")
 	private String notifyOfApprovalEmail;
 	@Size(max = 255)
-    @Column(name = "dataSource")
+	@Column(name = "\"dataSource\"")
 	private String dataSource;
 	@Size(max = 255)
-    @Column(name = "lastModificationType")
+	@Column(name = "\"lastModificationType\"")
 	private String lastModificationType;
 	@Size(max = 255)
-    @Column(name = "fileHistoryId")
+	@Column(name = "\"fileHistoryId\"")
 	private String fileHistoryId;
-	@Column(name = "recordVersion")
+	@Column(name = "\"recordVersion\"")
 	private Integer recordVersion;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 80)
-    @Column(name = "approvalState")
+	@NotNull
+	@Size(min = 1, max = 80)
+	@Column(name = "\"approvalState\"")
 	private String approvalState;
 	@Size(max = 80)
-    @Column(name = "pendingChangeId")
+	@Column(name = "\"pendingChangeId\"")
 	private String pendingChangeId;
 	@Size(max = 255)
-    @Column(name = "submissionUser")
+	@Column(name = "\"submissionUser\"")
 	private String submissionUser;
 	@Size(max = 255)
-    @Column(name = "ownerUser")
+	@Column(name = "\"ownerUser\"")
 	private String ownerUser;
 	@Size(max = 255)
-    @Column(name = "assignedLibrarian")
+	@Column(name = "\"assignedLibrarian\"")
 	private String assignedLibrarian;
-	@Column(name = "assignedLibrarianDts")
-    @Temporal(TemporalType.DATE)
+	@Column(name = "\"assignedLibrarianDts\"")
+	@Temporal(TemporalType.DATE)
 	private Date assignedLibrarianDts;
 	@Size(max = 255)
-    @Column(name = "securityMarkingType")
+	@Column(name = "\"securityMarkingType\"")
 	private String securityMarkingType;
 	@Size(max = 255)
-    @Column(name = "dataSensitivity")
+	@Column(name = "\"dataSensitivity\"")
 	private String dataSensitivity;
 	@Basic(optional = false)
-    @NotNull
-    @Column(name = "activeStatus")
-	private Character activeStatus;
+	@NotNull
+	@Column(name = "\"activeStatus\"")
+	private String activeStatus;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "createUser")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"createUser\"")
 	private String createUser;
 	@Basic(optional = false)
-    @NotNull
-    @Column(name = "createDts")
-    @Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	@Column(name = "\"createDts\"")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date createDts;
 	@Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
-    @Column(name = "updateUser")
+	@NotNull
+	@Size(min = 1, max = 255)
+	@Column(name = "\"updateUser\"")
 	private String updateUser;
 	@Basic(optional = false)
-    @NotNull
-    @Column(name = "updateDts")
-    @Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	@Column(name = "\"updateDts\"")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date updateDts;
-	@Column(name = "adminModified")
+	@Column(name = "\"adminModified\"")
 	private Boolean adminModified;
 
 	public Component()
@@ -195,7 +196,7 @@ public class Component implements Serializable
 		this.componentId = componentId;
 	}
 
-	public Component(String componentId, String name, String description, String componentType, String organization, String approvalState, Character activeStatus, String createUser, Date createDts, String updateUser, Date updateDts)
+	public Component(String componentId, String name, String description, String componentType, String organization, String approvalState, String activeStatus, String createUser, Date createDts, String updateUser, Date updateDts)
 	{
 		this.componentId = componentId;
 		this.name = name;
@@ -480,12 +481,12 @@ public class Component implements Serializable
 		this.dataSensitivity = dataSensitivity;
 	}
 
-	public Character getActiveStatus()
+	public String getActiveStatus()
 	{
 		return activeStatus;
 	}
 
-	public void setActiveStatus(Character activeStatus)
+	public void setActiveStatus(String activeStatus)
 	{
 		this.activeStatus = activeStatus;
 	}
