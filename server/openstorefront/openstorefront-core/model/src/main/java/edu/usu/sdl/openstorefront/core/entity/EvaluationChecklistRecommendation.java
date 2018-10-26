@@ -102,7 +102,7 @@ public class EvaluationChecklistRecommendation
 	}
 
 	@Override
-	public void setChangeParent(ChangeLog changeLog)
+	public void adjustChangeParent(ChangeLog changeLog)
 	{
 		changeLog.setParentEntity(EvaluationChecklist.class.getSimpleName());
 		changeLog.setParentEntityId(getChecklistId());

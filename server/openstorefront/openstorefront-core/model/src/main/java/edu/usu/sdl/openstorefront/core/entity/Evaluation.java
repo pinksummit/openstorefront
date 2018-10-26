@@ -148,7 +148,7 @@ public class Evaluation
 	}
 
 	@Override
-	public void setChangeParent(ChangeLog changeLog)
+	public void adjustChangeParent(ChangeLog changeLog)
 	{
 		//top-level
 	}
