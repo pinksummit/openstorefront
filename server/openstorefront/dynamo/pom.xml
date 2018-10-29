@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>edu.usu.sdl</groupId>
+        <artifactId>openstorefront</artifactId>
+        <version>2.6.6</version>
+    </parent>
+    <artifactId>dynamo</artifactId>
+    <packaging>jar</packaging>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+	<!--Custom repository:-->
+	<repositories>
+		<repository>
+		   <id>dynamodb-local-oregon</id>
+		   <name>DynamoDB Local Release Repository</name>
+		   <url>https://s3-us-west-2.amazonaws.com/dynamodb-local/release</url>
+		</repository>
+	</repositories>	
+	<dependencies>
+		<dependency>
+		   <groupId>com.amazonaws</groupId>
+		   <artifactId>DynamoDBLocal</artifactId>
+		   <version>1.11.119</version>
+		</dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>openstorefront-core-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>		
+	</dependencies>	
+	
+</project>
