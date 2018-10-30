@@ -31,7 +31,6 @@
 		<module>system-tests</module>
 		<module>openstorefront-client-login</module>
 		<module>openstorefront-client-mobile</module>
-	 <module>mongo</module>
 	</modules>
 	
 	<dependencies>
