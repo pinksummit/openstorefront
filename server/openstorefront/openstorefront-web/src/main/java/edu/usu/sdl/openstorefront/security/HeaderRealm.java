@@ -149,8 +149,8 @@ public class HeaderRealm
 			headerAuthToken.setGroup(groups.toString());
 			headerAuthToken.setGuid(request.getHeader(PropertiesManager.getInstance().getValue(PropertiesManager.KEY_OPENAM_HEADER_LDAPGUID, STUB_HEADER)));
 			headerAuthToken.setLastname(request.getHeader(PropertiesManager.getInstance().getValue(PropertiesManager.KEY_OPENAM_HEADER_LASTNAME, "family_name")));
-			headerAuthToken.setOrganization(request.getHeader(PropertiesManager.getInstance().getValue(PropertiesManager.KEY_OPENAM_HEADER_ORGANIZATION, "organization")));
 			headerAuthToken.setUsername(request.getHeader(PropertiesManager.getInstance().getValue(PropertiesManager.KEY_OPENAM_HEADER_USERNAME, "preferred_username")));
+            headerAuthToken.setOrganization(request.getHeader(PropertiesManager.getInstance().getValue(PropertiesManager.KEY_OPENAM_HEADER_ORGANIZATION, "organization")));
 
 			try {
 				Subject currentUser = SecurityUtils.getSubject();
